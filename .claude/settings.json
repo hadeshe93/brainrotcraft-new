@@ -1,0 +1,54 @@
+{
+  "project": {
+    "name": "gamesramp.com",
+    "description": "Online game platform built with Next.js 15 and TypeScript",
+    "type": "nextjs",
+    "architecture": "async-prediction-based"
+  },
+  "commands": {
+    "dev": "pnpm dev",
+    "turbodev": "pnpm turbodev",
+    "build": "pnpm build",
+    "start": "pnpm start",
+    "lint": "pnpm lint",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "pnpm drizzle:generate",
+    "db:migrate:local": "pnpm d1:apply",
+    "db:migrate:remote": "pnpm d1:apply:remote",
+    "deploy": "pnpm deploy",
+    "preview": "pnpm preview"
+  },
+  "preferences": {
+    "nodeVersion": "20",
+    "packageManager": "pnpm",
+    "codeStyle": "typescript-strict",
+    "ui": ["magic-ui", "shadcn-ui"],
+    "css": "tailwind-v4",
+    "i18n": ["en", "zh"],
+    "ports": {
+      "dev": 4004
+    }
+  },
+  "tech_stack": {
+    "frontend": "Next.js 15 + React 19",
+    "styling": "Tailwind CSS v4",
+    "ai": "Replicate API (Flux model)",
+    "database": "Drizzle ORM + SQLite/Cloudflare D1",
+    "storage": "Cloudflare R2 + KV",
+    "deployment": "Cloudflare Pages",
+    "i18n": "next-intl",
+    "state": "SWR"
+  },
+  "key_directories": {
+    "pages": "src/app/[locale]/",
+    "components": "src/components/",
+    "ui": "src/components/ui/",
+    "blocks": "src/components/blocks/",
+    "services": "src/services/",
+    "types": "src/types/",
+    "i18n": "src/i18n/",
+    "database": "src/db/"
+  },
+  "rules_reference": ".cursor/rules/",
+  "documentation": "CLAUDE.md"
+}

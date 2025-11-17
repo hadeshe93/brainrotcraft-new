@@ -1,0 +1,22 @@
+{
+  "mode": "production",
+  "currentCsvFile": "games-011.csv",
+  "currentCsvIndex": 2,
+  "totalCsvFiles": 3,
+  "allCsvFiles": [
+    "games-009.csv",
+    "games-010.csv",
+    "games-011.csv"
+  ],
+  "processedCsvFiles": [
+    "games-010.csv"
+  ],
+  "currentFileProgress": {
+    "totalGames": 40,
+    "processedGames": 40,
+    "successCount": 40,
+    "failedGames": [],
+    "lastProcessedIndex": 40
+  },
+  "timestamp": "2025-11-06T06:03:05.520Z"
+}

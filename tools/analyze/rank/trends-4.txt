@@ -1,0 +1,107 @@
+Game Search Trends Analysis
+Source: trends-4.json
+Total Games: 80
+Analysis Date: 2025-11-07T07:38:46.207Z
+
+================================================================================
+
+🔥 Tier S (Very High)
+--------------------------------------------------------------------------------
+JUMPER (avg: 73)
+Geometry Dash (avg: 70)
+Geometry Dash (avg: 70)
+Confusion (avg: 65)
+Tag 2 (avg: 63)
+Run 2 (avg: 55)
+Wave Editor (avg: 50)
+Geometry Dash 3D (avg: 49)
+Avatar World (avg: 48)
+99 Nights in the Forest (avg: 38)
+BLOODMONEY (avg: 38)
+Hollow Knight (avg: 33)
+Hollow Knight (avg: 32)
+Hollow Knight (avg: 32)
+67 Clicker (avg: 29)
+Slope Rider (avg: 28)
+
+⭐ Tier A (High)
+--------------------------------------------------------------------------------
+Ragdoll Playground (avg: 26)
+Retro Bowl 26 (avg: 24)
+Steal Brainrots (avg: 21)
+Plants Vs Brainrots (avg: 19)
+Geometry Dash (avg: 14)
+A Shedletsky POV (avg: 14)
+Falling Up (avg: 13)
+Steal Brainrot Online (avg: 13)
+Growden.io (avg: 9)
+Slope 2 (avg: 8)
+Mr Flip (avg: 6)
+Edge of Destiny (avg: 5)
+Sky Realm (avg: 3)
+Melon Playground (avg: 3)
+Stickman Hook (avg: 3)
+PolyTrack Unblocked (avg: 2)
+
+📊 Tier B (Medium)
+--------------------------------------------------------------------------------
+Geometry Dash Platformer (avg: 2)
+Hornet Adventure (avg: 2)
+Undead Corridor (avg: 1)
+Geometry Dash Minecraft (avg: 1)
+Mr. Pixel (avg: 1)
+Labubu Geometry Waves (avg: 1)
+Steal a Brainrot Original 3D (avg: 1)
+Geometry Dash Polargeist v01 (avg: 1)
+Neon Leap (avg: 1)
+Geometry Dash End Of Line (avg: 1)
+Geometry Platformer (avg: 1)
+Geometry Dash Level Easy (avg: 1)
+Geometry Dash Sonar (avg: 1)
+Stack Rush (avg: 0)
+Geometry Cube 2 (avg: 0)
+Geometry Dash Lite Scratch (avg: 0)
+
+📉 Tier C (Low)
+--------------------------------------------------------------------------------
+Vex 9 (avg: 0)
+Obby With Friends (avg: 0)
+Infinite Dash 2 (avg: 0)
+Geometry Dash Afterlife (avg: 0)
+Geometry Dash Demon Park (avg: 0)
+Wave Road 3D (avg: 0)
+Geometry Dash v1.5 (avg: 0)
+Geometry Dash square adventure (avg: 0)
+Geometry Dash Clubstep (avg: 0)
+Geometry Dash World Dashlands (avg: 0)
+Level Devil - NOT A Troll Game (avg: 0)
+Time Shooter 2 (avg: 0)
+Geometry Dash Quest for Perfection (avg: 0)
+UFO Editor (avg: 0)
+Cosmic Dash (avg: 0)
+Flamewall Wave Challenge (avg: 0)
+
+💤 Tier D (Very Low)
+--------------------------------------------------------------------------------
+Geometry Craft 3D (avg: 0)
+Geometry Dash Lava Mode (avg: 0)
+Vex Hyper Dash (avg: 0)
+Tung Tung Sahur in Geometry Dash (avg: 0)
+Geometry Dash Mystery Dungeon (avg: 0)
+Geometry Dash Remake Level 2 (avg: 0)
+Geo Rush (avg: 0)
+Geometry Dash BuTiTi (avg: 0)
+Geometry Dash Blade of Justice (avg: 0)
+Geometry Dash ColorZ (avg: 0)
+Geometry Dash Back on Track RM (avg: 0)
+Geometry Dash Adrift (avg: 0)
+Geometry Dash Glitter Madness 2k15 (avg: 0)
+Geometry Dash Dreamland (avg: 0)
+Geometry Dash The Lightning Road (avg: 0)
+Geometry Dash Double Wave PRO (avg: 0)
+
+================================================================================
+Statistics:
+- Highest: JUMPER (73)
+- Lowest: Geometry Dash Double Wave PRO (0)
+- Average: 12.14

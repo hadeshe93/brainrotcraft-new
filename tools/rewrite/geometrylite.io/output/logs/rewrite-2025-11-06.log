@@ -1,0 +1,953 @@
+[2025-11-06T02:25:09.692Z] [INFO] [1/3] Starting CSV file: games-003.csv
+[2025-11-06T02:25:09.698Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-06T02:25:09.699Z] [INFO] [1/50] Processing: Poligon Dash
+[2025-11-06T02:25:09.699Z] [INFO] [2/50] Processing: Geometry Dash WANNACRY
+[2025-11-06T02:25:09.699Z] [INFO] [4/50] Processing: Geometry Wave: Challenge
+[2025-11-06T02:25:09.699Z] [INFO] [3/50] Processing: Geometry Head
+[2025-11-06T02:25:42.215Z] [INFO] ✅ Success: Geometry Wave: Challenge (attempt 1)
+[2025-11-06T02:25:42.216Z] [INFO] [5/50] Processing: Geometry Dash Nine CircleX
+[2025-11-06T02:25:45.282Z] [INFO] ✅ Success: Poligon Dash (attempt 1)
+[2025-11-06T02:25:45.282Z] [INFO] [6/50] Processing: Geometry Dash: Battle with Italian Animals
+[2025-11-06T02:25:50.485Z] [INFO] ✅ Success: Geometry Head (attempt 1)
+[2025-11-06T02:25:50.485Z] [INFO] [7/50] Processing: Geometry Dash Merge
+[2025-11-06T02:25:53.195Z] [INFO] ✅ Success: Geometry Dash WANNACRY (attempt 1)
+[2025-11-06T02:25:53.196Z] [INFO] [8/50] Processing: Geometry Dash 2.2: New Arrow
+[2025-11-06T02:26:20.520Z] [INFO] ✅ Success: Geometry Dash: Battle with Italian Animals (attempt 1)
+[2025-11-06T02:26:20.521Z] [INFO] [9/50] Processing: Geometry Dash Death Moon
+[2025-11-06T02:26:23.638Z] [INFO] ✅ Success: Geometry Dash Nine CircleX (attempt 1)
+[2025-11-06T02:26:23.638Z] [INFO] [10/50] Processing: Geometry Dash: Ship Editor
+[2025-11-06T02:26:26.647Z] [INFO] ✅ Success: Geometry Dash Merge (attempt 1)
+[2025-11-06T02:26:26.647Z] [INFO] [11/50] Processing: Geometry Dash Wave: Original
+[2025-11-06T02:26:26.697Z] [INFO] ✅ Success: Geometry Dash 2.2: New Arrow (attempt 1)
+[2025-11-06T02:26:26.697Z] [INFO] [12/50] Processing: Golf Hit
+[2025-11-06T02:26:55.207Z] [INFO] ✅ Success: Geometry Dash Death Moon (attempt 1)
+[2025-11-06T02:26:55.207Z] [INFO] [13/50] Processing: Dude Theft Auto
+[2025-11-06T02:27:02.633Z] [INFO] ✅ Success: Geometry Dash Wave: Original (attempt 1)
+[2025-11-06T02:27:02.634Z] [INFO] [14/50] Processing: Geometry Dash Cyberpunk
+[2025-11-06T02:27:04.626Z] [INFO] ✅ Success: Golf Hit (attempt 1)
+[2025-11-06T02:27:04.626Z] [INFO] [15/50] Processing: Geometry Dash Nemesis
+[2025-11-06T02:27:04.832Z] [WARN] Attempt 1 failed for "Geometry Dash: Ship Editor", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:27:38.090Z] [INFO] ✅ Success: Dude Theft Auto (attempt 1)
+[2025-11-06T02:27:38.090Z] [INFO] [16/50] Processing: Geometry Arrow 2
+[2025-11-06T02:27:41.828Z] [INFO] [17/50] Processing: Geometry Cube: Challenge
+[2025-11-06T02:27:42.633Z] [INFO] ✅ Success: Geometry Dash Cyberpunk (attempt 1)
+[2025-11-06T02:27:42.633Z] [INFO] [18/50] Processing: Geometry Dash: Labubu Hardcore
+[2025-11-06T02:27:42.922Z] [INFO] ✅ Success: Geometry Dash Nemesis (attempt 1)
+[2025-11-06T02:27:42.922Z] [INFO] [19/50] Processing: Geometry Dash Kappaclysm
+[2025-11-06T02:28:11.610Z] [INFO] ✅ Success: Geometry Arrow 2 (attempt 1)
+[2025-11-06T02:28:11.610Z] [INFO] [20/50] Processing: Dashmetry
+[2025-11-06T02:28:15.375Z] [INFO] ✅ Success: Geometry Cube: Challenge (attempt 1)
+[2025-11-06T02:28:15.376Z] [INFO] [21/50] Processing: Geometry Dash Nine Circles
+[2025-11-06T02:28:15.999Z] [INFO] ✅ Success: Geometry Dash: Labubu Hardcore (attempt 1)
+[2025-11-06T02:28:15.999Z] [INFO] [22/50] Processing: Geometry Dash: Dangerous Choices
+[2025-11-06T02:28:18.781Z] [INFO] ✅ Success: Geometry Dash Kappaclysm (attempt 1)
+[2025-11-06T02:28:18.782Z] [INFO] [23/50] Processing: Fire And Water Geometry Dash
+[2025-11-06T02:28:42.911Z] [INFO] ✅ Success: Dashmetry (attempt 1)
+[2025-11-06T02:28:42.912Z] [INFO] [24/50] Processing: Geometry Dash: Secret Mode
+[2025-11-06T02:28:47.674Z] [INFO] ✅ Success: Geometry Dash: Dangerous Choices (attempt 1)
+[2025-11-06T02:28:47.674Z] [INFO] [25/50] Processing: Geometry Dash UFO
+[2025-11-06T02:28:51.059Z] [INFO] ✅ Success: Fire And Water Geometry Dash (attempt 1)
+[2025-11-06T02:28:51.059Z] [INFO] [26/50] Processing: Geometry Dash Idols
+[2025-11-06T02:28:52.458Z] [INFO] ✅ Success: Geometry Dash Nine Circles (attempt 1)
+[2025-11-06T02:28:52.459Z] [INFO] [27/50] Processing: Geometry Dash Press Start
+[2025-11-06T02:29:21.735Z] [INFO] ✅ Success: Geometry Dash: Secret Mode (attempt 1)
+[2025-11-06T02:29:21.736Z] [INFO] [28/50] Processing: Geometry Dash Duelo Maestro
+[2025-11-06T02:29:26.683Z] [INFO] ✅ Success: Geometry Dash UFO (attempt 1)
+[2025-11-06T02:29:26.683Z] [INFO] [29/50] Processing: Geometry Dash Mountain King
+[2025-11-06T02:29:30.597Z] [INFO] ✅ Success: Geometry Dash Idols (attempt 1)
+[2025-11-06T02:29:30.597Z] [INFO] [30/50] Processing: Geometry Dash MikuMikuMikuMiku
+[2025-11-06T02:29:31.575Z] [INFO] ✅ Success: Geometry Dash Press Start (attempt 1)
+[2025-11-06T02:29:31.575Z] [INFO] [31/50] Processing: Geometry Dash Ashley Wave Trials
+[2025-11-06T02:29:58.717Z] [WARN] Attempt 1 failed for "Geometry Dash Duelo Maestro", retrying... {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:30:09.566Z] [INFO] ✅ Success: Geometry Dash MikuMikuMikuMiku (attempt 1)
+[2025-11-06T02:30:09.567Z] [INFO] [32/50] Processing: Geometry Dash Fingerdash
+[2025-11-06T02:30:09.665Z] [INFO] ✅ Success: Geometry Dash Ashley Wave Trials (attempt 1)
+[2025-11-06T02:30:09.666Z] [INFO] [33/50] Processing: Geometry Dash Nock Em
+[2025-11-06T02:30:16.805Z] [INFO] ✅ Success: Geometry Dash Mountain King (attempt 1)
+[2025-11-06T02:30:16.805Z] [INFO] [34/50] Processing: Tap Road Beat
+[2025-11-06T02:30:41.940Z] [INFO] ✅ Success: Geometry Dash Duelo Maestro (attempt 2)
+[2025-11-06T02:30:41.941Z] [INFO] [35/50] Processing: Geometry Dash Explorers
+[2025-11-06T02:30:45.220Z] [INFO] ✅ Success: Geometry Dash Fingerdash (attempt 1)
+[2025-11-06T02:30:45.220Z] [INFO] [36/50] Processing: Geometry Dash Peaceful
+[2025-11-06T02:30:45.390Z] [INFO] ✅ Success: Geometry Dash Nock Em (attempt 1)
+[2025-11-06T02:30:45.390Z] [INFO] [37/50] Processing: Geometry Dash: Impossible
+[2025-11-06T02:30:49.460Z] [INFO] ✅ Success: Tap Road Beat (attempt 1)
+[2025-11-06T02:30:49.461Z] [INFO] [38/50] Processing: Geometry Dash Evolution of Flying
+[2025-11-06T02:31:17.470Z] [INFO] ✅ Success: Geometry Dash: Impossible (attempt 1)
+[2025-11-06T02:31:17.471Z] [INFO] [39/50] Processing: Geometry Dash Editor
+[2025-11-06T02:31:21.031Z] [INFO] ✅ Success: Geometry Dash Peaceful (attempt 1)
+[2025-11-06T02:31:21.032Z] [INFO] [40/50] Processing: Geometry Dash Sunshine
+[2025-11-06T02:31:21.788Z] [INFO] ✅ Success: Geometry Dash Explorers (attempt 1)
+[2025-11-06T02:31:21.788Z] [INFO] [41/50] Processing: Geometry Dash Moonlight
+[2025-11-06T02:31:23.180Z] [WARN] Attempt 1 failed for "Geometry Dash Evolution of Flying", retrying... {"error":"Validation failed: metaDescription length 168 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:31:56.924Z] [INFO] ✅ Success: Geometry Dash Editor (attempt 1)
+[2025-11-06T02:31:56.924Z] [INFO] [42/50] Processing: Trigonometry Dash
+[2025-11-06T02:31:57.894Z] [INFO] ✅ Success: Geometry Dash Sunshine (attempt 1)
+[2025-11-06T02:31:57.895Z] [INFO] [43/50] Processing: Geometry Worlds
+[2025-11-06T02:32:01.273Z] [WARN] Attempt 1 failed for "Geometry Dash Moonlight", retrying... {"error":"Validation failed: metaDescription length 174 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:32:05.577Z] [INFO] ✅ Success: Geometry Dash Evolution of Flying (attempt 2)
+[2025-11-06T02:32:05.578Z] [INFO] [44/50] Processing: Geometry Dash Heartbeat
+[2025-11-06T02:32:29.160Z] [INFO] ✅ Success: Geometry Worlds (attempt 1)
+[2025-11-06T02:32:29.161Z] [INFO] [45/50] Processing: Dune
+[2025-11-06T02:32:35.007Z] [INFO] ✅ Success: Trigonometry Dash (attempt 1)
+[2025-11-06T02:32:35.008Z] [INFO] [46/50] Processing: Geometry Dash Freedom08
+[2025-11-06T02:32:41.578Z] [INFO] ✅ Success: Geometry Dash Moonlight (attempt 2)
+[2025-11-06T02:32:41.579Z] [INFO] [47/50] Processing: Geometry Dash Badland
+[2025-11-06T02:32:43.859Z] [INFO] ✅ Success: Geometry Dash Heartbeat (attempt 1)
+[2025-11-06T02:32:43.860Z] [INFO] [48/50] Processing: Geometry Dash Sakupen Circles
+[2025-11-06T02:33:08.977Z] [INFO] ✅ Success: Dune (attempt 1)
+[2025-11-06T02:33:08.977Z] [INFO] [49/50] Processing: Square Dash
+[2025-11-06T02:33:15.522Z] [INFO] ✅ Success: Geometry Dash Freedom08 (attempt 1)
+[2025-11-06T02:33:15.523Z] [INFO] [50/50] Processing: Square Dash Up
+[2025-11-06T02:33:16.479Z] [INFO] ✅ Success: Geometry Dash Badland (attempt 1)
+[2025-11-06T02:33:31.088Z] [WARN] Attempt 1 failed for "Geometry Dash Sakupen Circles", retrying... {"error":"Validation failed: metaDescription length 171 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:33:44.874Z] [INFO] ✅ Success: Square Dash (attempt 1)
+[2025-11-06T02:33:53.163Z] [INFO] ✅ Success: Square Dash Up (attempt 1)
+[2025-11-06T02:34:06.995Z] [INFO] CSV file processing complete {"csvFile":"games-003.csv","csvIndex":1,"totalCsvFiles":3,"gamesTotal":50,"gamesSuccessful":48,"gamesFailed":2,"failedGames":["Geometry Dash: Ship Editor","Geometry Dash Sakupen Circles"],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-003.csv","json":"tools/rewrite/geometrylite.io/output/games-003.json"}}
+[2025-11-06T02:34:06.996Z] [INFO] [2/3] Starting CSV file: games-004.csv
+[2025-11-06T02:34:07.003Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-06T02:34:07.004Z] [INFO] [2/50] Processing: Geometry Dash LIMBO
+[2025-11-06T02:34:07.004Z] [INFO] [1/50] Processing: Geometry Dash Maze Maps V2
+[2025-11-06T02:34:07.004Z] [INFO] [3/50] Processing: Mad Dash
+[2025-11-06T02:34:07.004Z] [INFO] [4/50] Processing: Geometry Dash Jumper
+[2025-11-06T02:34:39.929Z] [INFO] ✅ Success: Mad Dash (attempt 1)
+[2025-11-06T02:34:39.930Z] [INFO] [5/50] Processing: Geometry Dash Hyper Wave
+[2025-11-06T02:34:40.100Z] [INFO] ✅ Success: Geometry Dash Jumper (attempt 1)
+[2025-11-06T02:34:40.101Z] [INFO] [6/50] Processing: Geometry Dash Level Editor - 2.0.4
+[2025-11-06T02:34:44.195Z] [INFO] ✅ Success: Geometry Dash LIMBO (attempt 1)
+[2025-11-06T02:34:44.196Z] [INFO] [7/50] Processing: Geometry Vibes Monster
+[2025-11-06T02:34:47.552Z] [INFO] ✅ Success: Geometry Dash Maze Maps V2 (attempt 1)
+[2025-11-06T02:34:47.553Z] [INFO] [8/50] Processing: Geometry Dash Can't Let Go
+[2025-11-06T02:35:15.380Z] [INFO] ✅ Success: Geometry Dash Level Editor - 2.0.4 (attempt 1)
+[2025-11-06T02:35:15.381Z] [INFO] [9/50] Processing: Geometry Dash Horror
+[2025-11-06T02:35:22.081Z] [WARN] Attempt 1 failed for "Geometry Dash Hyper Wave", retrying... {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:35:26.869Z] [INFO] ✅ Success: Geometry Vibes Monster (attempt 1)
+[2025-11-06T02:35:26.870Z] [INFO] [10/50] Processing: Geometry Dash Base After Base
+[2025-11-06T02:35:29.575Z] [INFO] ✅ Success: Geometry Dash Can't Let Go (attempt 1)
+[2025-11-06T02:35:29.576Z] [INFO] [11/50] Processing: Quantum Geometry
+[2025-11-06T02:35:53.601Z] [INFO] ✅ Success: Geometry Dash Horror (attempt 1)
+[2025-11-06T02:35:53.601Z] [INFO] [12/50] Processing: Geometry Dash Tartarus
+[2025-11-06T02:36:00.792Z] [INFO] ✅ Success: Geometry Dash Hyper Wave (attempt 2)
+[2025-11-06T02:36:00.792Z] [INFO] [13/50] Processing: Geometry Dash Kenos
+[2025-11-06T02:36:02.192Z] [WARN] Attempt 1 failed for "Quantum Geometry", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:36:09.174Z] [INFO] ✅ Success: Geometry Dash Base After Base (attempt 1)
+[2025-11-06T02:36:09.174Z] [INFO] [14/50] Processing: Glitch Dash
+[2025-11-06T02:36:34.216Z] [INFO] ✅ Success: Geometry Dash Kenos (attempt 1)
+[2025-11-06T02:36:34.216Z] [INFO] [15/50] Processing: Italian Brainrot in Geometry Dash
+[2025-11-06T02:36:41.933Z] [INFO] ✅ Success: Geometry Dash Tartarus (attempt 1)
+[2025-11-06T02:36:41.934Z] [INFO] [16/50] Processing: Geometry Dash Chambers
+[2025-11-06T02:36:44.371Z] [INFO] [17/50] Processing: Grow a Garden
+[2025-11-06T02:36:45.538Z] [INFO] ✅ Success: Glitch Dash (attempt 1)
+[2025-11-06T02:36:45.539Z] [INFO] [18/50] Processing: Geometry Dash Blast Processing
+[2025-11-06T02:37:06.754Z] [WARN] Attempt 1 failed for "Italian Brainrot in Geometry Dash", retrying... {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:37:13.309Z] [WARN] Attempt 1 failed for "Geometry Dash Chambers", retrying... {"error":"Validation failed: metaDescription length 168 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:37:15.286Z] [INFO] ✅ Success: Grow a Garden (attempt 1)
+[2025-11-06T02:37:15.287Z] [INFO] [19/50] Processing: Geometry Dash Electroman Adventures
+[2025-11-06T02:37:20.117Z] [INFO] ✅ Success: Geometry Dash Blast Processing (attempt 1)
+[2025-11-06T02:37:20.118Z] [INFO] [20/50] Processing: Geometry Dash Jump
+[2025-11-06T02:37:44.819Z] [INFO] [21/50] Processing: Geometry Dash Stereo Madness
+[2025-11-06T02:37:50.220Z] [INFO] ✅ Success: Geometry Dash Jump (attempt 1)
+[2025-11-06T02:37:50.220Z] [INFO] [22/50] Processing: Geometry Dash Jawbreaker
+[2025-11-06T02:37:50.565Z] [INFO] ✅ Success: Geometry Dash Chambers (attempt 2)
+[2025-11-06T02:37:50.565Z] [INFO] [23/50] Processing: Geometry Dash Chamber of Time
+[2025-11-06T02:37:54.653Z] [INFO] ✅ Success: Geometry Dash Electroman Adventures (attempt 1)
+[2025-11-06T02:37:54.654Z] [INFO] [24/50] Processing: Noob in Geometry Dash
+[2025-11-06T02:38:21.314Z] [INFO] ✅ Success: Geometry Dash Stereo Madness (attempt 1)
+[2025-11-06T02:38:21.315Z] [INFO] [25/50] Processing: Geometry Dash 7 PM
+[2025-11-06T02:38:27.344Z] [INFO] ✅ Success: Geometry Dash Chamber of Time (attempt 1)
+[2025-11-06T02:38:27.345Z] [INFO] [26/50] Processing: Geometry Dash 3Dash
+[2025-11-06T02:38:29.991Z] [INFO] ✅ Success: Geometry Dash Jawbreaker (attempt 1)
+[2025-11-06T02:38:29.991Z] [INFO] [27/50] Processing: Geometry Dash Odyssey
+[2025-11-06T02:38:35.028Z] [INFO] ✅ Success: Noob in Geometry Dash (attempt 1)
+[2025-11-06T02:38:35.029Z] [INFO] [28/50] Processing: Geometry Dash iSpyWithMyLittleEye
+[2025-11-06T02:38:58.198Z] [INFO] ✅ Success: Geometry Dash 7 PM (attempt 1)
+[2025-11-06T02:38:58.199Z] [INFO] [29/50] Processing: Geometry Dash Skeletal Shenanigans
+[2025-11-06T02:39:01.103Z] [INFO] ✅ Success: Geometry Dash 3Dash (attempt 1)
+[2025-11-06T02:39:01.103Z] [INFO] [30/50] Processing: Geometry Dash Spam Test
+[2025-11-06T02:39:05.711Z] [INFO] ✅ Success: Geometry Dash Odyssey (attempt 1)
+[2025-11-06T02:39:05.711Z] [INFO] [31/50] Processing: Geometry Dash Bloodlust
+[2025-11-06T02:39:15.254Z] [INFO] ✅ Success: Geometry Dash iSpyWithMyLittleEye (attempt 1)
+[2025-11-06T02:39:15.255Z] [INFO] [32/50] Processing: Brainrot Animals Geometry Dash
+[2025-11-06T02:39:36.590Z] [INFO] ✅ Success: Geometry Dash Skeletal Shenanigans (attempt 1)
+[2025-11-06T02:39:36.591Z] [INFO] [33/50] Processing: Lobotomy Dash: Fire in the Hole
+[2025-11-06T02:39:42.445Z] [INFO] ✅ Success: Geometry Dash Bloodlust (attempt 1)
+[2025-11-06T02:39:42.446Z] [INFO] [34/50] Processing: Chicken Scream Race
+[2025-11-06T02:39:47.424Z] [INFO] ✅ Success: Brainrot Animals Geometry Dash (attempt 1)
+[2025-11-06T02:39:47.424Z] [INFO] [35/50] Processing: Sprunki Geometry Dash
+[2025-11-06T02:39:47.473Z] [INFO] ✅ Success: Geometry Dash Spam Test (attempt 1)
+[2025-11-06T02:39:47.474Z] [INFO] [36/50] Processing: Wacky Flip
+[2025-11-06T02:40:15.547Z] [INFO] ✅ Success: Chicken Scream Race (attempt 1)
+[2025-11-06T02:40:15.548Z] [INFO] [37/50] Processing: Italian Brainrot: Neuro Beasts
+[2025-11-06T02:40:16.396Z] [INFO] ✅ Success: Lobotomy Dash: Fire in the Hole (attempt 1)
+[2025-11-06T02:40:16.397Z] [INFO] [38/50] Processing: Geometry Dash Aperture
+[2025-11-06T02:40:23.067Z] [INFO] ✅ Success: Wacky Flip (attempt 1)
+[2025-11-06T02:40:23.067Z] [INFO] [39/50] Processing: Retro Bowl 25
+[2025-11-06T02:40:25.369Z] [INFO] ✅ Success: Sprunki Geometry Dash (attempt 1)
+[2025-11-06T02:40:25.370Z] [INFO] [40/50] Processing: Wyrmdash
+[2025-11-06T02:40:51.271Z] [INFO] ✅ Success: Italian Brainrot: Neuro Beasts (attempt 1)
+[2025-11-06T02:40:51.271Z] [INFO] [41/50] Processing: Geometry Dash Unblocked 76
+[2025-11-06T02:40:53.736Z] [INFO] ✅ Success: Geometry Dash Aperture (attempt 1)
+[2025-11-06T02:40:53.736Z] [INFO] [42/50] Processing: Tap Road
+[2025-11-06T02:41:00.630Z] [INFO] ✅ Success: Wyrmdash (attempt 1)
+[2025-11-06T02:41:00.630Z] [INFO] [43/50] Processing: G-Switch 3
+[2025-11-06T02:41:02.456Z] [INFO] ✅ Success: Retro Bowl 25 (attempt 1)
+[2025-11-06T02:41:02.457Z] [INFO] [44/50] Processing: Geometry Dash OFFline
+[2025-11-06T02:41:25.798Z] [INFO] ✅ Success: Geometry Dash Unblocked 76 (attempt 1)
+[2025-11-06T02:41:25.798Z] [INFO] [45/50] Processing: Geometry Arrow
+[2025-11-06T02:41:28.505Z] [INFO] ✅ Success: Tap Road (attempt 1)
+[2025-11-06T02:41:28.505Z] [INFO] [46/50] Processing: Speed Stars Unblocked
+[2025-11-06T02:41:35.990Z] [INFO] ✅ Success: G-Switch 3 (attempt 1)
+[2025-11-06T02:41:35.990Z] [INFO] [47/50] Processing: Chicken Jockey Clicker
+[2025-11-06T02:41:38.714Z] [WARN] Attempt 1 failed for "Geometry Dash OFFline", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:42:01.005Z] [INFO] ✅ Success: Geometry Arrow (attempt 1)
+[2025-11-06T02:42:01.005Z] [INFO] [48/50] Processing: Geometry Dash Rage Quit
+[2025-11-06T02:42:06.793Z] [INFO] ✅ Success: Chicken Jockey Clicker (attempt 1)
+[2025-11-06T02:42:06.793Z] [INFO] [49/50] Processing: Wave Dash
+[2025-11-06T02:42:16.604Z] [INFO] ✅ Success: Speed Stars Unblocked (attempt 1)
+[2025-11-06T02:42:16.605Z] [INFO] [50/50] Processing: Run 3D
+[2025-11-06T02:42:20.769Z] [INFO] ✅ Success: Geometry Dash OFFline (attempt 2)
+[2025-11-06T02:42:41.490Z] [INFO] ✅ Success: Geometry Dash Rage Quit (attempt 1)
+[2025-11-06T02:42:50.086Z] [INFO] ✅ Success: Wave Dash (attempt 1)
+[2025-11-06T02:42:50.985Z] [INFO] ✅ Success: Run 3D (attempt 1)
+[2025-11-06T02:42:50.991Z] [INFO] CSV file processing complete {"csvFile":"games-004.csv","csvIndex":2,"totalCsvFiles":3,"gamesTotal":50,"gamesSuccessful":48,"gamesFailed":2,"failedGames":["Quantum Geometry","Italian Brainrot in Geometry Dash"],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-004.csv","json":"tools/rewrite/geometrylite.io/output/games-004.json"}}
+[2025-11-06T02:42:50.992Z] [INFO] [3/3] Starting CSV file: games-005.csv
+[2025-11-06T02:42:50.997Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-06T02:42:50.999Z] [INFO] [2/50] Processing: Geometry Dash Cycles
+[2025-11-06T02:42:50.999Z] [INFO] [3/50] Processing: Fortnite Unblocked
+[2025-11-06T02:42:50.998Z] [INFO] [1/50] Processing: FNF Unblocked
+[2025-11-06T02:42:50.999Z] [INFO] [4/50] Processing: Italian Brainrot Clicker
+[2025-11-06T02:43:19.371Z] [INFO] ✅ Success: Geometry Dash Cycles (attempt 1)
+[2025-11-06T02:43:19.371Z] [INFO] [5/50] Processing: Speed Stars
+[2025-11-06T02:43:23.925Z] [INFO] ✅ Success: Fortnite Unblocked (attempt 1)
+[2025-11-06T02:43:23.926Z] [INFO] [6/50] Processing: Cookie Clicker Unblocked
+[2025-11-06T02:43:30.101Z] [INFO] ✅ Success: FNF Unblocked (attempt 1)
+[2025-11-06T02:43:30.102Z] [INFO] [7/50] Processing: Geometry Dash Lunar Ocean
+[2025-11-06T02:43:31.156Z] [INFO] ✅ Success: Italian Brainrot Clicker (attempt 1)
+[2025-11-06T02:43:31.156Z] [INFO] [8/50] Processing: Geometry Dash Ultra Violence
+[2025-11-06T02:43:56.977Z] [INFO] ✅ Success: Speed Stars (attempt 1)
+[2025-11-06T02:43:56.977Z] [INFO] [9/50] Processing: Crazy Chicken 3D
+[2025-11-06T02:44:00.270Z] [WARN] Attempt 1 failed for "Geometry Dash Lunar Ocean", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:44:00.631Z] [INFO] ✅ Success: Cookie Clicker Unblocked (attempt 1)
+[2025-11-06T02:44:00.631Z] [INFO] [10/50] Processing: Geometry Dash Back On Track
+[2025-11-06T02:44:06.768Z] [INFO] ✅ Success: Geometry Dash Ultra Violence (attempt 1)
+[2025-11-06T02:44:06.768Z] [INFO] [11/50] Processing: Geometry Dash Wave Spam
+[2025-11-06T02:44:33.135Z] [INFO] ✅ Success: Crazy Chicken 3D (attempt 1)
+[2025-11-06T02:44:33.136Z] [INFO] [12/50] Processing: Geometry Dash Arrow
+[2025-11-06T02:44:35.748Z] [INFO] ✅ Success: Geometry Dash Lunar Ocean (attempt 2)
+[2025-11-06T02:44:35.750Z] [INFO] [13/50] Processing: Slope Unblocked 76
+[2025-11-06T02:44:38.458Z] [INFO] ✅ Success: Geometry Dash Back On Track (attempt 1)
+[2025-11-06T02:44:38.458Z] [INFO] [14/50] Processing: Geometry Dash Tidal Wave
+[2025-11-06T02:44:49.281Z] [INFO] ✅ Success: Geometry Dash Wave Spam (attempt 1)
+[2025-11-06T02:44:49.282Z] [INFO] [15/50] Processing: Geometry Dash ROBLOX
+[2025-11-06T02:45:06.182Z] [WARN] Attempt 1 failed for "Geometry Dash Arrow", retrying... {"error":"Validation failed: metaDescription length 169 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:45:07.202Z] [INFO] ✅ Success: Slope Unblocked 76 (attempt 1)
+[2025-11-06T02:45:07.203Z] [INFO] [16/50] Processing: Geometry Dash Clutterfunk
+[2025-11-06T02:45:14.036Z] [INFO] ✅ Success: Geometry Dash Tidal Wave (attempt 1)
+[2025-11-06T02:45:14.036Z] [INFO] [17/50] Processing: Geometry Dash Clicker
+[2025-11-06T02:45:23.238Z] [WARN] Attempt 1 failed for "Geometry Dash ROBLOX", retrying... {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:45:41.995Z] [INFO] ✅ Success: Geometry Dash Clutterfunk (attempt 1)
+[2025-11-06T02:45:41.995Z] [INFO] [18/50] Processing: Geometry Dash Deadlocked
+[2025-11-06T02:45:43.178Z] [INFO] ✅ Success: Geometry Dash Arrow (attempt 2)
+[2025-11-06T02:45:43.178Z] [INFO] [19/50] Processing: Papa's Freezeria
+[2025-11-06T02:45:47.041Z] [INFO] ✅ Success: Geometry Dash Clicker (attempt 1)
+[2025-11-06T02:45:47.042Z] [INFO] [20/50] Processing: Geometry Dash Boss 3 Electro
+[2025-11-06T02:46:03.205Z] [INFO] ✅ Success: Geometry Dash ROBLOX (attempt 2)
+[2025-11-06T02:46:03.206Z] [INFO] [21/50] Processing: Duck Life 4
+[2025-11-06T02:46:15.562Z] [INFO] ✅ Success: Papa's Freezeria (attempt 1)
+[2025-11-06T02:46:15.562Z] [INFO] [22/50] Processing: Rainbow Obby
+[2025-11-06T02:46:18.389Z] [INFO] ✅ Success: Geometry Dash Deadlocked (attempt 1)
+[2025-11-06T02:46:18.389Z] [INFO] [23/50] Processing: Geometry Dash Stereo Madness X
+[2025-11-06T02:46:21.201Z] [INFO] ✅ Success: Geometry Dash Boss 3 Electro (attempt 1)
+[2025-11-06T02:46:21.201Z] [INFO] [24/50] Processing: Geometry Dash Flappy Hexagon
+[2025-11-06T02:46:31.080Z] [INFO] ✅ Success: Duck Life 4 (attempt 1)
+[2025-11-06T02:46:31.081Z] [INFO] [25/50] Processing: Stickman Climb 2
+[2025-11-06T02:46:51.715Z] [INFO] ✅ Success: Geometry Dash Stereo Madness X (attempt 1)
+[2025-11-06T02:46:51.715Z] [INFO] [26/50] Processing: Gobble
+[2025-11-06T02:46:53.818Z] [INFO] ✅ Success: Rainbow Obby (attempt 1)
+[2025-11-06T02:46:53.819Z] [INFO] [27/50] Processing: Tiny Fishing
+[2025-11-06T02:46:54.938Z] [INFO] ✅ Success: Geometry Dash Flappy Hexagon (attempt 1)
+[2025-11-06T02:46:54.938Z] [INFO] [28/50] Processing: Orbit Dash
+[2025-11-06T02:47:09.591Z] [INFO] ✅ Success: Stickman Climb 2 (attempt 1)
+[2025-11-06T02:47:09.591Z] [INFO] [29/50] Processing: 8 Ball Pool
+[2025-11-06T02:47:27.929Z] [INFO] ✅ Success: Tiny Fishing (attempt 1)
+[2025-11-06T02:47:27.929Z] [INFO] [30/50] Processing: Space is Key Christmas
+[2025-11-06T02:47:31.290Z] [INFO] ✅ Success: Gobble (attempt 1)
+[2025-11-06T02:47:31.290Z] [INFO] [31/50] Processing: Basketball Stars
+[2025-11-06T02:47:34.558Z] [INFO] ✅ Success: Orbit Dash (attempt 1)
+[2025-11-06T02:47:34.558Z] [INFO] [32/50] Processing: Crazy Cattle 3D
+[2025-11-06T02:47:49.059Z] [INFO] ✅ Success: 8 Ball Pool (attempt 1)
+[2025-11-06T02:47:49.060Z] [INFO] [33/50] Processing: Geometry Dash: Impossible Wave
+[2025-11-06T02:48:04.745Z] [INFO] ✅ Success: Basketball Stars (attempt 1)
+[2025-11-06T02:48:04.745Z] [INFO] [34/50] Processing: REPO - The Original
+[2025-11-06T02:48:05.525Z] [INFO] ✅ Success: Space is Key Christmas (attempt 1)
+[2025-11-06T02:48:05.525Z] [INFO] [35/50] Processing: Geometry Dash Sakupen Hell
+[2025-11-06T02:48:11.672Z] [INFO] ✅ Success: Crazy Cattle 3D (attempt 1)
+[2025-11-06T02:48:11.672Z] [INFO] [36/50] Processing: Geometry Dash Spam
+[2025-11-06T02:48:22.422Z] [INFO] ✅ Success: Geometry Dash: Impossible Wave (attempt 1)
+[2025-11-06T02:48:22.423Z] [INFO] [37/50] Processing: Geometry Dash Full Version
+[2025-11-06T02:48:43.459Z] [INFO] ✅ Success: REPO - The Original (attempt 1)
+[2025-11-06T02:48:43.460Z] [INFO] [38/50] Processing: The Impossible Quiz 2
+[2025-11-06T02:48:45.171Z] [WARN] Attempt 1 failed for "Geometry Dash Sakupen Hell", retrying... {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:48:55.092Z] [INFO] ✅ Success: Geometry Dash Spam (attempt 1)
+[2025-11-06T02:48:55.093Z] [INFO] [39/50] Processing: Race Survival: Arena King
+[2025-11-06T02:49:01.963Z] [INFO] ✅ Success: Geometry Dash Full Version (attempt 1)
+[2025-11-06T02:49:01.964Z] [INFO] [40/50] Processing: Snake 2048.io
+[2025-11-06T02:49:17.970Z] [INFO] ✅ Success: The Impossible Quiz 2 (attempt 1)
+[2025-11-06T02:49:17.970Z] [INFO] [41/50] Processing: Geometry Dash Wave
+[2025-11-06T02:49:23.942Z] [INFO] ✅ Success: Geometry Dash Sakupen Hell (attempt 2)
+[2025-11-06T02:49:23.942Z] [INFO] [42/50] Processing: Overtake X
+[2025-11-06T02:49:31.739Z] [INFO] ✅ Success: Race Survival: Arena King (attempt 1)
+[2025-11-06T02:49:31.740Z] [INFO] [43/50] Processing: Geometry Dash Scratch
+[2025-11-06T02:49:32.928Z] [INFO] ✅ Success: Snake 2048.io (attempt 1)
+[2025-11-06T02:49:32.928Z] [INFO] [44/50] Processing: Blumgi Slime
+[2025-11-06T02:49:53.368Z] [INFO] ✅ Success: Geometry Dash Wave (attempt 1)
+[2025-11-06T02:49:53.368Z] [INFO] [45/50] Processing: Karate Bros
+[2025-11-06T02:49:57.991Z] [INFO] ✅ Success: Overtake X (attempt 1)
+[2025-11-06T02:49:57.991Z] [INFO] [46/50] Processing: Geometry Dash Unblocked
+[2025-11-06T02:49:59.739Z] [INFO] ✅ Success: Geometry Dash Scratch (attempt 1)
+[2025-11-06T02:49:59.740Z] [INFO] [47/50] Processing: BuildNow GG
+[2025-11-06T02:50:11.097Z] [INFO] ✅ Success: Blumgi Slime (attempt 1)
+[2025-11-06T02:50:11.098Z] [INFO] [48/50] Processing: Geometry Dash BONUS ROUND
+[2025-11-06T02:50:37.749Z] [INFO] ✅ Success: Geometry Dash Unblocked (attempt 1)
+[2025-11-06T02:50:37.749Z] [INFO] [49/50] Processing: Sprunki Phase 5
+[2025-11-06T02:50:38.236Z] [INFO] ✅ Success: BuildNow GG (attempt 1)
+[2025-11-06T02:50:38.236Z] [INFO] [50/50] Processing: Doodle Cricket
+[2025-11-06T02:50:43.376Z] [INFO] ✅ Success: Karate Bros (attempt 1)
+[2025-11-06T02:50:46.162Z] [INFO] ✅ Success: Geometry Dash BONUS ROUND (attempt 1)
+[2025-11-06T02:51:15.612Z] [INFO] ✅ Success: Doodle Cricket (attempt 1)
+[2025-11-06T02:51:18.088Z] [INFO] ✅ Success: Sprunki Phase 5 (attempt 1)
+[2025-11-06T02:51:18.091Z] [INFO] CSV file processing complete {"csvFile":"games-005.csv","csvIndex":3,"totalCsvFiles":3,"gamesTotal":50,"gamesSuccessful":50,"gamesFailed":0,"failedGames":[],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-005.csv","json":"tools/rewrite/geometrylite.io/output/games-005.json"}}
+[2025-11-06T04:27:22.110Z] [INFO] [1/3] Starting CSV file: games-006.csv
+[2025-11-06T04:27:22.116Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-06T04:27:22.117Z] [INFO] [2/50] Processing: Basketball Legends
+[2025-11-06T04:27:22.117Z] [INFO] [4/50] Processing: Hole.io
+[2025-11-06T04:27:22.117Z] [INFO] [3/50] Processing: Geometry Dash Dream Cream
+[2025-11-06T04:27:22.116Z] [INFO] [1/50] Processing: Tanuki Sunset
+[2025-11-06T04:27:52.688Z] [INFO] ✅ Success: Hole.io (attempt 1)
+[2025-11-06T04:27:52.688Z] [INFO] [5/50] Processing: Geometry Dash DorabaeBasic4
+[2025-11-06T04:27:58.590Z] [INFO] ✅ Success: Basketball Legends (attempt 1)
+[2025-11-06T04:27:58.591Z] [INFO] [6/50] Processing: Ragdoll Archers
+[2025-11-06T04:28:00.069Z] [INFO] ✅ Success: Geometry Dash Dream Cream (attempt 1)
+[2025-11-06T04:28:00.070Z] [INFO] [7/50] Processing: Geometry Dash Viking Arena
+[2025-11-06T04:28:00.944Z] [INFO] ✅ Success: Tanuki Sunset (attempt 1)
+[2025-11-06T04:28:00.944Z] [INFO] [8/50] Processing: Football Bros
+[2025-11-06T04:28:26.140Z] [INFO] ✅ Success: Geometry Dash Viking Arena (attempt 1)
+[2025-11-06T04:28:26.141Z] [INFO] [9/50] Processing: Ragdoll Hit
+[2025-11-06T04:28:36.356Z] [INFO] ✅ Success: Ragdoll Archers (attempt 1)
+[2025-11-06T04:28:36.358Z] [INFO] [10/50] Processing: Google Block Breaker
+[2025-11-06T04:28:40.661Z] [INFO] ✅ Success: Football Bros (attempt 1)
+[2025-11-06T04:28:40.661Z] [INFO] [11/50] Processing: Geometry Dash Silent Clubstep
+[2025-11-06T04:28:42.317Z] [INFO] ✅ Success: Geometry Dash DorabaeBasic4 (attempt 1)
+[2025-11-06T04:28:42.317Z] [INFO] [12/50] Processing: Wave Road
+[2025-11-06T04:28:57.836Z] [INFO] ✅ Success: Ragdoll Hit (attempt 1)
+[2025-11-06T04:28:57.843Z] [INFO] [13/50] Processing: ZombsRoyale.io
+[2025-11-06T04:29:07.446Z] [INFO] ✅ Success: Google Block Breaker (attempt 1)
+[2025-11-06T04:29:07.446Z] [INFO] [14/50] Processing: Pixel Speedrun
+[2025-11-06T04:29:14.152Z] [INFO] ✅ Success: Geometry Dash Silent Clubstep (attempt 1)
+[2025-11-06T04:29:14.153Z] [INFO] [15/50] Processing: Escape Road City 2
+[2025-11-06T04:29:14.711Z] [INFO] ✅ Success: Wave Road (attempt 1)
+[2025-11-06T04:29:14.711Z] [INFO] [16/50] Processing: Block Digger
+[2025-11-06T04:29:41.581Z] [INFO] ✅ Success: ZombsRoyale.io (attempt 1)
+[2025-11-06T04:29:41.581Z] [INFO] [17/50] Processing: Only Up!
+[2025-11-06T04:29:44.838Z] [INFO] ✅ Success: Escape Road City 2 (attempt 1)
+[2025-11-06T04:29:44.838Z] [INFO] [18/50] Processing: Geometry Dash Hyper Wave: Neon Challenge 3
+[2025-11-06T04:29:49.070Z] [INFO] ✅ Success: Block Digger (attempt 1)
+[2025-11-06T04:29:49.070Z] [INFO] [19/50] Processing: Geometry Dash Sonic Wave
+[2025-11-06T04:29:52.647Z] [INFO] ✅ Success: Pixel Speedrun (attempt 1)
+[2025-11-06T04:29:52.648Z] [INFO] [20/50] Processing: TapTap Shots
+[2025-11-06T04:30:24.531Z] [INFO] ✅ Success: Only Up! (attempt 1)
+[2025-11-06T04:30:24.532Z] [INFO] [21/50] Processing: Escape Road Halloween
+[2025-11-06T04:30:25.720Z] [INFO] ✅ Success: Geometry Dash Sonic Wave (attempt 1)
+[2025-11-06T04:30:25.720Z] [INFO] [22/50] Processing: Geometry Stars
+[2025-11-06T04:30:25.735Z] [INFO] ✅ Success: Geometry Dash Hyper Wave: Neon Challenge 3 (attempt 1)
+[2025-11-06T04:30:25.735Z] [INFO] [23/50] Processing: Geometry Vibes X-Ball
+[2025-11-06T04:30:34.069Z] [INFO] ✅ Success: TapTap Shots (attempt 1)
+[2025-11-06T04:30:34.070Z] [INFO] [24/50] Processing: Krunker.io
+[2025-11-06T04:30:59.636Z] [INFO] ✅ Success: Escape Road Halloween (attempt 1)
+[2025-11-06T04:30:59.636Z] [INFO] [25/50] Processing: Battle Wheel
+[2025-11-06T04:31:02.544Z] [INFO] ✅ Success: Geometry Vibes X-Ball (attempt 1)
+[2025-11-06T04:31:02.544Z] [INFO] [26/50] Processing: Crazy Roll 3D
+[2025-11-06T04:31:03.439Z] [WARN] Attempt 1 failed for "Geometry Stars", retrying... {"error":"Validation failed: metaDescription length 141 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T04:31:10.835Z] [WARN] Attempt 1 failed for "Krunker.io", retrying... {"error":"Validation failed: metaTitle length 42 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T04:31:34.604Z] [INFO] ✅ Success: Battle Wheel (attempt 1)
+[2025-11-06T04:31:34.605Z] [INFO] [27/50] Processing: Worm Hunt - Snake Game iO zone
+[2025-11-06T04:31:41.601Z] [INFO] ✅ Success: Geometry Stars (attempt 2)
+[2025-11-06T04:31:41.601Z] [INFO] [28/50] Processing: Geometry Dash Forms
+[2025-11-06T04:31:42.150Z] [INFO] ✅ Success: Crazy Roll 3D (attempt 1)
+[2025-11-06T04:31:42.151Z] [INFO] [29/50] Processing: Chill Guy Clicker 3D
+[2025-11-06T04:31:45.639Z] [INFO] [30/50] Processing: Space Rocket Simulator
+[2025-11-06T04:32:15.358Z] [INFO] ✅ Success: Worm Hunt - Snake Game iO zone (attempt 1)
+[2025-11-06T04:32:15.359Z] [INFO] [31/50] Processing: Electron Dash
+[2025-11-06T04:32:19.159Z] [INFO] ✅ Success: Chill Guy Clicker 3D (attempt 1)
+[2025-11-06T04:32:19.160Z] [INFO] [32/50] Processing: Trap The Cat
+[2025-11-06T04:32:19.591Z] [INFO] ✅ Success: Geometry Dash Forms (attempt 1)
+[2025-11-06T04:32:19.591Z] [INFO] [33/50] Processing: Geometry Dash Yatagarasu
+[2025-11-06T04:32:22.351Z] [INFO] ✅ Success: Space Rocket Simulator (attempt 1)
+[2025-11-06T04:32:22.352Z] [INFO] [34/50] Processing: FNF vs AmongUs
+[2025-11-06T04:32:54.238Z] [INFO] ✅ Success: Trap The Cat (attempt 1)
+[2025-11-06T04:32:54.239Z] [INFO] [35/50] Processing: Curve Rush
+[2025-11-06T04:32:59.793Z] [INFO] ✅ Success: Geometry Dash Yatagarasu (attempt 1)
+[2025-11-06T04:32:59.793Z] [INFO] [36/50] Processing: Geometry Dash Flappy Weird
+[2025-11-06T04:33:02.519Z] [INFO] ✅ Success: Electron Dash (attempt 1)
+[2025-11-06T04:33:02.519Z] [INFO] [37/50] Processing: Geometry Vertical
+[2025-11-06T04:33:06.654Z] [INFO] ✅ Success: FNF vs AmongUs (attempt 1)
+[2025-11-06T04:33:06.654Z] [INFO] [38/50] Processing: Penalty Shooters 3
+[2025-11-06T04:33:32.212Z] [INFO] ✅ Success: Geometry Vertical (attempt 1)
+[2025-11-06T04:33:32.213Z] [INFO] [39/50] Processing: Geometry Dash Electrodynamix
+[2025-11-06T04:33:35.509Z] [INFO] ✅ Success: Curve Rush (attempt 1)
+[2025-11-06T04:33:35.510Z] [INFO] [40/50] Processing: Gulper.io
+[2025-11-06T04:33:37.132Z] [INFO] ✅ Success: Penalty Shooters 3 (attempt 1)
+[2025-11-06T04:33:37.132Z] [INFO] [41/50] Processing: Stickman Climb
+[2025-11-06T04:33:45.860Z] [INFO] ✅ Success: Geometry Dash Flappy Weird (attempt 1)
+[2025-11-06T04:33:45.861Z] [INFO] [42/50] Processing: Slime Road
+[2025-11-06T04:34:09.891Z] [INFO] ✅ Success: Geometry Dash Electrodynamix (attempt 1)
+[2025-11-06T04:34:09.891Z] [INFO] [43/50] Processing: Rainbow Friends Return
+[2025-11-06T04:34:10.804Z] [INFO] ✅ Success: Stickman Climb (attempt 1)
+[2025-11-06T04:34:10.805Z] [INFO] [44/50] Processing: Bike Xtreme
+[2025-11-06T04:34:13.179Z] [INFO] ✅ Success: Slime Road (attempt 1)
+[2025-11-06T04:34:13.180Z] [INFO] [45/50] Processing: Boxel Rebound
+[2025-11-06T04:34:19.096Z] [WARN] Attempt 1 failed for "Gulper.io", retrying... {"error":"Validation failed: metaTitle length 39 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T04:34:46.642Z] [INFO] ✅ Success: Boxel Rebound (attempt 1)
+[2025-11-06T04:34:46.643Z] [INFO] [46/50] Processing: Geometry Dash Frizzantino Vibes
+[2025-11-06T04:34:49.127Z] [INFO] ✅ Success: Rainbow Friends Return (attempt 1)
+[2025-11-06T04:34:49.127Z] [INFO] [47/50] Processing: Goober Dash
+[2025-11-06T04:34:49.223Z] [INFO] ✅ Success: Bike Xtreme (attempt 1)
+[2025-11-06T04:34:49.223Z] [INFO] [48/50] Processing: Geometry Dash Shrimp
+[2025-11-06T04:35:03.860Z] [INFO] ✅ Success: Gulper.io (attempt 2)
+[2025-11-06T04:35:03.861Z] [INFO] [49/50] Processing: Dreadhead Parkour
+[2025-11-06T04:35:28.865Z] [INFO] ✅ Success: Goober Dash (attempt 1)
+[2025-11-06T04:35:28.865Z] [INFO] [50/50] Processing: Shell Shockers
+[2025-11-06T04:35:32.285Z] [INFO] ✅ Success: Geometry Dash Shrimp (attempt 1)
+[2025-11-06T04:35:33.440Z] [INFO] ✅ Success: Geometry Dash Frizzantino Vibes (attempt 1)
+[2025-11-06T04:35:44.500Z] [INFO] ✅ Success: Dreadhead Parkour (attempt 1)
+[2025-11-06T04:36:04.724Z] [INFO] ✅ Success: Shell Shockers (attempt 1)
+[2025-11-06T04:36:04.729Z] [INFO] CSV file processing complete {"csvFile":"games-006.csv","csvIndex":1,"totalCsvFiles":3,"gamesTotal":50,"gamesSuccessful":49,"gamesFailed":1,"failedGames":["Krunker.io"],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-006.csv","json":"tools/rewrite/geometrylite.io/output/games-006.json"}}
+[2025-11-06T04:36:04.730Z] [INFO] [2/3] Starting CSV file: games-007.csv
+[2025-11-06T04:36:04.737Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-06T04:36:04.738Z] [INFO] [2/50] Processing: Whopper Clicker
+[2025-11-06T04:36:04.738Z] [INFO] [1/50] Processing: Friday Night Sprunki
+[2025-11-06T04:36:04.738Z] [INFO] [3/50] Processing: Geometry: Perfect Wave
+[2025-11-06T04:36:04.738Z] [INFO] [4/50] Processing: Moto X3M Spooky Land
+[2025-11-06T04:36:41.027Z] [INFO] ✅ Success: Whopper Clicker (attempt 1)
+[2025-11-06T04:36:41.028Z] [INFO] [5/50] Processing: Squid Game Online
+[2025-11-06T04:36:44.594Z] [INFO] ✅ Success: Friday Night Sprunki (attempt 1)
+[2025-11-06T04:36:44.594Z] [INFO] [6/50] Processing: Sprunki Retake
+[2025-11-06T04:36:45.106Z] [INFO] ✅ Success: Moto X3M Spooky Land (attempt 1)
+[2025-11-06T04:36:45.107Z] [INFO] [7/50] Processing: Fireboy and Watergirl 5 Elements
+[2025-11-06T04:36:45.925Z] [INFO] ✅ Success: Geometry: Perfect Wave (attempt 1)
+[2025-11-06T04:36:45.926Z] [INFO] [8/50] Processing: Golf Orbit
+[2025-11-06T04:37:15.544Z] [INFO] ✅ Success: Squid Game Online (attempt 1)
+[2025-11-06T04:37:15.545Z] [INFO] [9/50] Processing: Eggy Car
+[2025-11-06T04:37:17.637Z] [INFO] ✅ Success: Fireboy and Watergirl 5 Elements (attempt 1)
+[2025-11-06T04:37:17.637Z] [INFO] [10/50] Processing: EvoWorld.io
+[2025-11-06T04:37:23.633Z] [INFO] ✅ Success: Sprunki Retake (attempt 1)
+[2025-11-06T04:37:23.634Z] [INFO] [11/50] Processing: Geometry Dash Bloodbath
+[2025-11-06T04:37:27.302Z] [INFO] ✅ Success: Golf Orbit (attempt 1)
+[2025-11-06T04:37:27.303Z] [INFO] [12/50] Processing: Space Waves
+[2025-11-06T04:37:52.389Z] [INFO] ✅ Success: Eggy Car (attempt 1)
+[2025-11-06T04:37:52.389Z] [INFO] [13/50] Processing: Neon Swing
+[2025-11-06T04:37:58.436Z] [INFO] ✅ Success: Geometry Dash Bloodbath (attempt 1)
+[2025-11-06T04:37:58.437Z] [INFO] [14/50] Processing: Capybara Clicker
+[2025-11-06T04:37:58.495Z] [INFO] ✅ Success: EvoWorld.io (attempt 1)
+[2025-11-06T04:37:58.496Z] [INFO] [15/50] Processing: Geometry Vibes
+[2025-11-06T04:38:09.604Z] [INFO] ✅ Success: Space Waves (attempt 1)
+[2025-11-06T04:38:09.605Z] [INFO] [16/50] Processing: Geometry Dash Levels
+[2025-11-06T04:38:26.270Z] [INFO] ✅ Success: Neon Swing (attempt 1)
+[2025-11-06T04:38:26.270Z] [INFO] [17/50] Processing: Cluster Rush
+[2025-11-06T04:38:39.421Z] [INFO] ✅ Success: Geometry Vibes (attempt 1)
+[2025-11-06T04:38:39.422Z] [INFO] [18/50] Processing: Block Blast
+[2025-11-06T04:38:41.159Z] [INFO] ✅ Success: Capybara Clicker (attempt 1)
+[2025-11-06T04:38:41.159Z] [INFO] [19/50] Processing: Snake.io
+[2025-11-06T04:38:50.852Z] [INFO] ✅ Success: Geometry Dash Levels (attempt 1)
+[2025-11-06T04:38:50.853Z] [INFO] [20/50] Processing: Penalty Shooters 2
+[2025-11-06T04:39:09.014Z] [INFO] ✅ Success: Cluster Rush (attempt 1)
+[2025-11-06T04:39:09.015Z] [INFO] [21/50] Processing: Geometry Monster Dash
+[2025-11-06T04:39:19.837Z] [INFO] ✅ Success: Snake.io (attempt 1)
+[2025-11-06T04:39:19.837Z] [INFO] [22/50] Processing: Build Royale
+[2025-11-06T04:39:21.993Z] [INFO] ✅ Success: Block Blast (attempt 1)
+[2025-11-06T04:39:21.993Z] [INFO] [23/50] Processing: Titans Clicker
+[2025-11-06T04:39:26.384Z] [INFO] ✅ Success: Penalty Shooters 2 (attempt 1)
+[2025-11-06T04:39:26.387Z] [INFO] [24/50] Processing: Geometry Dash Crazy Ball
+[2025-11-06T04:39:47.488Z] [INFO] ✅ Success: Geometry Monster Dash (attempt 1)
+[2025-11-06T04:39:47.489Z] [INFO] [25/50] Processing: Slope 3D
+[2025-11-06T04:39:56.680Z] [INFO] ✅ Success: Titans Clicker (attempt 1)
+[2025-11-06T04:39:56.680Z] [INFO] [26/50] Processing: Geometry Dash Rester
+[2025-11-06T04:40:02.952Z] [INFO] ✅ Success: Geometry Dash Crazy Ball (attempt 1)
+[2025-11-06T04:40:02.952Z] [INFO] [27/50] Processing: Volley Random
+[2025-11-06T04:40:05.683Z] [WARN] Attempt 1 failed for "Build Royale", retrying... {"error":"Failed to parse Gemini response: SyntaxError: Expected property name or '}' in JSON at position 4900 (line 19 column 6)"}
+[2025-11-06T04:40:22.005Z] [INFO] ✅ Success: Slope 3D (attempt 1)
+[2025-11-06T04:40:22.006Z] [INFO] [28/50] Processing: My Perfect Hotel
+[2025-11-06T04:40:33.179Z] [INFO] ✅ Success: Geometry Dash Rester (attempt 1)
+[2025-11-06T04:40:33.180Z] [INFO] [29/50] Processing: Geometry Dash Rocket
+[2025-11-06T04:40:41.474Z] [INFO] ✅ Success: Volley Random (attempt 1)
+[2025-11-06T04:40:41.475Z] [INFO] [30/50] Processing: Atari Breakout
+[2025-11-06T04:40:45.241Z] [INFO] ✅ Success: Build Royale (attempt 2)
+[2025-11-06T04:40:45.241Z] [INFO] [31/50] Processing: Death Run 3D
+[2025-11-06T04:40:59.969Z] [INFO] ✅ Success: My Perfect Hotel (attempt 1)
+[2025-11-06T04:40:59.970Z] [INFO] [32/50] Processing: Papa's Pizzeria
+[2025-11-06T04:41:16.613Z] [INFO] ✅ Success: Geometry Dash Rocket (attempt 1)
+[2025-11-06T04:41:16.615Z] [INFO] [33/50] Processing: Geometry Dash Prismarine
+[2025-11-06T04:41:21.383Z] [INFO] ✅ Success: Death Run 3D (attempt 1)
+[2025-11-06T04:41:21.383Z] [INFO] [34/50] Processing: Merge Fruit
+[2025-11-06T04:41:23.071Z] [INFO] ✅ Success: Atari Breakout (attempt 1)
+[2025-11-06T04:41:23.072Z] [INFO] [35/50] Processing: Tunnel Ball
+[2025-11-06T04:41:43.548Z] [INFO] ✅ Success: Papa's Pizzeria (attempt 1)
+[2025-11-06T04:41:43.549Z] [INFO] [36/50] Processing: Traffic Rally
+[2025-11-06T04:41:52.527Z] [INFO] ✅ Success: Geometry Dash Prismarine (attempt 1)
+[2025-11-06T04:41:52.528Z] [INFO] [37/50] Processing: Candy Clicker
+[2025-11-06T04:42:00.384Z] [INFO] ✅ Success: Tunnel Ball (attempt 1)
+[2025-11-06T04:42:00.384Z] [INFO] [38/50] Processing: Power Surfer
+[2025-11-06T04:42:00.488Z] [INFO] ✅ Success: Merge Fruit (attempt 1)
+[2025-11-06T04:42:00.489Z] [INFO] [39/50] Processing: Tube Fall
+[2025-11-06T04:42:16.384Z] [INFO] ✅ Success: Traffic Rally (attempt 1)
+[2025-11-06T04:42:16.384Z] [INFO] [40/50] Processing: Om Nom Jump
+[2025-11-06T04:42:31.078Z] [INFO] ✅ Success: Candy Clicker (attempt 1)
+[2025-11-06T04:42:31.079Z] [INFO] [41/50] Processing: Chill Clicker
+[2025-11-06T04:42:32.245Z] [INFO] ✅ Success: Power Surfer (attempt 1)
+[2025-11-06T04:42:32.245Z] [INFO] [42/50] Processing: Shooter Sky
+[2025-11-06T04:42:37.678Z] [INFO] ✅ Success: Tube Fall (attempt 1)
+[2025-11-06T04:42:37.679Z] [INFO] [43/50] Processing: Geometry Dash: Evolution Super Clicker!
+[2025-11-06T04:42:51.207Z] [INFO] ✅ Success: Om Nom Jump (attempt 1)
+[2025-11-06T04:42:51.207Z] [INFO] [44/50] Processing: Stickman Racing
+[2025-11-06T04:43:03.001Z] [INFO] ✅ Success: Chill Clicker (attempt 1)
+[2025-11-06T04:43:03.002Z] [INFO] [45/50] Processing: Jelly Hop
+[2025-11-06T04:43:04.571Z] [INFO] ✅ Success: Shooter Sky (attempt 1)
+[2025-11-06T04:43:04.571Z] [INFO] [46/50] Processing: Geometry Dash 2.2
+[2025-11-06T04:43:20.425Z] [INFO] ✅ Success: Geometry Dash: Evolution Super Clicker! (attempt 1)
+[2025-11-06T04:43:20.426Z] [INFO] [47/50] Processing: Egg Race
+[2025-11-06T04:43:22.941Z] [INFO] ✅ Success: Stickman Racing (attempt 1)
+[2025-11-06T04:43:22.942Z] [INFO] [48/50] Processing: Geometry Dash: Battle of the Memes 2!
+[2025-11-06T04:43:38.903Z] [INFO] ✅ Success: Jelly Hop (attempt 1)
+[2025-11-06T04:43:38.904Z] [INFO] [49/50] Processing: Geometry Dash Astral Divinity
+[2025-11-06T04:43:43.704Z] [WARN] Attempt 1 failed for "Geometry Dash 2.2", retrying... {"error":"Validation failed: metaDescription length 144 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T04:43:55.556Z] [INFO] ✅ Success: Egg Race (attempt 1)
+[2025-11-06T04:43:55.557Z] [INFO] [50/50] Processing: Block Factory Clicker
+[2025-11-06T04:44:08.234Z] [INFO] ✅ Success: Geometry Dash: Battle of the Memes 2! (attempt 1)
+[2025-11-06T04:44:23.668Z] [INFO] ✅ Success: Geometry Dash Astral Divinity (attempt 1)
+[2025-11-06T04:44:24.197Z] [INFO] ✅ Success: Geometry Dash 2.2 (attempt 2)
+[2025-11-06T04:44:27.356Z] [INFO] ✅ Success: Block Factory Clicker (attempt 1)
+[2025-11-06T04:44:27.360Z] [INFO] CSV file processing complete {"csvFile":"games-007.csv","csvIndex":2,"totalCsvFiles":3,"gamesTotal":50,"gamesSuccessful":50,"gamesFailed":0,"failedGames":[],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-007.csv","json":"tools/rewrite/geometrylite.io/output/games-007.json"}}
+[2025-11-06T04:44:27.361Z] [INFO] [3/3] Starting CSV file: games-008.csv
+[2025-11-06T04:44:27.370Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-06T04:44:27.371Z] [INFO] [1/50] Processing: TipTop: Tricky Challenges
+[2025-11-06T04:44:27.371Z] [INFO] [3/50] Processing: Planet Clicker
+[2025-11-06T04:44:27.371Z] [INFO] [4/50] Processing: Geometry Dash: Unstoppable Wave
+[2025-11-06T04:44:27.371Z] [INFO] [2/50] Processing: Flappy Bird
+[2025-11-06T04:45:03.606Z] [INFO] ✅ Success: Flappy Bird (attempt 1)
+[2025-11-06T04:45:03.607Z] [INFO] [5/50] Processing: Geometry Dash Spectrum Blast
+[2025-11-06T04:45:05.757Z] [INFO] ✅ Success: TipTop: Tricky Challenges (attempt 1)
+[2025-11-06T04:45:05.758Z] [INFO] [6/50] Processing: Geometry Dash Speedrun
+[2025-11-06T04:45:05.851Z] [INFO] ✅ Success: Planet Clicker (attempt 1)
+[2025-11-06T04:45:05.851Z] [INFO] [7/50] Processing: The World's Easyest Game
+[2025-11-06T04:45:13.272Z] [INFO] ✅ Success: Geometry Dash: Unstoppable Wave (attempt 1)
+[2025-11-06T04:45:13.273Z] [INFO] [8/50] Processing: Madalin Stunt Cars 2
+[2025-11-06T04:45:34.270Z] [INFO] ✅ Success: The World's Easyest Game (attempt 1)
+[2025-11-06T04:45:34.271Z] [INFO] [9/50] Processing: Getting Over It
+[2025-11-06T04:45:36.385Z] [INFO] ✅ Success: Geometry Dash Spectrum Blast (attempt 1)
+[2025-11-06T04:45:36.386Z] [INFO] [10/50] Processing: Geometry Dash: UFO Flying
+[2025-11-06T04:45:43.540Z] [WARN] Attempt 1 failed for "Geometry Dash Speedrun", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T04:45:55.418Z] [INFO] ✅ Success: Madalin Stunt Cars 2 (attempt 1)
+[2025-11-06T04:45:55.418Z] [INFO] [11/50] Processing: Five Nights at Freddy's Sprunki
+[2025-11-06T04:46:07.862Z] [INFO] ✅ Success: Getting Over It (attempt 1)
+[2025-11-06T04:46:07.863Z] [INFO] [12/50] Processing: Minecraft Unblocked
+[2025-11-06T04:46:11.091Z] [INFO] ✅ Success: Geometry Dash: UFO Flying (attempt 1)
+[2025-11-06T04:46:11.092Z] [INFO] [13/50] Processing: Chill Guy Clicker
+[2025-11-06T04:46:16.967Z] [INFO] ✅ Success: Geometry Dash Speedrun (attempt 2)
+[2025-11-06T04:46:16.968Z] [INFO] [14/50] Processing: GeoGuessr
+[2025-11-06T04:46:29.315Z] [INFO] ✅ Success: Five Nights at Freddy's Sprunki (attempt 1)
+[2025-11-06T04:46:29.316Z] [INFO] [15/50] Processing: Sprunki Phase 3
+[2025-11-06T04:46:37.990Z] [INFO] ✅ Success: Minecraft Unblocked (attempt 1)
+[2025-11-06T04:46:37.990Z] [INFO] [16/50] Processing: Astro Robot Clicker
+[2025-11-06T04:46:40.517Z] [INFO] ✅ Success: Chill Guy Clicker (attempt 1)
+[2025-11-06T04:46:40.518Z] [INFO] [17/50] Processing: Escape Road City
+[2025-11-06T04:46:53.886Z] [INFO] ✅ Success: GeoGuessr (attempt 1)
+[2025-11-06T04:46:53.886Z] [INFO] [18/50] Processing: Monkey Mart
+[2025-11-06T04:47:11.413Z] [INFO] ✅ Success: Sprunki Phase 3 (attempt 1)
+[2025-11-06T04:47:11.414Z] [INFO] [19/50] Processing: Escape Road 2
+[2025-11-06T04:47:13.558Z] [INFO] ✅ Success: Astro Robot Clicker (attempt 1)
+[2025-11-06T04:47:13.559Z] [INFO] [20/50] Processing: Geometry Dash Super Cycles
+[2025-11-06T04:47:29.062Z] [INFO] ✅ Success: Escape Road City (attempt 1)
+[2025-11-06T04:47:29.063Z] [INFO] [21/50] Processing: Sprunki Clicker
+[2025-11-06T04:47:33.372Z] [WARN] Attempt 1 failed for "Monkey Mart", retrying... {"error":"Validation failed: metaTitle length 43 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T04:47:44.035Z] [INFO] ✅ Success: Escape Road 2 (attempt 1)
+[2025-11-06T04:47:44.036Z] [INFO] [22/50] Processing: Wrestle Bros
+[2025-11-06T04:47:53.124Z] [WARN] Attempt 1 failed for "Geometry Dash Super Cycles", retrying... {"error":"Validation failed: metaDescription length 173 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T04:47:59.120Z] [INFO] ✅ Success: Sprunki Clicker (attempt 1)
+[2025-11-06T04:47:59.120Z] [INFO] [23/50] Processing: Pixel Shooter
+[2025-11-06T04:48:05.800Z] [INFO] ✅ Success: Monkey Mart (attempt 2)
+[2025-11-06T04:48:05.800Z] [INFO] [24/50] Processing: Brawl Stars Unblocked
+[2025-11-06T04:48:25.826Z] [INFO] ✅ Success: Wrestle Bros (attempt 1)
+[2025-11-06T04:48:25.827Z] [INFO] [25/50] Processing: Spacebar Clicker 2
+[2025-11-06T04:48:32.176Z] [INFO] ✅ Success: Geometry Dash Super Cycles (attempt 2)
+[2025-11-06T04:48:32.177Z] [INFO] [26/50] Processing: Obby: Skateboard Race
+[2025-11-06T04:48:39.342Z] [WARN] Attempt 1 failed for "Pixel Shooter", retrying... {"error":"Validation failed: metaTitle length 44 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T04:48:43.915Z] [INFO] ✅ Success: Brawl Stars Unblocked (attempt 1)
+[2025-11-06T04:48:43.915Z] [INFO] [27/50] Processing: Run 3
+[2025-11-06T04:49:09.260Z] [INFO] ✅ Success: Obby: Skateboard Race (attempt 1)
+[2025-11-06T04:49:09.260Z] [INFO] [28/50] Processing: Puppet Hockey
+[2025-11-06T04:49:10.674Z] [INFO] ✅ Success: Spacebar Clicker 2 (attempt 1)
+[2025-11-06T04:49:10.675Z] [INFO] [29/50] Processing: Geometry Portal Challenge
+[2025-11-06T04:49:16.223Z] [INFO] ✅ Success: Run 3 (attempt 1)
+[2025-11-06T04:49:16.223Z] [INFO] [30/50] Processing: Roller Baller
+[2025-11-06T04:49:21.247Z] [INFO] ✅ Success: Pixel Shooter (attempt 2)
+[2025-11-06T04:49:21.247Z] [INFO] [31/50] Processing: Geometry: Black Wave 5
+[2025-11-06T04:49:38.168Z] [INFO] ✅ Success: Puppet Hockey (attempt 1)
+[2025-11-06T04:49:38.169Z] [INFO] [32/50] Processing: Space Is Key 2
+[2025-11-06T04:49:47.626Z] [INFO] ✅ Success: Geometry Portal Challenge (attempt 1)
+[2025-11-06T04:49:47.627Z] [INFO] [33/50] Processing: Baseball 9
+[2025-11-06T04:49:48.883Z] [INFO] ✅ Success: Roller Baller (attempt 1)
+[2025-11-06T04:49:48.883Z] [INFO] [34/50] Processing: Geometry Dash ForceDynamix
+[2025-11-06T04:49:59.391Z] [INFO] ✅ Success: Geometry: Black Wave 5 (attempt 1)
+[2025-11-06T04:49:59.391Z] [INFO] [35/50] Processing: Funny Shooter 2
+[2025-11-06T04:50:17.364Z] [INFO] ✅ Success: Space Is Key 2 (attempt 1)
+[2025-11-06T04:50:17.364Z] [INFO] [36/50] Processing: Rolly Vortex
+[2025-11-06T04:50:23.348Z] [INFO] ✅ Success: Geometry Dash ForceDynamix (attempt 1)
+[2025-11-06T04:50:23.349Z] [INFO] [37/50] Processing: Sprunki Mod Phase 10
+[2025-11-06T04:50:25.847Z] [WARN] Attempt 1 failed for "Baseball 9", retrying... {"error":"Validation failed: metaTitle length 44 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T04:50:32.199Z] [INFO] ✅ Success: Funny Shooter 2 (attempt 1)
+[2025-11-06T04:50:32.200Z] [INFO] [38/50] Processing: Slow Roads
+[2025-11-06T04:50:47.859Z] [INFO] ✅ Success: Rolly Vortex (attempt 1)
+[2025-11-06T04:50:47.860Z] [INFO] [39/50] Processing: Pacman 30th Anniversary
+[2025-11-06T04:51:03.077Z] [INFO] ✅ Success: Slow Roads (attempt 1)
+[2025-11-06T04:51:03.078Z] [INFO] [40/50] Processing: Slope Unblocked
+[2025-11-06T04:51:04.021Z] [INFO] ✅ Success: Sprunki Mod Phase 10 (attempt 1)
+[2025-11-06T04:51:04.021Z] [INFO] [41/50] Processing: Geometry Dash: Wave Challenge
+[2025-11-06T04:51:07.170Z] [INFO] ✅ Success: Baseball 9 (attempt 2)
+[2025-11-06T04:51:07.170Z] [INFO] [42/50] Processing: Sprunki Phase 5: Original
+[2025-11-06T04:51:25.934Z] [INFO] ✅ Success: Pacman 30th Anniversary (attempt 1)
+[2025-11-06T04:51:25.934Z] [INFO] [43/50] Processing: Red Ball Escape
+[2025-11-06T04:51:36.326Z] [WARN] Attempt 1 failed for "Geometry Dash: Wave Challenge", retrying... {"error":"Validation failed: metaDescription length 170 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T04:51:37.013Z] [INFO] ✅ Success: Sprunki Phase 5: Original (attempt 1)
+[2025-11-06T04:51:37.013Z] [INFO] [44/50] Processing: Melon Sandbox
+[2025-11-06T04:51:37.834Z] [WARN] Attempt 1 failed for "Slope Unblocked", retrying... {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T04:51:56.893Z] [INFO] ✅ Success: Red Ball Escape (attempt 1)
+[2025-11-06T04:51:56.894Z] [INFO] [45/50] Processing: Geometry Dash ReTraY
+[2025-11-06T04:52:10.365Z] [INFO] ✅ Success: Geometry Dash: Wave Challenge (attempt 2)
+[2025-11-06T04:52:10.366Z] [INFO] [46/50] Processing: Geometry Dash Hyper Wave: Neon Challenge 2
+[2025-11-06T04:52:16.221Z] [INFO] ✅ Success: Melon Sandbox (attempt 1)
+[2025-11-06T04:52:16.222Z] [INFO] [47/50] Processing: Geometry Dash Robot
+[2025-11-06T04:52:21.564Z] [INFO] ✅ Success: Slope Unblocked (attempt 2)
+[2025-11-06T04:52:21.565Z] [INFO] [48/50] Processing: Escape Road Winter
+[2025-11-06T04:52:34.245Z] [INFO] ✅ Success: Geometry Dash ReTraY (attempt 1)
+[2025-11-06T04:52:34.245Z] [INFO] [49/50] Processing: Blox Obby: Tower of Hell
+[2025-11-06T04:52:46.805Z] [INFO] ✅ Success: Geometry Dash Hyper Wave: Neon Challenge 2 (attempt 1)
+[2025-11-06T04:52:46.805Z] [INFO] [50/50] Processing: Geometry Dash: Ultra Impossible Wave
+[2025-11-06T04:53:00.479Z] [INFO] ✅ Success: Geometry Dash Robot (attempt 1)
+[2025-11-06T04:53:04.576Z] [INFO] ✅ Success: Escape Road Winter (attempt 1)
+[2025-11-06T04:53:09.251Z] [INFO] ✅ Success: Blox Obby: Tower of Hell (attempt 1)
+[2025-11-06T04:53:24.664Z] [INFO] ✅ Success: Geometry Dash: Ultra Impossible Wave (attempt 1)
+[2025-11-06T04:53:24.668Z] [INFO] CSV file processing complete {"csvFile":"games-008.csv","csvIndex":3,"totalCsvFiles":3,"gamesTotal":50,"gamesSuccessful":50,"gamesFailed":0,"failedGames":[],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-008.csv","json":"tools/rewrite/geometrylite.io/output/games-008.json"}}
+[2025-11-06T05:16:21.672Z] [INFO] [1/3] Starting CSV file: games-009.csv
+[2025-11-06T05:16:21.679Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-06T05:16:21.680Z] [INFO] [2/50] Processing: Doodle Baseball
+[2025-11-06T05:16:21.680Z] [INFO] [4/50] Processing: Pixel Path
+[2025-11-06T05:16:21.680Z] [INFO] [3/50] Processing: Moto Obby
+[2025-11-06T05:16:21.680Z] [INFO] [1/50] Processing: Geometry Dash: 3D Wave
+[2025-11-06T05:16:54.701Z] [INFO] ✅ Success: Doodle Baseball (attempt 1)
+[2025-11-06T05:16:54.702Z] [INFO] [5/50] Processing: Recoil
+[2025-11-06T05:16:55.600Z] [INFO] ✅ Success: Geometry Dash: 3D Wave (attempt 1)
+[2025-11-06T05:16:55.600Z] [INFO] [6/50] Processing: Moto X3M 4 Winter
+[2025-11-06T05:16:58.504Z] [INFO] ✅ Success: Moto Obby (attempt 1)
+[2025-11-06T05:16:58.505Z] [INFO] [7/50] Processing: Geometry Dash yStep
+[2025-11-06T05:17:03.003Z] [INFO] ✅ Success: Pixel Path (attempt 1)
+[2025-11-06T05:17:03.003Z] [INFO] [8/50] Processing: Geometry Dash: Black Spider
+[2025-11-06T05:17:26.311Z] [INFO] ✅ Success: Recoil (attempt 1)
+[2025-11-06T05:17:26.312Z] [INFO] [9/50] Processing: Krew.io
+[2025-11-06T05:17:27.921Z] [WARN] Attempt 1 failed for "Geometry Dash yStep", retrying... {"error":"Validation failed: metaDescription length 171 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:17:32.591Z] [WARN] Attempt 1 failed for "Moto X3M 4 Winter", retrying... {"error":"Validation failed: metaTitle length 44 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T05:17:36.691Z] [INFO] ✅ Success: Geometry Dash: Black Spider (attempt 1)
+[2025-11-06T05:17:36.692Z] [INFO] [10/50] Processing: Rooftop Snipers 2
+[2025-11-06T05:17:58.055Z] [WARN] Attempt 1 failed for "Krew.io", retrying... {"error":"Validation failed: metaTitle length 42 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T05:18:05.668Z] [INFO] ✅ Success: Geometry Dash yStep (attempt 2)
+[2025-11-06T05:18:05.668Z] [INFO] [11/50] Processing: Geometry Dash Black Blizzard
+[2025-11-06T05:18:13.544Z] [INFO] ✅ Success: Moto X3M 4 Winter (attempt 2)
+[2025-11-06T05:18:13.545Z] [INFO] [12/50] Processing: House of Hazards
+[2025-11-06T05:18:16.171Z] [INFO] ✅ Success: Rooftop Snipers 2 (attempt 1)
+[2025-11-06T05:18:16.172Z] [INFO] [13/50] Processing: Shooting Master! Craft the Gun!
+[2025-11-06T05:18:37.304Z] [INFO] ✅ Success: Geometry Dash Black Blizzard (attempt 1)
+[2025-11-06T05:18:37.304Z] [INFO] [14/50] Processing: Geometry Dash Extreme Fantasy
+[2025-11-06T05:18:39.204Z] [INFO] [15/50] Processing: Cube Stack
+[2025-11-06T05:18:49.781Z] [INFO] ✅ Success: House of Hazards (attempt 1)
+[2025-11-06T05:18:49.781Z] [INFO] [16/50] Processing: Hill Climb Race
+[2025-11-06T05:18:58.008Z] [INFO] ✅ Success: Shooting Master! Craft the Gun! (attempt 1)
+[2025-11-06T05:18:58.009Z] [INFO] [17/50] Processing: Subway Surfers Haunted Hood
+[2025-11-06T05:19:05.395Z] [INFO] ✅ Success: Geometry Dash Extreme Fantasy (attempt 1)
+[2025-11-06T05:19:05.396Z] [INFO] [18/50] Processing: Geo Dash Mine
+[2025-11-06T05:19:08.145Z] [WARN] Attempt 1 failed for "Cube Stack", retrying... {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:19:30.045Z] [INFO] ✅ Success: Hill Climb Race (attempt 1)
+[2025-11-06T05:19:30.046Z] [INFO] [19/50] Processing: Geometry Rush 4D
+[2025-11-06T05:19:33.513Z] [INFO] ✅ Success: Subway Surfers Haunted Hood (attempt 1)
+[2025-11-06T05:19:33.514Z] [INFO] [20/50] Processing: ROBLOX Parkour
+[2025-11-06T05:19:43.865Z] [INFO] ✅ Success: Geo Dash Mine (attempt 1)
+[2025-11-06T05:19:43.866Z] [INFO] [21/50] Processing: Geometry Dash Platinum Adventure
+[2025-11-06T05:19:47.748Z] [INFO] ✅ Success: Cube Stack (attempt 2)
+[2025-11-06T05:19:47.748Z] [INFO] [22/50] Processing: Geometry Dash OuterSpace
+[2025-11-06T05:20:07.350Z] [INFO] ✅ Success: ROBLOX Parkour (attempt 1)
+[2025-11-06T05:20:07.351Z] [INFO] [23/50] Processing: Cut The Rope
+[2025-11-06T05:20:08.626Z] [WARN] Attempt 1 failed for "Geometry Rush 4D", retrying... {"error":"Validation failed: metaDescription length 169 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:20:15.155Z] [INFO] ✅ Success: Geometry Dash Platinum Adventure (attempt 1)
+[2025-11-06T05:20:15.157Z] [INFO] [24/50] Processing: Monster Truck : Drive Me
+[2025-11-06T05:20:26.149Z] [WARN] Attempt 1 failed for "Geometry Dash OuterSpace", retrying... {"error":"Validation failed: metaDescription length 168 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:20:42.236Z] [INFO] ✅ Success: Cut The Rope (attempt 1)
+[2025-11-06T05:20:42.236Z] [INFO] [25/50] Processing: Geometry Dash Acid Factory
+[2025-11-06T05:20:45.363Z] [INFO] ✅ Success: Monster Truck : Drive Me (attempt 1)
+[2025-11-06T05:20:45.364Z] [INFO] [26/50] Processing: Box Simulator for Brawl Stars
+[2025-11-06T05:20:46.411Z] [INFO] ✅ Success: Geometry Rush 4D (attempt 2)
+[2025-11-06T05:20:46.411Z] [INFO] [27/50] Processing: Doge Miner
+[2025-11-06T05:20:58.253Z] [INFO] ✅ Success: Geometry Dash OuterSpace (attempt 2)
+[2025-11-06T05:20:58.254Z] [INFO] [28/50] Processing: Color Tunnel
+[2025-11-06T05:21:11.439Z] [INFO] ✅ Success: Doge Miner (attempt 1)
+[2025-11-06T05:21:11.440Z] [INFO] [29/50] Processing: A Small World Cup
+[2025-11-06T05:21:14.304Z] [INFO] ✅ Success: Geometry Dash Acid Factory (attempt 1)
+[2025-11-06T05:21:14.305Z] [INFO] [30/50] Processing: Powerline.io
+[2025-11-06T05:21:20.405Z] [INFO] ✅ Success: Box Simulator for Brawl Stars (attempt 1)
+[2025-11-06T05:21:20.406Z] [INFO] [31/50] Processing: Friday Night Funkin
+[2025-11-06T05:21:37.666Z] [INFO] ✅ Success: Color Tunnel (attempt 1)
+[2025-11-06T05:21:37.667Z] [INFO] [32/50] Processing: Geometry Dash: Wave Editor
+[2025-11-06T05:21:45.221Z] [INFO] ✅ Success: A Small World Cup (attempt 1)
+[2025-11-06T05:21:45.222Z] [INFO] [33/50] Processing: Speed Master
+[2025-11-06T05:21:46.076Z] [INFO] ✅ Success: Powerline.io (attempt 1)
+[2025-11-06T05:21:46.076Z] [INFO] [34/50] Processing: Bloxd.io
+[2025-11-06T05:21:52.794Z] [INFO] ✅ Success: Friday Night Funkin (attempt 1)
+[2025-11-06T05:21:52.794Z] [INFO] [35/50] Processing: Geometry Dash Hyper Wave: Neon Challenge
+[2025-11-06T05:22:12.758Z] [INFO] ✅ Success: Geometry Dash: Wave Editor (attempt 1)
+[2025-11-06T05:22:12.759Z] [INFO] [36/50] Processing: Tic Tac Toe
+[2025-11-06T05:22:22.516Z] [WARN] Attempt 1 failed for "Speed Master", retrying... {"error":"Validation failed: metaTitle length 41 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T05:22:25.469Z] [INFO] ✅ Success: Bloxd.io (attempt 1)
+[2025-11-06T05:22:25.469Z] [INFO] [37/50] Processing: Geometry Dash Theory of Everything 2
+[2025-11-06T05:22:28.804Z] [INFO] ✅ Success: Geometry Dash Hyper Wave: Neon Challenge (attempt 1)
+[2025-11-06T05:22:28.804Z] [INFO] [38/50] Processing: Who Is
+[2025-11-06T05:22:50.665Z] [INFO] ✅ Success: Tic Tac Toe (attempt 1)
+[2025-11-06T05:22:50.666Z] [INFO] [39/50] Processing: Ball Eating Simulator
+[2025-11-06T05:23:04.368Z] [WARN] Attempt 1 failed for "Geometry Dash Theory of Everything 2", retrying... {"error":"Validation failed: metaDescription length 170 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:23:10.671Z] [INFO] ✅ Success: Speed Master (attempt 2)
+[2025-11-06T05:23:10.671Z] [INFO] [40/50] Processing: Geometry Dash Sky Tower
+[2025-11-06T05:23:10.803Z] [INFO] ✅ Success: Who Is (attempt 1)
+[2025-11-06T05:23:10.804Z] [INFO] [41/50] Processing: American Football Bowl
+[2025-11-06T05:23:32.530Z] [INFO] ✅ Success: Ball Eating Simulator (attempt 1)
+[2025-11-06T05:23:32.531Z] [INFO] [42/50] Processing: Geometry Dash Ice Carbon Diablo X
+[2025-11-06T05:23:38.564Z] [WARN] Attempt 1 failed for "American Football Bowl", retrying... {"error":"Validation failed: metaDescription length 168 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:23:44.209Z] [INFO] ✅ Success: Geometry Dash Theory of Everything 2 (attempt 2)
+[2025-11-06T05:23:44.209Z] [INFO] [43/50] Processing: EvoWars.io
+[2025-11-06T05:23:47.405Z] [INFO] ✅ Success: Geometry Dash Sky Tower (attempt 1)
+[2025-11-06T05:23:47.405Z] [INFO] [44/50] Processing: Geometry Dash Dorabaebasic5
+[2025-11-06T05:24:15.793Z] [INFO] ✅ Success: EvoWars.io (attempt 1)
+[2025-11-06T05:24:15.793Z] [INFO] [45/50] Processing: Planet Clicker Idle
+[2025-11-06T05:24:15.912Z] [INFO] ✅ Success: American Football Bowl (attempt 2)
+[2025-11-06T05:24:15.913Z] [INFO] [46/50] Processing: Temple Run
+[2025-11-06T05:24:21.229Z] [INFO] ✅ Success: Geometry Dash Ice Carbon Diablo X (attempt 1)
+[2025-11-06T05:24:21.229Z] [INFO] [47/50] Processing: Drive Mad
+[2025-11-06T05:24:24.009Z] [INFO] ✅ Success: Geometry Dash Dorabaebasic5 (attempt 1)
+[2025-11-06T05:24:24.009Z] [INFO] [48/50] Processing: Snake Game
+[2025-11-06T05:24:46.390Z] [INFO] ✅ Success: Planet Clicker Idle (attempt 1)
+[2025-11-06T05:24:46.390Z] [INFO] [49/50] Processing: Geometry Dash Slaughterhouse
+[2025-11-06T05:24:54.446Z] [INFO] ✅ Success: Temple Run (attempt 1)
+[2025-11-06T05:24:54.447Z] [INFO] [50/50] Processing: FNF vs Sonic.EXE
+[2025-11-06T05:24:56.598Z] [INFO] ✅ Success: Drive Mad (attempt 1)
+[2025-11-06T05:25:07.106Z] [WARN] Attempt 1 failed for "Snake Game", retrying... {"error":"Validation failed: metaDescription length 168 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:25:22.573Z] [INFO] ✅ Success: Geometry Dash Slaughterhouse (attempt 1)
+[2025-11-06T05:25:40.101Z] [INFO] ✅ Success: FNF vs Sonic.EXE (attempt 1)
+[2025-11-06T05:25:46.377Z] [INFO] ✅ Success: Snake Game (attempt 2)
+[2025-11-06T05:25:46.383Z] [INFO] CSV file processing complete {"csvFile":"games-009.csv","csvIndex":1,"totalCsvFiles":3,"gamesTotal":50,"gamesSuccessful":49,"gamesFailed":1,"failedGames":["Krew.io"],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-009.csv","json":"tools/rewrite/geometrylite.io/output/games-009.json"}}
+[2025-11-06T05:25:46.384Z] [INFO] [2/3] Starting CSV file: games-010.csv
+[2025-11-06T05:25:46.391Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-06T05:25:46.392Z] [INFO] [2/50] Processing: Geometry Dash Benevolent
+[2025-11-06T05:25:46.392Z] [INFO] [1/50] Processing: Rhythm Ball 3D
+[2025-11-06T05:25:46.392Z] [INFO] [4/50] Processing: Brawl Stars Mega Simulator
+[2025-11-06T05:25:46.392Z] [INFO] [3/50] Processing: World’s Hardest Game
+[2025-11-06T05:26:22.821Z] [INFO] ✅ Success: Geometry Dash Benevolent (attempt 1)
+[2025-11-06T05:26:22.822Z] [INFO] [5/50] Processing: We Become What We Behold
+[2025-11-06T05:26:24.521Z] [INFO] ✅ Success: Brawl Stars Mega Simulator (attempt 1)
+[2025-11-06T05:26:24.521Z] [INFO] [6/50] Processing: Mini Golf Club
+[2025-11-06T05:26:27.638Z] [INFO] ✅ Success: World’s Hardest Game (attempt 1)
+[2025-11-06T05:26:27.639Z] [INFO] [7/50] Processing: Sprunki
+[2025-11-06T05:26:31.961Z] [INFO] ✅ Success: Rhythm Ball 3D (attempt 1)
+[2025-11-06T05:26:31.961Z] [INFO] [8/50] Processing: Geometry Dash Endless
+[2025-11-06T05:27:00.391Z] [INFO] ✅ Success: We Become What We Behold (attempt 1)
+[2025-11-06T05:27:00.392Z] [INFO] [9/50] Processing: Hover Racer Drive
+[2025-11-06T05:27:06.321Z] [INFO] ✅ Success: Mini Golf Club (attempt 1)
+[2025-11-06T05:27:06.321Z] [INFO] [10/50] Processing: Traffic Jam 3D
+[2025-11-06T05:27:07.984Z] [INFO] ✅ Success: Sprunki (attempt 1)
+[2025-11-06T05:27:07.984Z] [INFO] [11/50] Processing: Geometry Dash The Yandere
+[2025-11-06T05:27:08.738Z] [INFO] ✅ Success: Geometry Dash Endless (attempt 1)
+[2025-11-06T05:27:08.738Z] [INFO] [12/50] Processing: Getaway Shootout
+[2025-11-06T05:27:36.483Z] [INFO] ✅ Success: Getaway Shootout (attempt 1)
+[2025-11-06T05:27:36.484Z] [INFO] [13/50] Processing: Geometry Dash Windy Circles
+[2025-11-06T05:27:39.322Z] [WARN] Attempt 1 failed for "Geometry Dash The Yandere", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:27:39.363Z] [WARN] Attempt 1 failed for "Hover Racer Drive", retrying... {"error":"Validation failed: metaDescription length 168 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:27:46.786Z] [INFO] ✅ Success: Traffic Jam 3D (attempt 1)
+[2025-11-06T05:27:46.787Z] [INFO] [14/50] Processing: PolyTrack
+[2025-11-06T05:28:09.695Z] [INFO] ✅ Success: Geometry Dash The Yandere (attempt 2)
+[2025-11-06T05:28:09.696Z] [INFO] [15/50] Processing: Small Guys: Battleground Arena
+[2025-11-06T05:28:13.273Z] [INFO] ✅ Success: Geometry Dash Windy Circles (attempt 1)
+[2025-11-06T05:28:13.274Z] [INFO] [16/50] Processing: Geometry Dash Sonic Wave Infinity
+[2025-11-06T05:28:18.726Z] [INFO] ✅ Success: Hover Racer Drive (attempt 2)
+[2025-11-06T05:28:18.728Z] [INFO] [17/50] Processing: Head Soccer
+[2025-11-06T05:28:19.842Z] [WARN] Attempt 1 failed for "PolyTrack", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:28:46.465Z] [INFO] ✅ Success: Small Guys: Battleground Arena (attempt 1)
+[2025-11-06T05:28:46.466Z] [INFO] [18/50] Processing: Friday Night Funkin vs Whitty
+[2025-11-06T05:28:57.653Z] [WARN] Attempt 1 failed for "Geometry Dash Sonic Wave Infinity", retrying... {"error":"Validation failed: metaDescription length 168 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:29:01.076Z] [INFO] ✅ Success: Head Soccer (attempt 1)
+[2025-11-06T05:29:01.076Z] [INFO] [19/50] Processing: Agar.io
+[2025-11-06T05:29:01.228Z] [INFO] ✅ Success: PolyTrack (attempt 2)
+[2025-11-06T05:29:01.229Z] [INFO] [20/50] Processing: Geometry Dash Firework
+[2025-11-06T05:29:22.502Z] [INFO] ✅ Success: Friday Night Funkin vs Whitty (attempt 1)
+[2025-11-06T05:29:22.503Z] [INFO] [21/50] Processing: Drive Mad 2
+[2025-11-06T05:29:38.407Z] [INFO] ✅ Success: Agar.io (attempt 1)
+[2025-11-06T05:29:38.408Z] [INFO] [22/50] Processing: Geometry Dash Dark Drop
+[2025-11-06T05:29:40.379Z] [INFO] ✅ Success: Geometry Dash Firework (attempt 1)
+[2025-11-06T05:29:40.379Z] [INFO] [23/50] Processing: Solar Smash
+[2025-11-06T05:29:44.438Z] [INFO] ✅ Success: Geometry Dash Sonic Wave Infinity (attempt 2)
+[2025-11-06T05:29:44.438Z] [INFO] [24/50] Processing: Coreball
+[2025-11-06T05:29:55.695Z] [INFO] ✅ Success: Drive Mad 2 (attempt 1)
+[2025-11-06T05:29:55.696Z] [INFO] [25/50] Processing: Slitherio: Eat them all
+[2025-11-06T05:30:14.451Z] [INFO] ✅ Success: Coreball (attempt 1)
+[2025-11-06T05:30:14.452Z] [INFO] [26/50] Processing: Geometry Dash Silent Circles
+[2025-11-06T05:30:15.975Z] [INFO] ✅ Success: Geometry Dash Dark Drop (attempt 1)
+[2025-11-06T05:30:15.976Z] [INFO] [27/50] Processing: Moto X3M
+[2025-11-06T05:30:24.352Z] [INFO] ✅ Success: Solar Smash (attempt 1)
+[2025-11-06T05:30:24.353Z] [INFO] [28/50] Processing: Friday Night Dashing
+[2025-11-06T05:30:35.365Z] [INFO] ✅ Success: Slitherio: Eat them all (attempt 1)
+[2025-11-06T05:30:35.366Z] [INFO] [29/50] Processing: Basket Random
+[2025-11-06T05:30:46.580Z] [INFO] ✅ Success: Geometry Dash Silent Circles (attempt 1)
+[2025-11-06T05:30:46.580Z] [INFO] [30/50] Processing: Jump Up
+[2025-11-06T05:30:51.579Z] [INFO] ✅ Success: Moto X3M (attempt 1)
+[2025-11-06T05:30:51.580Z] [INFO] [31/50] Processing: Drift Hunters
+[2025-11-06T05:30:53.780Z] [INFO] ✅ Success: Friday Night Dashing (attempt 1)
+[2025-11-06T05:30:53.780Z] [INFO] [32/50] Processing: LOLBeans.io
+[2025-11-06T05:31:11.203Z] [INFO] ✅ Success: Basket Random (attempt 1)
+[2025-11-06T05:31:11.204Z] [INFO] [33/50] Processing: Geometry Dash The Nightmare
+[2025-11-06T05:31:25.555Z] [INFO] ✅ Success: Jump Up (attempt 1)
+[2025-11-06T05:31:25.556Z] [INFO] [34/50] Processing: Geometry Game 3D
+[2025-11-06T05:31:25.568Z] [INFO] ✅ Success: Drift Hunters (attempt 1)
+[2025-11-06T05:31:25.568Z] [INFO] [35/50] Processing: Sledge Rider
+[2025-11-06T05:31:29.590Z] [WARN] Attempt 1 failed for "Geometry Dash The Nightmare", retrying... {"error":"Failed to parse Gemini response: SyntaxError: Unexpected end of JSON input"}
+[2025-11-06T05:31:35.219Z] [INFO] ✅ Success: LOLBeans.io (attempt 1)
+[2025-11-06T05:31:35.220Z] [INFO] [36/50] Processing: Geometry Dash Ground Zero
+[2025-11-06T05:31:58.299Z] [INFO] ✅ Success: Geometry Game 3D (attempt 1)
+[2025-11-06T05:31:58.300Z] [INFO] [37/50] Processing: Subway Surfs
+[2025-11-06T05:31:59.469Z] [INFO] ✅ Success: Sledge Rider (attempt 1)
+[2025-11-06T05:31:59.469Z] [INFO] [38/50] Processing: Ball Surfer 3D
+[2025-11-06T05:32:06.106Z] [INFO] ✅ Success: Geometry Dash The Nightmare (attempt 2)
+[2025-11-06T05:32:06.106Z] [INFO] [39/50] Processing: Drift Road
+[2025-11-06T05:32:12.189Z] [INFO] ✅ Success: Geometry Dash Ground Zero (attempt 1)
+[2025-11-06T05:32:12.190Z] [INFO] [40/50] Processing: Doodle Jump
+[2025-11-06T05:32:28.526Z] [WARN] Attempt 1 failed for "Ball Surfer 3D", retrying... {"error":"Validation failed: metaTitle length 44 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T05:32:28.780Z] [INFO] ✅ Success: Subway Surfs (attempt 1)
+[2025-11-06T05:32:28.781Z] [INFO] [41/50] Processing: Cuby Road
+[2025-11-06T05:32:40.596Z] [INFO] ✅ Success: Drift Road (attempt 1)
+[2025-11-06T05:32:40.596Z] [INFO] [42/50] Processing: Geometry Dash Quantum Processing
+[2025-11-06T05:32:51.381Z] [INFO] ✅ Success: Doodle Jump (attempt 1)
+[2025-11-06T05:32:51.382Z] [INFO] [43/50] Processing: Stacky Dash 2
+[2025-11-06T05:33:05.395Z] [INFO] ✅ Success: Ball Surfer 3D (attempt 2)
+[2025-11-06T05:33:05.396Z] [INFO] [44/50] Processing: Super Oliver World
+[2025-11-06T05:33:09.519Z] [INFO] ✅ Success: Cuby Road (attempt 1)
+[2025-11-06T05:33:09.520Z] [INFO] [45/50] Processing: Only Up Balls
+[2025-11-06T05:33:15.247Z] [INFO] ✅ Success: Geometry Dash Quantum Processing (attempt 1)
+[2025-11-06T05:33:15.248Z] [INFO] [46/50] Processing: Ramp Car Jumping
+[2025-11-06T05:33:26.863Z] [INFO] ✅ Success: Stacky Dash 2 (attempt 1)
+[2025-11-06T05:33:26.864Z] [INFO] [47/50] Processing: Vex 3
+[2025-11-06T05:33:40.362Z] [INFO] ✅ Success: Super Oliver World (attempt 1)
+[2025-11-06T05:33:40.363Z] [INFO] [48/50] Processing: Snow Road
+[2025-11-06T05:33:46.381Z] [INFO] ✅ Success: Ramp Car Jumping (attempt 1)
+[2025-11-06T05:33:46.381Z] [INFO] [49/50] Processing: Traffic Road
+[2025-11-06T05:33:53.221Z] [INFO] ✅ Success: Only Up Balls (attempt 1)
+[2025-11-06T05:33:53.222Z] [INFO] [50/50] Processing: Soccer Random
+[2025-11-06T05:34:00.262Z] [INFO] ✅ Success: Vex 3 (attempt 1)
+[2025-11-06T05:34:19.391Z] [INFO] ✅ Success: Snow Road (attempt 1)
+[2025-11-06T05:34:23.300Z] [INFO] ✅ Success: Traffic Road (attempt 1)
+[2025-11-06T05:34:33.312Z] [INFO] ✅ Success: Soccer Random (attempt 1)
+[2025-11-06T05:34:33.316Z] [INFO] CSV file processing complete {"csvFile":"games-010.csv","csvIndex":2,"totalCsvFiles":3,"gamesTotal":50,"gamesSuccessful":50,"gamesFailed":0,"failedGames":[],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-010.csv","json":"tools/rewrite/geometrylite.io/output/games-010.json"}}
+[2025-11-06T05:34:33.317Z] [INFO] [3/3] Starting CSV file: games-011.csv
+[2025-11-06T05:34:33.320Z] [INFO] Processing 40 games (mode: production, starting from index 0)
+[2025-11-06T05:34:33.320Z] [INFO] [1/40] Processing: Big Tower Tiny Square
+[2025-11-06T05:34:33.320Z] [INFO] [2/40] Processing: Geometry Dash Boss V Devourers
+[2025-11-06T05:34:33.320Z] [INFO] [4/40] Processing: Smash Karts
+[2025-11-06T05:34:33.320Z] [INFO] [3/40] Processing: FNF Vs. Impostor
+[2025-11-06T05:35:03.996Z] [INFO] ✅ Success: Smash Karts (attempt 1)
+[2025-11-06T05:35:03.997Z] [INFO] [5/40] Processing: FNF Fire in the Hole Online
+[2025-11-06T05:35:11.917Z] [INFO] ✅ Success: Geometry Dash Boss V Devourers (attempt 1)
+[2025-11-06T05:35:11.918Z] [INFO] [6/40] Processing: Slice Master
+[2025-11-06T05:35:15.879Z] [INFO] ✅ Success: Big Tower Tiny Square (attempt 1)
+[2025-11-06T05:35:15.879Z] [INFO] [7/40] Processing: Paper.io 2
+[2025-11-06T05:35:19.886Z] [INFO] ✅ Success: FNF Vs. Impostor (attempt 1)
+[2025-11-06T05:35:19.887Z] [INFO] [8/40] Processing: 1v1 lol
+[2025-11-06T05:35:44.229Z] [INFO] ✅ Success: FNF Fire in the Hole Online (attempt 1)
+[2025-11-06T05:35:44.229Z] [INFO] [9/40] Processing: Stacky Dash
+[2025-11-06T05:35:49.256Z] [INFO] ✅ Success: Slice Master (attempt 1)
+[2025-11-06T05:35:49.257Z] [INFO] [10/40] Processing: Geometry Dash Ocean of Dreams
+[2025-11-06T05:35:51.079Z] [INFO] ✅ Success: Paper.io 2 (attempt 1)
+[2025-11-06T05:35:51.079Z] [INFO] [11/40] Processing: The Impossible Game
+[2025-11-06T05:36:00.532Z] [INFO] ✅ Success: 1v1 lol (attempt 1)
+[2025-11-06T05:36:00.533Z] [INFO] [12/40] Processing: BasketBros
+[2025-11-06T05:36:19.814Z] [WARN] Attempt 1 failed for "Stacky Dash", retrying... {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:36:27.280Z] [INFO] ✅ Success: Geometry Dash Ocean of Dreams (attempt 1)
+[2025-11-06T05:36:27.281Z] [INFO] [13/40] Processing: Candy Jump
+[2025-11-06T05:36:30.816Z] [INFO] ✅ Success: The Impossible Game (attempt 1)
+[2025-11-06T05:36:30.817Z] [INFO] [14/40] Processing: Geometry Jump Sketchy
+[2025-11-06T05:36:39.641Z] [INFO] ✅ Success: BasketBros (attempt 1)
+[2025-11-06T05:36:39.642Z] [INFO] [15/40] Processing: Geometry Dash Solar Circles
+[2025-11-06T05:36:59.282Z] [INFO] ✅ Success: Stacky Dash (attempt 2)
+[2025-11-06T05:36:59.282Z] [INFO] [16/40] Processing: Drift Boss
+[2025-11-06T05:36:59.942Z] [INFO] ✅ Success: Candy Jump (attempt 1)
+[2025-11-06T05:36:59.942Z] [INFO] [17/40] Processing: Boxing Random
+[2025-11-06T05:37:12.329Z] [WARN] Attempt 1 failed for "Geometry Jump Sketchy", retrying... {"error":"Validation failed: metaDescription length 171 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:37:12.794Z] [WARN] Attempt 1 failed for "Geometry Dash Solar Circles", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:37:33.157Z] [INFO] ✅ Success: Boxing Random (attempt 1)
+[2025-11-06T05:37:33.158Z] [INFO] [18/40] Processing: Geometry Dash 3D
+[2025-11-06T05:37:37.058Z] [INFO] ✅ Success: Drift Boss (attempt 1)
+[2025-11-06T05:37:37.059Z] [INFO] [19/40] Processing: Escape Road
+[2025-11-06T05:37:49.004Z] [INFO] ✅ Success: Geometry Jump Sketchy (attempt 2)
+[2025-11-06T05:37:49.005Z] [INFO] [20/40] Processing: Head Soccer 2024
+[2025-11-06T05:37:52.772Z] [INFO] [21/40] Processing: X Trench Run
+[2025-11-06T05:38:01.269Z] [INFO] ✅ Success: Geometry Dash 3D (attempt 1)
+[2025-11-06T05:38:01.270Z] [INFO] [22/40] Processing: Tunnel Rush
+[2025-11-06T05:38:17.998Z] [INFO] ✅ Success: Escape Road (attempt 1)
+[2025-11-06T05:38:17.998Z] [INFO] [23/40] Processing: Slope
+[2025-11-06T05:38:26.762Z] [WARN] Attempt 1 failed for "Head Soccer 2024", retrying... {"error":"Validation failed: metaTitle length 44 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T05:38:29.533Z] [INFO] ✅ Success: X Trench Run (attempt 1)
+[2025-11-06T05:38:29.534Z] [INFO] [24/40] Processing: Triangular Jump
+[2025-11-06T05:38:40.868Z] [INFO] ✅ Success: Tunnel Rush (attempt 1)
+[2025-11-06T05:38:40.869Z] [INFO] [25/40] Processing: Gorilla Adventure
+[2025-11-06T05:38:55.315Z] [WARN] Attempt 1 failed for "Slope", retrying... {"error":"Validation failed: metaDescription length 173 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:38:59.280Z] [INFO] ✅ Success: Triangular Jump (attempt 1)
+[2025-11-06T05:38:59.281Z] [INFO] [26/40] Processing: Geometry Jump
+[2025-11-06T05:39:07.030Z] [INFO] ✅ Success: Head Soccer 2024 (attempt 2)
+[2025-11-06T05:39:07.030Z] [INFO] [27/40] Processing: Geometrical Dash
+[2025-11-06T05:39:13.084Z] [INFO] ✅ Success: Gorilla Adventure (attempt 1)
+[2025-11-06T05:39:13.084Z] [INFO] [28/40] Processing: Zrist DX
+[2025-11-06T05:39:27.875Z] [INFO] ✅ Success: Geometry Jump (attempt 1)
+[2025-11-06T05:39:27.875Z] [INFO] [29/40] Processing: Among Dash
+[2025-11-06T05:39:32.193Z] [INFO] ✅ Success: Slope (attempt 2)
+[2025-11-06T05:39:32.193Z] [INFO] [30/40] Processing: 3Dash
+[2025-11-06T05:39:36.403Z] [INFO] ✅ Success: Geometrical Dash (attempt 1)
+[2025-11-06T05:39:36.404Z] [INFO] [31/40] Processing: Egg Dash
+[2025-11-06T05:39:52.377Z] [INFO] ✅ Success: Zrist DX (attempt 1)
+[2025-11-06T05:39:52.378Z] [INFO] [32/40] Processing: Devil Dash
+[2025-11-06T05:40:01.245Z] [INFO] ✅ Success: Among Dash (attempt 1)
+[2025-11-06T05:40:01.245Z] [INFO] [33/40] Processing: Geometry FreezeNova
+[2025-11-06T05:40:11.541Z] [INFO] ✅ Success: 3Dash (attempt 1)
+[2025-11-06T05:40:11.541Z] [INFO] [34/40] Processing: Geometry Meltdown
+[2025-11-06T05:40:17.149Z] [INFO] ✅ Success: Egg Dash (attempt 1)
+[2025-11-06T05:40:17.150Z] [INFO] [35/40] Processing: Spooky Dash
+[2025-11-06T05:40:29.450Z] [WARN] Attempt 1 failed for "Devil Dash", retrying... {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T05:40:37.964Z] [INFO] ✅ Success: Geometry FreezeNova (attempt 1)
+[2025-11-06T05:40:37.964Z] [INFO] [36/40] Processing: Xmas Dash
+[2025-11-06T05:40:51.374Z] [INFO] ✅ Success: Geometry Meltdown (attempt 1)
+[2025-11-06T05:40:51.374Z] [INFO] [37/40] Processing: Geometry World
+[2025-11-06T05:40:55.948Z] [INFO] ✅ Success: Spooky Dash (attempt 1)
+[2025-11-06T05:40:55.949Z] [INFO] [38/40] Processing: Geometry Subzero
+[2025-11-06T05:41:03.175Z] [INFO] ✅ Success: Devil Dash (attempt 2)
+[2025-11-06T05:41:03.175Z] [INFO] [39/40] Processing: Chat With A Chill Guy
+[2025-11-06T05:41:14.216Z] [INFO] ✅ Success: Xmas Dash (attempt 1)
+[2025-11-06T05:41:14.216Z] [INFO] [40/40] Processing: Geometry Dash Lite
+[2025-11-06T05:41:28.855Z] [INFO] ✅ Success: Geometry World (attempt 1)
+[2025-11-06T05:41:30.180Z] [INFO] ✅ Success: Geometry Subzero (attempt 1)
+[2025-11-06T05:41:39.861Z] [INFO] ✅ Success: Chat With A Chill Guy (attempt 1)
+[2025-11-06T05:41:57.094Z] [INFO] ✅ Success: Geometry Dash Lite (attempt 1)
+[2025-11-06T05:41:57.098Z] [INFO] CSV file processing complete {"csvFile":"games-011.csv","csvIndex":3,"totalCsvFiles":3,"gamesTotal":40,"gamesSuccessful":39,"gamesFailed":1,"failedGames":["Geometry Dash Solar Circles"],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-011.csv","json":"tools/rewrite/geometrylite.io/output/games-011.json"}}
+[2025-11-06T06:02:26.881Z] [INFO] Retrying 1 failed games from games-011.csv
+[2025-11-06T06:02:26.883Z] [INFO] [1/1] Retrying: Geometry Dash Solar Circles
+[2025-11-06T06:03:05.508Z] [INFO] ✅ Retry success: Geometry Dash Solar Circles (attempt 1)
+[2025-11-06T06:03:05.520Z] [INFO] Updated output files with successful retries
+[2025-11-06T06:03:05.521Z] [INFO] Retry operation complete {"totalRetries":1,"successful":1,"failed":0,"stillFailedGames":[]}

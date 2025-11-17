@@ -1,0 +1,26 @@
+---
+globs: src/app/**/*.*,src/middleware.ts
+description: Next.js App Router 开发规范
+---
+
+# Next.js App Router 开发规范
+
+## 路由结构
+- 使用 `[locale]` 动态路由实现国际化
+- 页面文件使用 `page.tsx`，布局文件使用 `layout.tsx`
+- 中间件文件 [middleware.ts](mdc:src/middleware.ts) 处理语言重定向
+
+## 组件导入
+- 优先使用相对路径导入本地组件
+- 使用 `@/` 别名导入 src 目录下的模块
+- UI 组件从 `@/components/ui` 导入
+
+## 服务端组件优先
+- 默认使用服务端组件，需要交互时才添加 `"use client"`
+- 状态管理和事件处理组件需要客户端渲染
+- 主题切换和语言选择器需要客户端渲染
+
+## 类型安全
+- 所有组件都要定义 TypeScript 接口
+- 使用 [global.d.ts](mdc:src/types/global.d.ts) 定义全局类型
+- 页面参数使用 `params` 和 `searchParams` 类型

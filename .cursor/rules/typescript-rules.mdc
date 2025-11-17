@@ -1,0 +1,38 @@
+---
+globs: **/*.ts,**/*.tsx
+description: TypeScript 开发规范
+---
+
+# TypeScript 开发规范
+
+## 类型定义
+- 组件 Props 使用 interface 定义
+- 业务类型统一放在 `src/types/` 目录
+- 使用 [global.d.ts](mdc:src/types/global.d.ts) 声明全局类型
+
+## 组件类型规范
+```typescript
+interface ComponentProps {
+  // 必需属性
+  title: string;
+  // 可选属性
+  className?: string;
+  // 子元素
+  children?: React.ReactNode;
+}
+```
+
+## 国际化类型
+- 语言类型定义在 [lang.ts](mdc:src/types/lang.ts)
+- 页面类型定义在 [page.ts](mdc:src/types/page.ts)
+- 使用严格的语言代码类型：`'en' | 'zh'`
+
+## 导入导出
+- 优先使用命名导出
+- 组件使用默认导出
+- 类型和接口使用命名导出
+
+## 错误处理
+- 使用 TypeScript 严格模式
+- 尽量避免使用 `any` 类型
+- 为异步函数定义返回类型

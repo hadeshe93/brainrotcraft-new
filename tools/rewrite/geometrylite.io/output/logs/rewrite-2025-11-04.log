@@ -1,0 +1,165 @@
+[2025-11-04T04:33:59.114Z] [INFO] [1/1] Starting CSV file: games-001.csv
+[2025-11-04T04:33:59.120Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-04T04:33:59.121Z] [INFO] [1/50] Processing: Undead Corridor
+[2025-11-04T04:33:59.121Z] [INFO] [3/50] Processing: Stack Rush
+[2025-11-04T04:33:59.121Z] [INFO] [2/50] Processing: Mr Flip
+[2025-11-04T04:33:59.121Z] [INFO] [4/50] Processing: Tag 2
+[2025-11-04T04:34:33.152Z] [WARN] Attempt 1 failed for "Undead Corridor", retrying... {"error":"Validation failed: metaTitle length 49 outside range 50-60"}
+[2025-11-04T04:34:34.168Z] [INFO] ✅ Success: Mr Flip (attempt 1)
+[2025-11-04T04:34:34.168Z] [INFO] [5/50] Processing: Geometry Dash Clubstep
+[2025-11-04T04:34:39.707Z] [WARN] Attempt 1 failed for "Stack Rush", retrying... {"error":"Validation failed: metaDescription length 163 outside range 150-160"}
+[2025-11-04T04:34:45.817Z] [WARN] Attempt 1 failed for "Tag 2", retrying... {"error":"Validation failed: metaTitle length 46 outside range 50-60, metaDescription length 164 outside range 150-160"}
+[2025-11-04T04:35:13.532Z] [INFO] ✅ Success: Undead Corridor (attempt 2)
+[2025-11-04T04:35:13.533Z] [INFO] [6/50] Processing: Slope Rider
+[2025-11-04T04:35:14.665Z] [WARN] Attempt 1 failed for "Geometry Dash Clubstep", retrying... {"error":"Validation failed: metaDescription length 162 outside range 150-160"}
+[2025-11-04T04:35:17.657Z] [INFO] ✅ Success: Stack Rush (attempt 2)
+[2025-11-04T04:35:17.657Z] [INFO] [7/50] Processing: Geometry Cube 2: Challenge
+[2025-11-04T04:35:26.008Z] [INFO] [8/50] Processing: Steal Brainrots
+[2025-11-04T04:35:47.689Z] [INFO] ✅ Success: Slope Rider (attempt 1)
+[2025-11-04T04:35:47.689Z] [INFO] [9/50] Processing: Falling Up
+[2025-11-04T04:35:55.195Z] [INFO] [10/50] Processing: Confusion
+[2025-11-04T04:35:55.425Z] [INFO] ✅ Success: Geometry Cube 2: Challenge (attempt 1)
+[2025-11-04T04:35:55.425Z] [INFO] [11/50] Processing: Edge of Destiny
+[2025-11-04T04:36:06.763Z] [WARN] Attempt 1 failed for "Steal Brainrots", retrying... {"error":"Validation failed: metaDescription length 167 outside range 150-160"}
+[2025-11-04T04:36:25.896Z] [INFO] ✅ Success: Falling Up (attempt 1)
+[2025-11-04T04:36:25.897Z] [INFO] [12/50] Processing: PolyTrack Unblocked
+[2025-11-04T04:36:31.660Z] [INFO] ✅ Success: Confusion (attempt 1)
+[2025-11-04T04:36:31.660Z] [INFO] [13/50] Processing: Geometry Dash Lite Scratch
+[2025-11-04T04:36:39.835Z] [INFO] ✅ Success: Edge of Destiny (attempt 1)
+[2025-11-04T04:36:39.836Z] [INFO] [14/50] Processing: Avatar World
+[2025-11-04T04:36:46.745Z] [INFO] [15/50] Processing: Vex 9
+[2025-11-04T04:37:07.737Z] [INFO] ✅ Success: Geometry Dash Lite Scratch (attempt 1)
+[2025-11-04T04:37:07.737Z] [INFO] [16/50] Processing: Retro Bowl 26
+[2025-11-04T04:37:10.033Z] [INFO] ✅ Success: PolyTrack Unblocked (attempt 1)
+[2025-11-04T04:37:10.033Z] [INFO] [17/50] Processing: Ragdoll Playground
+[2025-11-04T04:37:21.779Z] [INFO] ✅ Success: Avatar World (attempt 1)
+[2025-11-04T04:37:21.779Z] [INFO] [18/50] Processing: Growden.io
+[2025-11-04T04:37:24.279Z] [INFO] ✅ Success: Vex 9 (attempt 1)
+[2025-11-04T04:37:24.280Z] [INFO] [19/50] Processing: Sky Realm
+[2025-11-04T04:37:53.804Z] [INFO] ✅ Success: Retro Bowl 26 (attempt 1)
+[2025-11-04T04:37:53.805Z] [INFO] [20/50] Processing: Melon Playground
+[2025-11-04T04:37:55.283Z] [INFO] ✅ Success: Ragdoll Playground (attempt 1)
+[2025-11-04T04:37:55.284Z] [INFO] [21/50] Processing: Obby With Friends: Draw and Jump
+[2025-11-04T04:37:55.681Z] [INFO] ✅ Success: Sky Realm (attempt 1)
+[2025-11-04T04:37:55.682Z] [INFO] [22/50] Processing: Stickman Hook
+[2025-11-04T04:37:57.883Z] [WARN] Attempt 1 failed for "Growden.io", retrying... {"error":"Validation failed: metaDescription length 163 outside range 150-160"}
+[2025-11-04T04:38:36.116Z] [INFO] ✅ Success: Stickman Hook (attempt 1)
+[2025-11-04T04:38:36.117Z] [INFO] [23/50] Processing: Steal Brainrot Online
+[2025-11-04T04:38:36.876Z] [INFO] ✅ Success: Obby With Friends: Draw and Jump (attempt 1)
+[2025-11-04T04:38:36.876Z] [INFO] [24/50] Processing: JUMPER
+[2025-11-04T04:38:37.356Z] [INFO] ✅ Success: Growden.io (attempt 2)
+[2025-11-04T04:38:37.356Z] [INFO] [25/50] Processing: Infinite Dash 2
+[2025-11-04T04:38:38.709Z] [INFO] ✅ Success: Melon Playground (attempt 1)
+[2025-11-04T04:38:38.709Z] [INFO] [26/50] Processing: Hollow Knight
+[2025-11-04T04:39:11.172Z] [INFO] ✅ Success: Infinite Dash 2 (attempt 1)
+[2025-11-04T04:39:11.172Z] [INFO] [27/50] Processing: Geometry Dash World Dashlands
+[2025-11-04T04:39:14.182Z] [INFO] ✅ Success: JUMPER (attempt 1)
+[2025-11-04T04:39:14.182Z] [INFO] [28/50] Processing: Geometry Dash Afterlife
+[2025-11-04T04:39:15.010Z] [WARN] Attempt 1 failed for "Steal Brainrot Online", retrying... {"error":"Validation failed: metaDescription length 161 outside range 150-160"}
+[2025-11-04T04:39:27.178Z] [WARN] Attempt 1 failed for "Hollow Knight", retrying... {"error":"Validation failed: metaTitle length 48 outside range 50-60, metaDescription length 162 outside range 150-160"}
+[2025-11-04T04:39:50.931Z] [WARN] Attempt 1 failed for "Geometry Dash World Dashlands", retrying... {"error":"Validation failed: metaTitle length 47 outside range 50-60"}
+[2025-11-04T04:39:55.362Z] [INFO] ✅ Success: Geometry Dash Afterlife (attempt 1)
+[2025-11-04T04:39:55.362Z] [INFO] [29/50] Processing: 99 Nights in the Forest
+[2025-11-04T04:39:59.509Z] [INFO] [30/50] Processing: Geometry Dash Minecraft
+[2025-11-04T04:40:13.650Z] [INFO] [31/50] Processing: Time Shooter 2
+[2025-11-04T04:40:26.645Z] [INFO] [32/50] Processing: Geometry Dash Demon Park
+[2025-11-04T04:40:33.213Z] [WARN] Attempt 1 failed for "99 Nights in the Forest", retrying... {"error":"Validation failed: metaDescription length 165 outside range 150-160"}
+[2025-11-04T04:40:41.452Z] [INFO] ✅ Success: Geometry Dash Minecraft (attempt 1)
+[2025-11-04T04:40:41.452Z] [INFO] [33/50] Processing: Wave Road 3D
+[2025-11-04T04:40:55.387Z] [WARN] Attempt 1 failed for "Time Shooter 2", retrying... {"error":"Validation failed: metaTitle length 49 outside range 50-60, metaDescription length 146 outside range 150-160"}
+[2025-11-04T04:41:06.610Z] [INFO] ✅ Success: Geometry Dash Demon Park (attempt 1)
+[2025-11-04T04:41:06.611Z] [INFO] [34/50] Processing: 67 Clicker
+[2025-11-04T04:41:13.765Z] [INFO] ✅ Success: 99 Nights in the Forest (attempt 2)
+[2025-11-04T04:41:13.765Z] [INFO] [35/50] Processing: Geometry Dash Quest for Perfection
+[2025-11-04T04:41:20.982Z] [INFO] ✅ Success: Wave Road 3D (attempt 1)
+[2025-11-04T04:41:20.983Z] [INFO] [36/50] Processing: Mr. Pixel: The Path of Parkour
+[2025-11-04T04:41:26.211Z] [INFO] [37/50] Processing: Run 2
+[2025-11-04T04:41:42.045Z] [WARN] Attempt 1 failed for "67 Clicker", retrying... {"error":"Validation failed: metaTitle length 47 outside range 50-60"}
+[2025-11-04T04:41:50.372Z] [WARN] Attempt 1 failed for "Geometry Dash Quest for Perfection", retrying... {"error":"Validation failed: metaTitle length 61 outside range 50-60"}
+[2025-11-04T04:41:56.872Z] [INFO] ✅ Success: Mr. Pixel: The Path of Parkour (attempt 1)
+[2025-11-04T04:41:56.872Z] [INFO] [38/50] Processing: Labubu Geometry Waves
+[2025-11-04T04:42:00.918Z] [WARN] Attempt 1 failed for "Run 2", retrying... {"error":"Validation failed: metaTitle length 48 outside range 50-60"}
+[2025-11-04T04:42:17.644Z] [INFO] ✅ Success: 67 Clicker (attempt 2)
+[2025-11-04T04:42:17.645Z] [INFO] [39/50] Processing: Hornet Adventure
+[2025-11-04T04:42:28.661Z] [WARN] Attempt 1 failed for "Labubu Geometry Waves", retrying... {"error":"Validation failed: metaDescription length 162 outside range 150-160"}
+[2025-11-04T04:42:31.444Z] [INFO] [40/50] Processing: Plants Vs Brainrots
+[2025-11-04T04:42:44.716Z] [INFO] ✅ Success: Run 2 (attempt 2)
+[2025-11-04T04:42:44.717Z] [INFO] [41/50] Processing: Steal a Brainrot Original 3D
+[2025-11-04T04:42:58.223Z] [WARN] Attempt 1 failed for "Hornet Adventure", retrying... {"error":"Validation failed: metaDescription length 163 outside range 150-160"}
+[2025-11-04T04:43:03.586Z] [INFO] [42/50] Processing: Geometry Dash v1.5
+[2025-11-04T04:43:11.337Z] [INFO] ✅ Success: Plants Vs Brainrots (attempt 1)
+[2025-11-04T04:43:11.338Z] [INFO] [43/50] Processing: Slope 2
+[2025-11-04T04:43:23.051Z] [WARN] Attempt 1 failed for "Steal a Brainrot Original 3D", retrying... {"error":"Validation failed: metaDescription length 162 outside range 150-160"}
+[2025-11-04T04:43:36.194Z] [WARN] Attempt 1 failed for "Geometry Dash v1.5", retrying... {"error":"Validation failed: metaDescription length 163 outside range 150-160"}
+[2025-11-04T04:43:36.658Z] [INFO] [44/50] Processing: Geometry Dash: Mad Race
+[2025-11-04T04:43:55.102Z] [INFO] ✅ Success: Slope 2 (attempt 1)
+[2025-11-04T04:43:55.102Z] [INFO] [45/50] Processing: Geometry Dash Platformer
+[2025-11-04T04:44:06.278Z] [WARN] Attempt 1 failed for "Geometry Dash: Mad Race", retrying... {"error":"Validation failed: metaDescription length 168 outside range 150-160"}
+[2025-11-04T04:44:10.988Z] [INFO] [46/50] Processing: Level Devil - NOT A Troll Game
+[2025-11-04T04:44:21.422Z] [INFO] ✅ Success: Geometry Dash v1.5 (attempt 2)
+[2025-11-04T04:44:21.423Z] [INFO] [47/50] Processing: Geometry Dash square adventure
+[2025-11-04T04:44:31.480Z] [WARN] Attempt 1 failed for "Geometry Dash Platformer", retrying... {"error":"Validation failed: metaDescription length 168 outside range 150-160"}
+[2025-11-04T04:44:40.767Z] [INFO] [48/50] Processing: Geometry Dash 3D: Build a level
+[2025-11-04T04:44:55.615Z] [WARN] Attempt 1 failed for "Level Devil - NOT A Troll Game", retrying... {"error":"Validation failed: metaDescription length 162 outside range 150-160"}
+[2025-11-04T04:44:56.427Z] [WARN] Attempt 1 failed for "Geometry Dash square adventure", retrying... {"error":"Validation failed: metaDescription length 163 outside range 150-160"}
+[2025-11-04T04:45:10.933Z] [INFO] ✅ Success: Geometry Dash Platformer (attempt 2)
+[2025-11-04T04:45:10.933Z] [INFO] [49/50] Processing: Wave Editor
+[2025-11-04T04:45:15.270Z] [WARN] Attempt 1 failed for "Geometry Dash 3D: Build a level", retrying... {"error":"Validation failed: metaDescription length 161 outside range 150-160"}
+[2025-11-04T04:45:40.957Z] [INFO] ✅ Success: Geometry Dash square adventure (attempt 2)
+[2025-11-04T04:45:40.958Z] [INFO] [50/50] Processing: UFO Editor
+[2025-11-04T04:45:49.067Z] [INFO] ✅ Success: Wave Editor (attempt 1)
+[2025-11-04T04:45:57.979Z] [INFO] ✅ Success: Geometry Dash 3D: Build a level (attempt 2)
+[2025-11-04T04:46:22.750Z] [WARN] Attempt 1 failed for "UFO Editor", retrying... {"error":"Validation failed: metaDescription length 148 outside range 150-160"}
+[2025-11-04T04:47:07.973Z] [INFO] CSV file processing complete {"csvFile":"games-001.csv","csvIndex":1,"totalCsvFiles":1,"gamesTotal":50,"gamesSuccessful":36,"gamesFailed":14,"failedGames":["Tag 2","Geometry Dash Clubstep","Steal Brainrots","Steal Brainrot Online","Hollow Knight","Geometry Dash World Dashlands","Time Shooter 2","Geometry Dash Quest for Perfection","Labubu Geometry Waves","Hornet Adventure","Steal a Brainrot Original 3D","Geometry Dash: Mad Race","Level Devil - NOT A Troll Game","UFO Editor"],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-001.csv","json":"tools/rewrite/geometrylite.io/output/games-001.json"}}
+[2025-11-04T06:48:15.727Z] [INFO] Retrying 14 failed games from games-001.csv
+[2025-11-04T06:48:15.729Z] [INFO] [1/14] Retrying: Tag 2
+[2025-11-04T06:48:15.729Z] [INFO] [3/14] Retrying: Steal Brainrots
+[2025-11-04T06:48:15.729Z] [INFO] [2/14] Retrying: Geometry Dash Clubstep
+[2025-11-04T06:48:15.729Z] [INFO] [4/14] Retrying: Steal Brainrot Online
+[2025-11-04T06:48:51.799Z] [INFO] ✅ Retry success: Steal Brainrots (attempt 1)
+[2025-11-04T06:48:51.799Z] [INFO] [5/14] Retrying: Hollow Knight
+[2025-11-04T06:48:52.319Z] [INFO] ✅ Retry success: Tag 2 (attempt 1)
+[2025-11-04T06:48:52.319Z] [INFO] [6/14] Retrying: Geometry Dash World Dashlands
+[2025-11-04T06:48:56.847Z] [INFO] ✅ Retry success: Geometry Dash Clubstep (attempt 1)
+[2025-11-04T06:48:56.847Z] [INFO] [7/14] Retrying: Time Shooter 2
+[2025-11-04T06:49:01.696Z] [INFO] ✅ Retry success: Steal Brainrot Online (attempt 1)
+[2025-11-04T06:49:01.696Z] [INFO] [8/14] Retrying: Geometry Dash Quest for Perfection
+[2025-11-04T06:49:30.400Z] [WARN] Attempt 1 failed for "Hollow Knight", retrying... {"error":"Validation failed: metaTitle length 46 outside range 50-60, metaDescription length 165 outside range 150-160"}
+[2025-11-04T06:49:31.936Z] [WARN] Attempt 1 failed for "Time Shooter 2", retrying... {"error":"Validation failed: metaTitle length 49 outside range 50-60"}
+[2025-11-04T06:49:34.207Z] [WARN] Attempt 1 failed for "Geometry Dash World Dashlands", retrying... {"error":"Validation failed: metaDescription length 163 outside range 150-160"}
+[2025-11-04T06:49:35.762Z] [WARN] Attempt 1 failed for "Geometry Dash Quest for Perfection", retrying... {"error":"Validation failed: metaTitle length 61 outside range 50-60, metaDescription length 165 outside range 150-160"}
+[2025-11-04T06:50:01.375Z] [INFO] [9/14] Retrying: Labubu Geometry Waves
+[2025-11-04T06:50:06.114Z] [INFO] [10/14] Retrying: Hornet Adventure
+[2025-11-04T06:50:16.395Z] [INFO] [11/14] Retrying: Steal a Brainrot Original 3D
+[2025-11-04T06:50:22.717Z] [INFO] ✅ Retry success: Geometry Dash World Dashlands (attempt 2)
+[2025-11-04T06:50:22.717Z] [INFO] [12/14] Retrying: Geometry Dash: Mad Race
+[2025-11-04T06:50:34.590Z] [INFO] ✅ Retry success: Labubu Geometry Waves (attempt 1)
+[2025-11-04T06:50:34.590Z] [INFO] [13/14] Retrying: Level Devil - NOT A Troll Game
+[2025-11-04T06:50:45.060Z] [INFO] ✅ Retry success: Hornet Adventure (attempt 1)
+[2025-11-04T06:50:45.061Z] [INFO] [14/14] Retrying: UFO Editor
+[2025-11-04T06:50:55.780Z] [INFO] ✅ Retry success: Steal a Brainrot Original 3D (attempt 1)
+[2025-11-04T06:50:59.536Z] [INFO] ✅ Retry success: Geometry Dash: Mad Race (attempt 1)
+[2025-11-04T06:51:11.245Z] [INFO] ✅ Retry success: Level Devil - NOT A Troll Game (attempt 1)
+[2025-11-04T06:51:23.512Z] [WARN] Attempt 1 failed for "UFO Editor", retrying... {"error":"Validation failed: metaDescription length 164 outside range 150-160"}
+[2025-11-04T06:52:07.991Z] [INFO] Updated output files with successful retries
+[2025-11-04T06:52:07.991Z] [INFO] Retry operation complete {"totalRetries":14,"successful":10,"failed":4,"stillFailedGames":["Hollow Knight","Time Shooter 2","Geometry Dash Quest for Perfection","UFO Editor"]}
+[2025-11-04T06:59:09.247Z] [INFO] Retrying 4 failed games from games-001.csv
+[2025-11-04T06:59:09.248Z] [INFO] [1/4] Retrying: Hollow Knight
+[2025-11-04T06:59:09.248Z] [INFO] [3/4] Retrying: Geometry Dash Quest for Perfection
+[2025-11-04T06:59:09.248Z] [INFO] [2/4] Retrying: Time Shooter 2
+[2025-11-04T06:59:09.248Z] [INFO] [4/4] Retrying: UFO Editor
+[2025-11-04T06:59:41.060Z] [INFO] ✅ Retry success: Time Shooter 2 (attempt 1)
+[2025-11-04T06:59:48.752Z] [INFO] ✅ Retry success: UFO Editor (attempt 1)
+[2025-11-04T06:59:49.254Z] [INFO] ✅ Retry success: Geometry Dash Quest for Perfection (attempt 1)
+[2025-11-04T06:59:54.426Z] [WARN] Attempt 1 failed for "Hollow Knight", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-04T07:00:38.850Z] [INFO] Updated output files with successful retries
+[2025-11-04T07:00:38.851Z] [INFO] Retry operation complete {"totalRetries":4,"successful":3,"failed":1,"stillFailedGames":["Hollow Knight"]}
+[2025-11-04T07:00:54.602Z] [INFO] Retrying 1 failed games from games-001.csv
+[2025-11-04T07:00:54.604Z] [INFO] [1/1] Retrying: Hollow Knight
+[2025-11-04T07:01:37.589Z] [INFO] ✅ Retry success: Hollow Knight (attempt 1)
+[2025-11-04T07:01:37.597Z] [INFO] Updated output files with successful retries
+[2025-11-04T07:01:37.598Z] [INFO] Retry operation complete {"totalRetries":1,"successful":1,"failed":0,"stillFailedGames":[]}
+[2025-11-04T08:52:17.057Z] [INFO] Starting CSV to JSON conversion for 1 files {"csvFiles":["games-001.csv"]}
+[2025-11-04T08:52:17.058Z] [INFO] Converting games-001.csv to JSON
+[2025-11-04T08:52:17.065Z] [INFO] ✅ Converted games-001.csv → games-001.json {"count":50}
+[2025-11-04T08:52:17.066Z] [INFO] CSV to JSON conversion complete {"total":1,"successful":1,"failed":0,"totalGames":50}

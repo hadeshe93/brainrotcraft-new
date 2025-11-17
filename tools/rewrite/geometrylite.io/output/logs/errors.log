@@ -1,0 +1,26 @@
+[2025-11-04T04:35:26.007Z] [ERROR] ❌ Failed: Tag 2 after 2 attempts {"error":"Validation failed: metaTitle length 47 outside range 50-60, metaDescription length 163 outside range 150-160"}
+[2025-11-04T04:35:55.195Z] [ERROR] ❌ Failed: Geometry Dash Clubstep after 2 attempts {"error":"Validation failed: metaDescription length 161 outside range 150-160"}
+[2025-11-04T04:36:46.744Z] [ERROR] ❌ Failed: Steal Brainrots after 2 attempts {"error":"Validation failed: metaDescription length 166 outside range 150-160"}
+[2025-11-04T04:39:59.508Z] [ERROR] ❌ Failed: Steal Brainrot Online after 2 attempts {"error":"Validation failed: metaDescription length 162 outside range 150-160"}
+[2025-11-04T04:40:13.650Z] [ERROR] ❌ Failed: Hollow Knight after 2 attempts {"error":"Validation failed: metaTitle length 46 outside range 50-60"}
+[2025-11-04T04:40:26.645Z] [ERROR] ❌ Failed: Geometry Dash World Dashlands after 2 attempts {"error":"Validation failed: metaDescription length 162 outside range 150-160"}
+[2025-11-04T04:41:26.210Z] [ERROR] ❌ Failed: Time Shooter 2 after 2 attempts {"error":"Validation failed: metaTitle length 46 outside range 50-60, metaDescription length 147 outside range 150-160"}
+[2025-11-04T04:42:31.443Z] [ERROR] ❌ Failed: Geometry Dash Quest for Perfection after 2 attempts {"error":"Validation failed: metaTitle length 61 outside range 50-60, metaDescription length 161 outside range 150-160"}
+[2025-11-04T04:43:03.585Z] [ERROR] ❌ Failed: Labubu Geometry Waves after 2 attempts {"error":"Validation failed: metaDescription length 167 outside range 150-160"}
+[2025-11-04T04:43:36.658Z] [ERROR] ❌ Failed: Hornet Adventure after 2 attempts {"error":"Validation failed: metaDescription length 161 outside range 150-160"}
+[2025-11-04T04:44:10.988Z] [ERROR] ❌ Failed: Steal a Brainrot Original 3D after 2 attempts {"error":"Validation failed: metaDescription length 164 outside range 150-160"}
+[2025-11-04T04:44:40.766Z] [ERROR] ❌ Failed: Geometry Dash: Mad Race after 2 attempts {"error":"Validation failed: metaDescription length 167 outside range 150-160"}
+[2025-11-04T04:45:41.629Z] [ERROR] ❌ Failed: Level Devil - NOT A Troll Game after 2 attempts {"error":"Validation failed: metaDescription length 161 outside range 150-160"}
+[2025-11-04T04:47:07.967Z] [ERROR] ❌ Failed: UFO Editor after 2 attempts {"error":"Validation failed: metaDescription length 165 outside range 150-160"}
+[2025-11-04T06:50:01.372Z] [ERROR] ❌ Retry failed: Time Shooter 2 after 2 attempts {"error":"Validation failed: metaTitle length 49 outside range 50-60"}
+[2025-11-04T06:50:06.113Z] [ERROR] ❌ Retry failed: Hollow Knight after 2 attempts {"error":"Validation failed: metaTitle length 49 outside range 50-60, metaDescription length 149 outside range 150-160"}
+[2025-11-04T06:50:16.393Z] [ERROR] ❌ Retry failed: Geometry Dash Quest for Perfection after 2 attempts {"error":"Validation failed: metaTitle length 61 outside range 50-60"}
+[2025-11-04T06:52:07.983Z] [ERROR] ❌ Retry failed: UFO Editor after 2 attempts {"error":"Validation failed: metaDescription length 165 outside range 150-160"}
+[2025-11-04T07:00:38.833Z] [ERROR] ❌ Retry failed: Hollow Knight after 2 attempts {"error":"Validation failed: metaDescription length 170 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:27:41.827Z] [ERROR] ❌ Failed: Geometry Dash: Ship Editor after 2 attempts {"error":"Validation failed: metaDescription length 169 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:34:06.987Z] [ERROR] ❌ Failed: Geometry Dash Sakupen Circles after 2 attempts {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:36:44.370Z] [ERROR] ❌ Failed: Quantum Geometry after 2 attempts {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T02:37:44.818Z] [ERROR] ❌ Failed: Italian Brainrot in Geometry Dash after 2 attempts {"error":"Validation failed: metaDescription length 166 outside range 145-165 (strict: 150-160)"}
+[2025-11-06T04:31:45.637Z] [ERROR] ❌ Failed: Krunker.io after 2 attempts {"error":"Validation failed: metaTitle length 42 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T05:18:39.203Z] [ERROR] ❌ Failed: Krew.io after 2 attempts {"error":"Validation failed: metaTitle length 41 outside range 45-65 (strict: 50-60)"}
+[2025-11-06T05:37:52.772Z] [ERROR] ❌ Failed: Geometry Dash Solar Circles after 2 attempts {"error":"Validation failed: metaDescription length 169 outside range 145-165 (strict: 150-160)"}

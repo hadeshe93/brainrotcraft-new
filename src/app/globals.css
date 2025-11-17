@@ -1,0 +1,257 @@
+@import './theme.css';
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin "@tailwindcss/typography";
+
+/* 两种属性都能工作 */
+/* Ref: https://tailwindcss.com/docs/dark-mode */
+@custom-variant dark (&:is([data-theme='dark'], [data-theme='dark'] *, .dark, .dark *));
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('/fonts/montserrat-v31-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url('/fonts/montserrat-v31-latin-regular.ttf')
+      format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url('/fonts/montserrat-v31-latin-700.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url('/fonts/montserrat-v31-latin-700.ttf')
+      format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src:
+    url('/fonts/montserrat-v31-latin-800.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url('/fonts/montserrat-v31-latin-800.ttf')
+      format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* Marquee animation */
+@theme inline {
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+  --animate-shine: shine var(--duration) infinite linear;
+  @keyframes shine {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    to {
+      background-position: 0% 0%;
+    }
+  }
+}
+
+/* 在 Preflight 之上添加自己的基本样式 */
+/* Ref: https://tailwindcss.com/docs/preflight#extending-preflight */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    @apply scroll-smooth;
+    /* 隐藏滚动条 */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  html {
+    @apply w-screen;
+  }
+  body {
+    @apply bg-background text-foreground w-screen overflow-x-hidden;
+  }
+  h1 {
+    @apply tracking-tighter;
+  }
+  h1,
+  h2,
+  h3 {
+    /* h1, h2, h3, .brand { */
+    /* font-family: 'Playfair Display', 'Didot', 'Bodoni MT', 'Noto Serif', 'Georgia', serif; */
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    @apply !text-foreground font-bold;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+/* 6xl - 72rem - 1152 */
+/* 7xl - 80rem - 1280 */
+/* 8xl - 96rem - 1536 */
+/* 9xl - 104rem - 1664 */
+@layer components {
+  .block-section,
+  .block-section-width {
+    @apply container mx-auto max-w-[104rem] px-4 md:px-6;
+  }
+  .block-section {
+    @apply py-6;
+  }
+  .block-section:first-child {
+    @apply pt-4;
+  }
+
+  .text-gold-gradient {
+    /* Fallback color */
+    color: oklch(0.77 0.16 70);
+    /* Gradient effect */
+    background: linear-gradient(
+      135deg,
+      #dbbd55,
+      /* Light gold */ oklch(0.77 0.16 70),
+      /* Mid gold - similar to primary */ oklch(0.55 0.15 50) /* Deep gold - similar to chart-3 */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    position: relative;
+    /* Fix for descender clipping */
+    display: inline-block;
+    line-height: 1.2;
+    padding-bottom: 0.1em;
+  }
+
+  /* Subtle animation on hover */
+  .text-gold-gradient:hover {
+    animation: shine 1s ease-in-out;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Glow effect animations for component */
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 0.15;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.25;
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    33% {
+      transform: translate(30px, -30px) rotate(120deg);
+    }
+    66% {
+      transform: translate(-20px, 20px) rotate(240deg);
+    }
+  }
+
+  @keyframes glow-pulse {
+    0%,
+    100% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes glow-float {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    25% {
+      transform: translate(20px, -10px) scale(1.05);
+    }
+    50% {
+      transform: translate(-10px, 15px) scale(1.1);
+    }
+    75% {
+      transform: translate(15px, 10px) scale(1.05);
+    }
+  }
+
+  /* Dark mode adjustment for better contrast */
+  [data-theme='dark'] .text-gold-gradient {
+    /* Fallback color */
+    color: oklch(0.75 0.18 70);
+    /* Gradient effect */
+    background: linear-gradient(
+      135deg,
+      oklch(0.85 0.15 85),
+      /* Bright gold */ oklch(0.75 0.18 70),
+      /* Medium gold */ oklch(0.6 0.16 55) /* Deep gold */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    /* Inherit fix for descender clipping */
+    display: inline-block;
+    line-height: 1.2;
+    padding-bottom: 0.1em;
+  }
+
+  .transparent-grid {
+    background-image: url('/imgs/transparent-grid.svg');
+    background-size: 20px 20px;
+    background-repeat: repeat;
+  }
+
+  .markdown-renderer a {
+    @apply underline;
+  }
+
+  .markdown-renderer iframe {
+    @apply mx-auto aspect-video w-full max-w-2xl overflow-hidden rounded-md;
+  }
+
+  .cta-link-button {
+    @apply bg-primary !text-primary-foreground hover:bg-primary/90 hover:!text-primary-foreground/90 mx-auto block w-fit rounded-full px-6 py-3 text-lg !font-bold !no-underline;
+  }
+}

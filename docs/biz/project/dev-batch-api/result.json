@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Platform",
+    "slug": "platform",
+    "status": "updated",
+    "uuid": "0eakQ5rgvdPYo47BLBFlD"
+  },
+  {
+    "name": "Rhythm",
+    "slug": "rhythm",
+    "status": "updated",
+    "uuid": "iyhRFH78wEDQ_5KGKGZ_l"
+  },
+  {
+    "name": "Geometry",
+    "slug": "geometry",
+    "status": "updated",
+    "uuid": "KQh5Y7jv3NpvAgje6zrf6"
+  },
+  {
+    "name": "Action",
+    "slug": "action",
+    "status": "failed",
+    "error": "Failed query: insert into \"categories\" (\"id\", \"uuid\", \"name\", \"slug\", \"metadata_title\", \"metadata_description\", \"content\", \"created_at\", \"updated_at\", \"deleted_at\") values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)\nparams: jn7HyxBDksbkdG20LwlXu,Action,action,Action Games - Fast-Paced Combat & Intense Battle Online,Dominate action games with fast combat and thrilling battles. Master combos, dodge attacks, and defeat enemies in epic warfare scenarios online.,Action games focus on fast-paced combat, intense confrontation, and thrilling operational experiences. Players need to make quick reactions on ever-changing battlefields, using various skills and strategies to defeat enemies. These games emphasize hand-eye coordination and tactical thinking, with every battle testing players' comprehensive abilities.\n\nIn action games, smooth combos, precise dodges, and perfectly timed counterattacks are the keys to victory. From simple side-scrolling stages to complex 3D combat, action games offer rich and diverse gameplay and challenges. Players can experience various battle scenarios from street fighting to epic warfare, with each enemy having unique attack patterns that require observation, learning, and finding solutions.\n\nThe charm of action games lies in their satisfying feel—when you perfectly execute a combo or successfully dodge a fatal attack at the last moment, that adrenaline rush will leave you unable to stop. These games not only test your reaction speed but also challenge your strategic thinking and adaptability.,1762252250,1762252250,"
+  },
+  {
+    "name": "Arcade",
+    "slug": "arcade",
+    "status": "updated",
+    "uuid": "3_fi1Nzmn8EcikCc2r6Jn"
+  },
+  {
+    "name": "Casual",
+    "slug": "casual",
+    "status": "failed",
+    "error": "Failed query: insert into \"categories\" (\"id\", \"uuid\", \"name\", \"slug\", \"metadata_title\", \"metadata_description\", \"content\", \"created_at\", \"updated_at\", \"deleted_at\") values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)\nparams: hj3NmP44C34I14SvvI9LT,Casual,casual,Casual Games - Relaxing Fun & Stress-Free Gaming Online,Unwind with casual games! Simple controls, relaxing gameplay, and colorful visuals. Perfect for all ages with match-three, puzzles, and more.,Casual games are characterized by relaxed and pleasant atmospheres, simple and intuitive controls, and low-pressure gaming experiences. These games are suitable for players of all ages—whether gaming novices or veterans, everyone can find their own joy in casual games. From match-three to management, from puzzles to simulation, casual games cover a rich variety of gameplay styles.\n\nThe design philosophy of casual games is to let players relax and enjoy the fun that games bring, rather than create stress and anxiety. The game pace is leisurely, with no strict time limits or punishment mechanisms, allowing players to explore and experience at their own pace. Bright and colorful visuals, relaxing and pleasant music, and friendly interaction design all make casual games an excellent choice for stress relief.\n\nIn the fast-paced modern life, casual games provide a brief refuge. You can play for a few minutes during waiting periods or leisurely play for hours on weekends. No complex rules to learn, no fierce competition to deal with—just pure relaxation and happiness.,1762252250,1762252250,"
+  },
+  {
+    "name": "Driving",
+    "slug": "driving",
+    "status": "updated",
+    "uuid": "BGi5cgZ3GtgXYuVBt_gyV"
+  },
+  {
+    "name": "Sports",
+    "slug": "sports",
+    "status": "failed",
+    "error": "Failed query: insert into \"categories\" (\"id\", \"uuid\", \"name\", \"slug\", \"metadata_title\", \"metadata_description\", \"content\", \"created_at\", \"updated_at\", \"deleted_at\") values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)\nparams: bE7WBS5fiiY6aZnHW1GcR,Sports,sports,Sports Games - Soccer, Basketball & Athletic Competition,Compete in sports games online! Play soccer, basketball, tennis and more. Realistic simulation or arcade fun with skill-based competitive action.,Sports games bring various real-world sports to the virtual world, allowing players to experience the charm of soccer, basketball, tennis, golf, and other sports without leaving their seats. These games focus on rule authenticity and competitive fairness, with players able to improve their skills through practice and compete for glory on virtual fields.\n\nFrom realistic simulation to fun adaptations, sports games offer diverse gaming experiences. You can choose simulation modes that fully follow real rules, feeling the competitive pressure of professional athletes, or select arcade modes with fun elements added, enjoying exaggerated effects and a relaxed atmosphere. Whether single-player challenges or multiplayer battles, sports games let you feel the passion and excitement of competitive sports.\n\nThe charm of sports games lies in their competitiveness and growth potential. Through continuous practice, you can master more skills and improve your competitive level. Every successful goal, every perfect dunk, every accurate shot lets you experience the pure joy that sports bring.,1762252250,1762252250,"
+  },
+  {
+    "name": "Adventure",
+    "slug": "adventure",
+    "status": "updated",
+    "uuid": "VWhah-qC4_cAxc0HGeuq-"
+  },
+  {
+    "name": "Clicker",
+    "slug": "clicker",
+    "status": "updated",
+    "uuid": "eKDJBzS6mRpkRDfmsBbh8"
+  }
+]

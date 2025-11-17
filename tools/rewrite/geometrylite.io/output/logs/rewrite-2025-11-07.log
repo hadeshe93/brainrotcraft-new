@@ -1,0 +1,26 @@
+[2025-11-07T07:46:12.769Z] [INFO] Starting CSV to JSON conversion for 12 files {"csvFiles":["games-001.csv","games-002.csv","games-003.csv","games-004-tagged.csv","games-004.csv","games-005.csv","games-006.csv","games-007.csv","games-008.csv","games-009.csv","games-010.csv","games-011.csv"]}
+[2025-11-07T07:46:12.770Z] [INFO] Converting games-001.csv to JSON
+[2025-11-07T07:46:12.770Z] [INFO] Converting games-002.csv to JSON
+[2025-11-07T07:46:12.771Z] [INFO] Converting games-004-tagged.csv to JSON
+[2025-11-07T07:46:12.771Z] [INFO] Converting games-003.csv to JSON
+[2025-11-07T07:46:12.796Z] [INFO] ✅ Converted games-001.csv → games-001.json {"count":50}
+[2025-11-07T07:46:12.796Z] [INFO] ✅ Converted games-003.csv → games-003.json {"count":48}
+[2025-11-07T07:46:12.796Z] [INFO] ✅ Converted games-004-tagged.csv → games-004-tagged.json {"count":48}
+[2025-11-07T07:46:12.796Z] [INFO] ✅ Converted games-002.csv → games-002.json {"count":50}
+[2025-11-07T07:46:12.796Z] [INFO] Converting games-004.csv to JSON
+[2025-11-07T07:46:12.796Z] [INFO] Converting games-005.csv to JSON
+[2025-11-07T07:46:12.797Z] [INFO] Converting games-006.csv to JSON
+[2025-11-07T07:46:12.797Z] [INFO] Converting games-007.csv to JSON
+[2025-11-07T07:46:12.803Z] [INFO] ✅ Converted games-004.csv → games-004.json {"count":48}
+[2025-11-07T07:46:12.803Z] [INFO] ✅ Converted games-005.csv → games-005.json {"count":50}
+[2025-11-07T07:46:12.803Z] [INFO] ✅ Converted games-006.csv → games-006.json {"count":49}
+[2025-11-07T07:46:12.803Z] [INFO] ✅ Converted games-007.csv → games-007.json {"count":50}
+[2025-11-07T07:46:12.803Z] [INFO] Converting games-008.csv to JSON
+[2025-11-07T07:46:12.803Z] [INFO] Converting games-010.csv to JSON
+[2025-11-07T07:46:12.803Z] [INFO] Converting games-009.csv to JSON
+[2025-11-07T07:46:12.803Z] [INFO] Converting games-011.csv to JSON
+[2025-11-07T07:46:12.808Z] [INFO] ✅ Converted games-008.csv → games-008.json {"count":50}
+[2025-11-07T07:46:12.808Z] [INFO] ✅ Converted games-011.csv → games-011.json {"count":40}
+[2025-11-07T07:46:12.808Z] [INFO] ✅ Converted games-010.csv → games-010.json {"count":50}
+[2025-11-07T07:46:12.808Z] [INFO] ✅ Converted games-009.csv → games-009.json {"count":49}
+[2025-11-07T07:46:12.808Z] [INFO] CSV to JSON conversion complete {"total":12,"successful":12,"failed":0,"totalGames":582}

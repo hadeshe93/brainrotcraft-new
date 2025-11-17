@@ -1,0 +1,28 @@
+---
+alwaysApply: true
+---
+
+# 项目结构规范
+
+## 目录结构说明
+- `src/app/[locale]/` - 国际化路由页面
+- `src/components/` - 可复用组件
+- `src/i18n/` - 国际化配置和翻译文件
+- `src/lib/` - 工具函数和配置
+- `src/types/` - TypeScript 类型定义
+
+## 组件分类
+- `blocks/` - 页面级复合组件（header, nav）
+- `ui/` - 基础 UI 组件（按钮、输入框等）
+- `i18n/` - 多语言相关组件
+- `theme/` - 主题相关组件
+
+## 关键文件
+- [middleware.ts](mdc:src/middleware.ts) - 处理国际化路由
+- [navigation.ts](mdc:src/i18n/navigation.ts) - 国际化导航配置
+- [utils.ts](mdc:src/lib/utils.ts) - 通用工具函数
+
+## 样式系统
+- 使用 Tailwind CSS v4 进行样式编写
+- 主题配置在 [theme.css](mdc:src/app/theme.css)
+- 全局样式在 [globals.css](mdc:src/app/globals.css)

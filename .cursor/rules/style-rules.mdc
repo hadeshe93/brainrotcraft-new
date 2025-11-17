@@ -1,0 +1,11 @@
+---
+description: 组件样式与应用层样式规范
+globs: src/**/*.tsx,src/**/*.css
+alwaysApply: false
+---
+
+# 组件样式与应用层样式规范
+
+## 样式开发
+
+- 如果组件来自于 Magic UI 或者 Shadcn UI，那么优先遵循他们的样式名称和规范，然后如果有自定义或者覆盖样式的需求，那么均使用 Tailwind CSS v4 的机制或者工具进行开发，可参考其 [Tailwind CSS 官方文档](docs:tailwind-v4)

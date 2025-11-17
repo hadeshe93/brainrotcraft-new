@@ -1,0 +1,27 @@
+---
+description: 主题系统开发规范
+globs: src/components/theme/**/*.*,src/contexts/app.tsx,src/app/theme*.css
+alwaysApply: false
+---
+# 主题系统规范
+
+## 主题切换组件
+- 主题提供者配置和状态管理在 [app.tsx](mdc:src/contexts/app.tsx)
+- 主题切换组件在 [toggle.tsx](mdc:src/components/theme/toggle.tsx)
+
+## CSS 变量系统
+- 主题变量定义在 [theme.css](mdc:src/app/theme.css)
+- 使用 CSS 自定义属性实现动态主题切换
+
+## 主题相关常量
+- 主题配置常量定义在 [theme.ts](mdc:src/constants/theme.ts)
+- 支持 light/dark/system 三种模式
+
+## 组件主题适配
+- 使用 Tailwind 的 dark: 前缀处理暗色模式
+- 避免硬编码颜色值，使用主题变量
+- 确保所有交互元素在两种主题下都有良好的对比度
+
+## 主题持久化
+- 使用 [storage.ts](mdc:src/lib/storage.ts) 处理主题偏好存储
+- 支持系统主题自动跟随

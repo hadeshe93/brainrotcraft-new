@@ -1,0 +1,38 @@
+---
+globs: src/components/**/*.*
+description: 组件开发规范
+---
+
+# 组件开发规范
+
+## 组件结构
+- 每个组件都应该有清晰的职责边界
+- 复合组件放在 `blocks/` 目录
+- 基础组件放在 `ui/` 目录
+- 组件文件夹使用 `index.tsx` 作为入口
+
+## UI 组件库
+- 复合或特效组件优先使用 Magic UI v4 组件，可以参考其对应的 [Magic UI 官方文档](docs:magic-ui)
+- 基础组件优先使用 [ui/](mdc:src/components/ui/) 目录，这里面的组件来自于 Shadcn，可以参考其对应的 [Shadcn UI 官方文档](docs:shadcn-ui)，如果目录下没有对应的组件请提示我安装
+- 如果前两者均无法提供合适的理想的组件，那么请自行开发创建，确保组件支持：主题切换、国际化，且 UI 样式、组件性能和无障碍方面对标 Shadcn UI 组件
+
+## 组件命名
+- 使用 PascalCase 命名组件
+- 文件名使用 kebab-case
+- 组件导出使用默认导出
+
+## 组件 Props
+- 始终定义 TypeScript 接口
+- 支持 `className` 属性用于样式扩展
+- 使用 `children` 属性支持组合模式
+
+## 国际化支持
+- 低阶组件内文本通过 props 传入，顶级高阶组件内文本使用 [i18n utils](mdc:src/i18n/utils.tsx) 进行翻译
+- 避免硬编码文本内容
+- 支持 RTL 语言的布局适配
+
+## 样式规范
+- 使用 Tailwind CSS v4 类名
+- 通过 [utils.ts](mdc:src/lib/utils.ts) 中的 `cn` 函数合并类名
+- 响应式设计优先考虑移动端
+- 应用层样式在 [globals.css](mdc:src/app/globals.css) 文件中维护

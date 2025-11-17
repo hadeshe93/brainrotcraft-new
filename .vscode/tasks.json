@@ -1,0 +1,61 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "nvm use 20 && pnpm dlx ngrok http 4004",
+			"label": "[ngrok]",
+			"group": {
+				"kind": "build"
+			}
+		},
+		{
+			"type": "shell",
+			"command": "./scripts/run.sh ngrok",
+			"label": "[ngrok]",
+			"group": {
+				"kind": "build"
+			}
+		},
+		{
+			"type": "shell",
+			"command": "./scripts/run.sh worker",
+			"label": "[worker]",
+			"group": {
+				"kind": "build"
+			}
+		},
+		{
+			"type": "shell",
+			"command": "./scripts/run.sh dev",
+			"label": "[dev]",
+			"group": {
+				"kind": "build"
+			}
+		},
+		{
+			"type": "shell",
+			"command": "./scripts/run.sh build",
+			"label": "[build]",
+			"group": {
+				"kind": "build"
+			}
+		},
+		{
+			"type": "shell",
+			"command": "./scripts/run.sh sitemap",
+			"label": "[sitemap]",
+			"group": {
+				"kind": "build"
+			}
+		},
+		{
+			"type": "shell",
+			"command": "./scripts/run.sh deploy",
+			"label": "[deploy]",
+			"group": {
+				"kind": "build"
+			}
+		},
+	]
+}

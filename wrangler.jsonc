@@ -1,0 +1,126 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gamesramp",
+  // "main": ".open-next/worker.js",
+  "main": "./worker/index.ts",
+  "compatibility_date": "2025-08-22",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public", "nodejs_compat_populate_process_env"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".open-next/assets",
+  },
+  "observability": {
+    "enabled": true,
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gamesramp",
+      "database_id": "dab6c12b-ff22-47bb-a5f8-ac838afa9eb6",
+      // 直接指定了 drizzle 文件夹
+      "migrations_dir": "drizzle",
+    },
+  ],
+
+  /**
+   * Environment Variables
+   * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
+   *
+   * 在这里定义环境变量，可以在代码中通过 getCloudflareContext().env 访问
+   */
+  "vars": {
+    // 示例环境变量（请根据实际需要配置）
+    "NEXTJS_ENV": "production",
+    "NEXT_PUBLIC_RUNTIME_ENV": "production",
+    "NEXTAUTH_URL": "https://gamesramp.com",
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "",
+    "SHOW_COLLECTION_STRATEGY": "EFFECTIVE"
+  },
+
+  /**
+   * Secrets - 敏感信息配置
+   * 注意：secrets 需要通过 wrangler secret put <KEY> 命令来设置
+   * 不要在这个文件中直接写入敏感信息
+   *
+   * 示例命令：
+   * wrangler secret put AUTH_SECRET
+   * wrangler secret put AUTH_GOOGLE_SECRET
+   * wrangler secret put AUTH_GITHUB_SECRET
+   */
+
+  /**
+   * KV 命名空间绑定示例
+   */
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "3e691b8542c844bc828f8e99378bee3e" // union-biz
+    }
+  ],
+
+  /**
+   * R2 存储桶绑定示例
+   */
+  "r2_buckets": [
+    {
+      // 远程绑定到真实 R2
+      // "remote": true,
+      "binding": "R2",
+      "bucket_name": "union-biz"
+    },
+  ],
+
+  "images": {
+    "binding": "IMAGES", // i.e. available in your Worker on env.IMAGES
+  },
+
+  /**
+   * Smart Placement
+   * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
+   */
+  // "placement": { "mode": "smart" },
+
+  /**
+   * Bindings
+   * Bindings allow your Worker to interact with resources on the Cloudflare Developer Platform, including
+   * databases, object storage, AI inference, real-time communication and more.
+   * https://developers.cloudflare.com/workers/runtime-apis/bindings/
+   */
+
+  /**
+   * Note: Use secrets to store sensitive data.
+   * https://developers.cloudflare.com/workers/configuration/secrets/
+   */
+
+  /**
+   * Static Assets
+   * https://developers.cloudflare.com/workers/static-assets/binding/
+   */
+  // "assets": { "directory": "./public/", "binding": "ASSETS" },
+
+  /**
+   * Service Bindings (communicate between multiple Workers)
+   * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
+   */
+  "services": [
+    {
+      "binding": "THROTTLE_SERVICE",
+      "service": "union-biz-worker",
+      "entrypoint": "ThrottleRpcService"
+    },
+    {
+      "binding": "BASE_DO_SERVICE",
+      "service": "union-biz-worker",
+      "entrypoint": "BaseDORpcService"
+    },
+    {
+      "binding": "UNION_IMG_SERVICE",
+      "service": "union-biz-worker",
+      "entrypoint": "UnionImgService"
+    },
+  ]
+}

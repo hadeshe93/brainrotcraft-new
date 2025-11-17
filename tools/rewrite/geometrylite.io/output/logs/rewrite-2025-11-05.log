@@ -1,0 +1,118 @@
+[2025-11-05T08:46:30.227Z] [INFO] [1/2] Starting CSV file: games-001.csv
+[2025-11-05T08:46:30.234Z] [INFO] Processing 50 games (mode: production, starting from index 50)
+[2025-11-05T08:46:30.235Z] [INFO] CSV file processing complete {"csvFile":"games-001.csv","csvIndex":1,"totalCsvFiles":2,"gamesTotal":50,"gamesSuccessful":0,"gamesFailed":50,"failedGames":[],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-001.csv","json":"tools/rewrite/geometrylite.io/output/games-001.json"}}
+[2025-11-05T08:46:30.236Z] [INFO] [2/2] Starting CSV file: games-002.csv
+[2025-11-05T08:46:30.239Z] [INFO] Processing 50 games (mode: production, starting from index 0)
+[2025-11-05T08:46:30.240Z] [INFO] [2/50] Processing: Geometry Dash: Dual Wave Editor
+[2025-11-05T08:46:30.240Z] [INFO] [1/50] Processing: Hollow Knight: Silksong
+[2025-11-05T08:46:30.240Z] [INFO] [3/50] Processing: Cosmic Dash
+[2025-11-05T08:46:30.240Z] [INFO] [4/50] Processing: Flamewall Wave Challenge
+[2025-11-05T08:47:09.347Z] [INFO] ✅ Success: Cosmic Dash (attempt 1)
+[2025-11-05T08:47:09.347Z] [INFO] [5/50] Processing: Geometry Dash: Black Ball
+[2025-11-05T08:47:09.480Z] [INFO] ✅ Success: Geometry Dash: Dual Wave Editor (attempt 1)
+[2025-11-05T08:47:09.480Z] [INFO] [6/50] Processing: Geometry Craft 3D
+[2025-11-05T08:47:10.072Z] [INFO] ✅ Success: Flamewall Wave Challenge (attempt 1)
+[2025-11-05T08:47:10.073Z] [INFO] [7/50] Processing: Geometry Dash Lava Mode
+[2025-11-05T08:47:13.261Z] [WARN] Attempt 1 failed for "Hollow Knight: Silksong", retrying... {"error":"Validation failed: metaDescription length 144 outside range 145-165 (strict: 150-160)"}
+[2025-11-05T08:47:39.300Z] [INFO] ✅ Success: Geometry Dash: Black Ball (attempt 1)
+[2025-11-05T08:47:39.300Z] [INFO] [8/50] Processing: Vex Hyper Dash
+[2025-11-05T08:47:42.668Z] [INFO] ✅ Success: Geometry Dash Lava Mode (attempt 1)
+[2025-11-05T08:47:42.669Z] [INFO] [9/50] Processing: Tung Tung Sahur in Geometry Dash
+[2025-11-05T08:47:45.231Z] [INFO] ✅ Success: Hollow Knight: Silksong (attempt 2)
+[2025-11-05T08:47:45.232Z] [INFO] [10/50] Processing: Geometry Dash Polargeist v01
+[2025-11-05T08:47:52.039Z] [INFO] ✅ Success: Geometry Craft 3D (attempt 1)
+[2025-11-05T08:47:52.039Z] [INFO] [11/50] Processing: Hollow Knight: Silksong in Geometry Mod!
+[2025-11-05T08:48:14.409Z] [INFO] ✅ Success: Tung Tung Sahur in Geometry Dash (attempt 1)
+[2025-11-05T08:48:14.410Z] [INFO] [12/50] Processing: Geometry Dash Mystery Dungeon
+[2025-11-05T08:48:16.838Z] [INFO] ✅ Success: Vex Hyper Dash (attempt 1)
+[2025-11-05T08:48:16.839Z] [INFO] [13/50] Processing: Geometry Dash Remake Level 2
+[2025-11-05T08:48:25.551Z] [INFO] ✅ Success: Hollow Knight: Silksong in Geometry Mod! (attempt 1)
+[2025-11-05T08:48:25.552Z] [INFO] [14/50] Processing: Geo Rush
+[2025-11-05T08:48:25.611Z] [INFO] ✅ Success: Geometry Dash Polargeist v01 (attempt 1)
+[2025-11-05T08:48:25.611Z] [INFO] [15/50] Processing: Geometry Dash BuTiTi
+[2025-11-05T08:48:49.671Z] [INFO] ✅ Success: Geometry Dash Mystery Dungeon (attempt 1)
+[2025-11-05T08:48:49.671Z] [INFO] [16/50] Processing: Geometry Dash Blade of Justice
+[2025-11-05T08:48:56.221Z] [INFO] ✅ Success: Geometry Dash Remake Level 2 (attempt 1)
+[2025-11-05T08:48:56.221Z] [INFO] [17/50] Processing: Neon Leap
+[2025-11-05T08:49:01.627Z] [INFO] ✅ Success: Geometry Dash BuTiTi (attempt 1)
+[2025-11-05T08:49:01.627Z] [INFO] [18/50] Processing: Geometry Dash ColorZ
+[2025-11-05T08:49:08.052Z] [INFO] ✅ Success: Geo Rush (attempt 1)
+[2025-11-05T08:49:08.052Z] [INFO] [19/50] Processing: Geometry Dash Back on Track RM
+[2025-11-05T08:49:28.789Z] [INFO] ✅ Success: Geometry Dash Blade of Justice (attempt 1)
+[2025-11-05T08:49:28.789Z] [INFO] [20/50] Processing: BLOODMONEY!
+[2025-11-05T08:49:30.309Z] [WARN] Attempt 1 failed for "Neon Leap", retrying... {"error":"Validation failed: metaDescription length 170 outside range 145-165 (strict: 150-160)"}
+[2025-11-05T08:49:38.068Z] [WARN] Attempt 1 failed for "Geometry Dash ColorZ", retrying... {"error":"Validation failed: metaDescription length 167 outside range 145-165 (strict: 150-160)"}
+[2025-11-05T08:49:45.382Z] [INFO] ✅ Success: Geometry Dash Back on Track RM (attempt 1)
+[2025-11-05T08:49:45.382Z] [INFO] [21/50] Processing: Geometry Dash Adrift
+[2025-11-05T08:50:02.964Z] [INFO] ✅ Success: Neon Leap (attempt 2)
+[2025-11-05T08:50:02.965Z] [INFO] [22/50] Processing: Geometry Dash Glitter Madness 2k15
+[2025-11-05T08:50:08.636Z] [INFO] ✅ Success: BLOODMONEY! (attempt 1)
+[2025-11-05T08:50:08.637Z] [INFO] [23/50] Processing: A Shedletsky POV
+[2025-11-05T08:50:17.951Z] [INFO] ✅ Success: Geometry Dash ColorZ (attempt 2)
+[2025-11-05T08:50:17.951Z] [INFO] [24/50] Processing: Geometry Dash End Of Line
+[2025-11-05T08:50:25.463Z] [INFO] ✅ Success: Geometry Dash Adrift (attempt 1)
+[2025-11-05T08:50:25.463Z] [INFO] [25/50] Processing: Geometry Dash Dreamland
+[2025-11-05T08:50:38.959Z] [INFO] ✅ Success: Geometry Dash Glitter Madness 2k15 (attempt 1)
+[2025-11-05T08:50:38.959Z] [INFO] [26/50] Processing: Geometry Platformer
+[2025-11-05T08:50:42.946Z] [INFO] ✅ Success: A Shedletsky POV (attempt 1)
+[2025-11-05T08:50:42.947Z] [INFO] [27/50] Processing: Geometry Dash Level Easy
+[2025-11-05T08:50:52.685Z] [INFO] ✅ Success: Geometry Dash End Of Line (attempt 1)
+[2025-11-05T08:50:52.685Z] [INFO] [28/50] Processing: Geometry Dash Sonar
+[2025-11-05T08:51:09.892Z] [INFO] ✅ Success: Geometry Dash Dreamland (attempt 1)
+[2025-11-05T08:51:09.892Z] [INFO] [29/50] Processing: Geometry Dash The Lightning Road
+[2025-11-05T08:51:15.038Z] [INFO] ✅ Success: Geometry Platformer (attempt 1)
+[2025-11-05T08:51:15.039Z] [INFO] [30/50] Processing: Geometry Dash Double Wave PRO
+[2025-11-05T08:51:27.863Z] [INFO] ✅ Success: Geometry Dash Level Easy (attempt 1)
+[2025-11-05T08:51:27.863Z] [INFO] [31/50] Processing: Geometry Wave Сhallenge
+[2025-11-05T08:51:30.696Z] [INFO] ✅ Success: Geometry Dash Sonar (attempt 1)
+[2025-11-05T08:51:30.697Z] [INFO] [32/50] Processing: Fireboy and Watergirl
+[2025-11-05T08:51:52.649Z] [INFO] ✅ Success: Geometry Dash Double Wave PRO (attempt 1)
+[2025-11-05T08:51:52.649Z] [INFO] [33/50] Processing: Dinosaur Game
+[2025-11-05T08:51:54.749Z] [INFO] ✅ Success: Geometry Dash The Lightning Road (attempt 1)
+[2025-11-05T08:51:54.749Z] [INFO] [34/50] Processing: MineFun.io
+[2025-11-05T08:52:01.331Z] [INFO] ✅ Success: Geometry Wave Сhallenge (attempt 1)
+[2025-11-05T08:52:01.331Z] [INFO] [35/50] Processing: Geometry Dash Breeze
+[2025-11-05T08:52:05.432Z] [INFO] ✅ Success: Fireboy and Watergirl (attempt 1)
+[2025-11-05T08:52:05.433Z] [INFO] [36/50] Processing: Geometry Dash Razorleaf
+[2025-11-05T08:52:29.074Z] [WARN] Attempt 1 failed for "Dinosaur Game", retrying... {"error":"Validation failed: metaDescription length 175 outside range 145-165 (strict: 150-160)"}
+[2025-11-05T08:52:34.510Z] [INFO] ✅ Success: Geometry Dash Breeze (attempt 1)
+[2025-11-05T08:52:34.510Z] [INFO] [37/50] Processing: Curve Rush 2
+[2025-11-05T08:52:37.546Z] [INFO] ✅ Success: MineFun.io (attempt 1)
+[2025-11-05T08:52:37.546Z] [INFO] [38/50] Processing: Geometry Jump 2
+[2025-11-05T08:52:44.977Z] [INFO] ✅ Success: Geometry Dash Razorleaf (attempt 1)
+[2025-11-05T08:52:44.977Z] [INFO] [39/50] Processing: Geometry Dash Waves of Motion
+[2025-11-05T08:53:04.782Z] [INFO] ✅ Success: Dinosaur Game (attempt 2)
+[2025-11-05T08:53:04.782Z] [INFO] [40/50] Processing: Snow Rider 3D
+[2025-11-05T08:53:18.912Z] [INFO] ✅ Success: Curve Rush 2 (attempt 1)
+[2025-11-05T08:53:18.913Z] [INFO] [41/50] Processing: Geometry Vibes 3D
+[2025-11-05T08:53:19.862Z] [WARN] Attempt 1 failed for "Geometry Jump 2", retrying... {"error":"Validation failed: metaTitle length 43 outside range 45-65 (strict: 50-60)"}
+[2025-11-05T08:53:30.426Z] [INFO] ✅ Success: Geometry Dash Waves of Motion (attempt 1)
+[2025-11-05T08:53:30.426Z] [INFO] [42/50] Processing: Black Geometry Wave Super Challenge
+[2025-11-05T08:53:41.093Z] [INFO] ✅ Success: Snow Rider 3D (attempt 1)
+[2025-11-05T08:53:41.094Z] [INFO] [43/50] Processing: Geometry Lite Classic
+[2025-11-05T08:53:51.923Z] [INFO] ✅ Success: Geometry Jump 2 (attempt 2)
+[2025-11-05T08:53:51.924Z] [INFO] [44/50] Processing: Deer Adventure
+[2025-11-05T08:53:54.009Z] [INFO] ✅ Success: Geometry Vibes 3D (attempt 1)
+[2025-11-05T08:53:54.009Z] [INFO] [45/50] Processing: Geometry Dash Down Bass
+[2025-11-05T08:54:07.068Z] [INFO] ✅ Success: Black Geometry Wave Super Challenge (attempt 1)
+[2025-11-05T08:54:07.068Z] [INFO] [46/50] Processing: Geometry Dash Hexagon Hyperdrive
+[2025-11-05T08:54:19.167Z] [INFO] ✅ Success: Geometry Lite Classic (attempt 1)
+[2025-11-05T08:54:19.168Z] [INFO] [47/50] Processing: Geometry Dash Dark Paradise
+[2025-11-05T08:54:36.917Z] [INFO] ✅ Success: Geometry Dash Down Bass (attempt 1)
+[2025-11-05T08:54:36.917Z] [INFO] [48/50] Processing: Geometry Dash Change of Scene
+[2025-11-05T08:54:38.768Z] [INFO] ✅ Success: Deer Adventure (attempt 1)
+[2025-11-05T08:54:38.768Z] [INFO] [49/50] Processing: Geometry Dash 2D: Platformer
+[2025-11-05T08:54:45.060Z] [WARN] Attempt 1 failed for "Geometry Dash Hexagon Hyperdrive", retrying... {"error":"Validation failed: metaTitle length 68 outside range 45-65 (strict: 50-60)"}
+[2025-11-05T08:54:58.323Z] [INFO] ✅ Success: Geometry Dash Dark Paradise (attempt 1)
+[2025-11-05T08:54:58.326Z] [INFO] [50/50] Processing: Geometry Dash Spider
+[2025-11-05T08:55:19.445Z] [INFO] ✅ Success: Geometry Dash 2D: Platformer (attempt 1)
+[2025-11-05T08:55:20.613Z] [INFO] ✅ Success: Geometry Dash Change of Scene (attempt 1)
+[2025-11-05T08:55:31.229Z] [INFO] ✅ Success: Geometry Dash Hexagon Hyperdrive (attempt 2)
+[2025-11-05T08:55:40.780Z] [INFO] ✅ Success: Geometry Dash Spider (attempt 1)
+[2025-11-05T08:55:40.784Z] [INFO] CSV file processing complete {"csvFile":"games-002.csv","csvIndex":2,"totalCsvFiles":2,"gamesTotal":50,"gamesSuccessful":50,"gamesFailed":0,"failedGames":[],"outputFiles":{"csv":"tools/rewrite/geometrylite.io/output/games-002.csv","json":"tools/rewrite/geometrylite.io/output/games-002.json"}}
+[2025-11-05T10:08:05.009Z] [INFO] Starting CSV to JSON conversion for 2 files {"csvFiles":["games-001.csv","games-002.csv"]}
+[2025-11-05T10:08:05.011Z] [INFO] Converting games-001.csv to JSON
+[2025-11-05T10:08:05.011Z] [INFO] Converting games-002.csv to JSON
+[2025-11-05T10:08:05.027Z] [INFO] ✅ Converted games-002.csv → games-002.json {"count":50}
+[2025-11-05T10:08:05.028Z] [INFO] ✅ Converted games-001.csv → games-001.json {"count":50}
+[2025-11-05T10:08:05.028Z] [INFO] CSV to JSON conversion complete {"total":2,"successful":2,"failed":0,"totalGames":100}

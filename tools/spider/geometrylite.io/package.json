@@ -1,0 +1,30 @@
+{
+  "name": "geometrylite.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "test": "tsx src/test.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "dependencies": {
+    "@types/glob": "^9.0.0",
+    "cheerio": "^1.1.2",
+    "csv-parse": "^6.1.0",
+    "csv-writer": "^1.6.0",
+    "glob": "^11.0.3",
+    "p-limit": "^7.2.0",
+    "turndown": "^7.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@types/turndown": "^5.0.6",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
