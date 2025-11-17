@@ -264,7 +264,7 @@ export default function GameRelationsDialog({ game, open, onOpenChange, onSucces
   };
 
   const loadAllTags = async () => {
-    const response = await fetch('/api/admin/tags');
+    const response = await fetch('/api/admin/tags?page=1&pageSize=100');
     const data = (await response.json()) as any;
     if (data.success) {
       setAllTags(data.data);

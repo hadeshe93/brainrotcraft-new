@@ -7,6 +7,7 @@ import { eq, and, isNull, desc, asc } from 'drizzle-orm';
 import { createDrizzleClient } from '@/db/client';
 import { languageConfig } from '@/db/schema';
 import type { LanguageRecord } from '@/types/services/language';
+import { DEFAULT_LOCALE } from '@/i18n/language';
 
 export interface LanguageConfigData {
   code: string;
@@ -116,6 +117,7 @@ export async function createLanguage(data: LanguageConfigData, db: D1Database) {
         nativeName: data.nativeName,
         chineseName: data.chineseName,
         englishName: data.englishName,
+        isDefault: DEFAULT_LOCALE === data.code,
         enabled: true,
         sortOrder: data.sortOrder !== undefined ? data.sortOrder : maxSortOrder + 1,
         updatedAt: now,
@@ -137,7 +139,7 @@ export async function createLanguage(data: LanguageConfigData, db: D1Database) {
     nativeName: data.nativeName,
     chineseName: data.chineseName,
     englishName: data.englishName,
-    isDefault: false, // New languages are never default
+    isDefault: DEFAULT_LOCALE === data.code,
     enabled: true,
     sortOrder: data.sortOrder !== undefined ? data.sortOrder : maxSortOrder + 1,
     createdAt: now,

@@ -437,6 +437,7 @@ export async function featuredSlugExists(slug: string, excludeUuid?: string, db?
 export type ImportStrategy = 'upsert' | 'skip_existing' | 'overwrite';
 
 export interface FeaturedImportData {
+  uuid?: string; // Optional: preserve UUID from mother site
   name: string;
   slug: string;
   content?: string;
@@ -494,8 +495,19 @@ export async function importFeatured(
         continue;
       }
 
-      // Check if featured collection exists (including soft-deleted)
-      const existing = await client.select().from(featured).where(eq(featured.slug, item.slug)).limit(1);
+      // Check if featured collection exists (by UUID first if provided, then by slug), including soft-deleted
+      let existing;
+      if (item.uuid) {
+        // If UUID provided, check by UUID first, then fall back to slug
+        existing = await client
+          .select()
+          .from(featured)
+          .where(or(eq(featured.uuid, item.uuid), eq(featured.slug, item.slug)))
+          .limit(1);
+      } else {
+        // No UUID provided, check by slug only
+        existing = await client.select().from(featured).where(eq(featured.slug, item.slug)).limit(1);
+      }
 
       if (existing.length > 0) {
         const isDeleted = existing[0].deletedAt !== null;
@@ -550,9 +562,9 @@ export async function importFeatured(
           }
         }
       } else {
-        // Create new featured collection
+        // Create new featured collection with preserved UUID (if provided)
         const newFeatured = {
-          uuid: nanoid(),
+          uuid: item.uuid || nanoid(),
           name: item.name,
           slug: item.slug,
           metadataTitle: item.metaTitle,

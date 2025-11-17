@@ -1,12 +1,12 @@
 {
-  "name": "gamesramp",
+  "name": "brainrotcraft",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": "20"
   },
   "scripts": {
-    "dev": "rm -rf .next && cross-env DEBUG=gamesramp next dev -p 4004",
+    "dev": "rm -rf .next && cross-env DEBUG=brainrotcraft next dev -p 4004",
     "ngrok": "pnpm dlx ngrok http --url=unpragmatically-increasing-valda.ngrok-free.app 4004",
     "worker": "cd ./worker && pnpm dev",
     "turbodev": "next dev --turbopack -p 4004",
@@ -17,12 +17,12 @@
     "deploy": "cross-env NEXT_PUBLIC_RUNTIME_ENV=production opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "preview": "cross-env NEXTJS_ENV=production opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "drizzle:generate": "drizzle-kit generate",
-    "d1:create": "wrangler d1 migrations create gamesramp database_migration # 创建一个空的 migrations 文件",
-    "d1:apply": "wrangler d1 migrations apply gamesramp --local # 本地执行 migrations",
-    "d1:apply:remote": "wrangler d1 migrations apply gamesramp --remote # 生产环境执行 migrations",
-    "d1:select": "wrangler d1 execute gamesramp --local --command='SELECT * FROM featured_translations LIMIT 100'",
-    "d1:delete": "wrangler d1 execute gamesramp --local --command='DELETE FROM categories WHERE id = 1'",
-    "queue:create": "wrangler queues create gamesramp",
+    "d1:create": "wrangler d1 migrations create brainrotcraft database_migration # 创建一个空的 migrations 文件",
+    "d1:apply": "wrangler d1 migrations apply brainrotcraft --local # 本地执行 migrations",
+    "d1:apply:remote": "wrangler d1 migrations apply brainrotcraft --remote # 生产环境执行 migrations",
+    "d1:select": "wrangler d1 execute brainrotcraft --local --command='SELECT * FROM featured_translations LIMIT 100'",
+    "d1:delete": "wrangler d1 execute brainrotcraft --local --command='DELETE FROM categories WHERE id = 1'",
+    "queue:create": "wrangler queues create brainrotcraft",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
     "prepare": "husky"
   },

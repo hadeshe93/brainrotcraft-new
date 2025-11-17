@@ -440,6 +440,7 @@ export type ImportStrategy = 'upsert' | 'skip_existing' | 'overwrite';
  * Category data for import
  */
 export interface CategoryImportData {
+  uuid?: string; // Optional: preserve UUID from mother site
   name: string;
   slug: string;
   iconUrl?: string;
@@ -485,8 +486,19 @@ export async function importCategories(
 
   for (const item of items) {
     try {
-      // 1. Check if category exists (by slug), including soft-deleted records
-      const existing = await client.select().from(categories).where(eq(categories.slug, item.slug)).limit(1);
+      // 1. Check if category exists (by UUID first if provided, then by slug), including soft-deleted records
+      let existing;
+      if (item.uuid) {
+        // If UUID provided, check by UUID first, then fall back to slug
+        existing = await client
+          .select()
+          .from(categories)
+          .where(or(eq(categories.uuid, item.uuid), eq(categories.slug, item.slug)))
+          .limit(1);
+      } else {
+        // No UUID provided, check by slug only
+        existing = await client.select().from(categories).where(eq(categories.slug, item.slug)).limit(1);
+      }
 
       if (existing[0]) {
         const isDeleted = existing[0].deletedAt !== null;
@@ -547,8 +559,8 @@ export async function importCategories(
           });
         }
       } else {
-        // Create new record
-        const uuid = nanoid();
+        // Create new record with preserved UUID (if provided)
+        const uuid = item.uuid || nanoid();
         await client.insert(categories).values({
           uuid,
           name: item.name,

@@ -25,6 +25,7 @@ import type { MarqueePortrait } from '@/types/blocks/marquee';
 import type { MarkdownRenderer } from '@/types/blocks/markdown-renderer';
 import type { Breadcrumb } from '@/types/blocks/breadcrumb';
 import type { AboutBlockSection } from '@/types/blocks/about';
+import type { BlogPost } from '@/types/blocks/blog';
 
 // 使用 next-intl 提供的 NamespaceKeys 类型，它已经支持嵌套路径
 export type I18nTranslator<TNameSpace extends NamespaceKeys<I18nMessageContent, NestedKeyOf<I18nMessageContent>>> =
@@ -50,6 +51,21 @@ type Langdingpage = {
   markdownRenderer?: MarkdownRenderer;
 };
 
+// 博客列表页类型声明
+export type IBlogListPage = {
+  metadata: Metadata;
+  introduction: Introduction;
+  list: IBlogPostPage[];
+  breadcrumb?: Breadcrumb;
+};
+
+// 博客内容页类型声明
+export type IBlogPostPage = {
+  metadata: Metadata;
+  post: BlogPost;
+  breadcrumb?: Breadcrumb;
+};
+
 export interface ImageFilterStyle {
   id: string;
   disabled?: boolean;
@@ -67,6 +83,7 @@ export type I18nPageContent = {
     footer: Footer;
   };
   home: Langdingpage;
+  blog_list?: IBlogListPage;
   pricing?: {
     metadata: Metadata;
     breadcrumb?: Breadcrumb;

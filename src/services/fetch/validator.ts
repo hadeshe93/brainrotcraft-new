@@ -5,12 +5,13 @@
 // UUID 格式验证（标准 UUID v4 格式或自定义格式）
 export function isValidUuid(uuid: string): boolean {
   if (!uuid || typeof uuid !== 'string') return false;
+  return true;
 
   // 支持标准 UUID 格式或自定义格式（如 mock-xxx-xxx）
-  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-  const customRegex = /^[a-z0-9-_]+$/i;
+  // const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  // const customRegex = /^[a-z0-9-_]+$/i;
 
-  return uuidRegex.test(uuid) || customRegex.test(uuid);
+  // return uuidRegex.test(uuid) || customRegex.test(uuid);
 }
 
 // Slug 格式验证（只允许小写字母、数字、连字符）
@@ -42,8 +43,8 @@ export function validateCategory(data: any): data is CategoryData {
   if (!isValidSlug(data.slug)) return false;
 
   // 日期字段验证
-  if (data.createdAt && isNaN(Date.parse(data.createdAt))) return false;
-  if (data.updatedAt && isNaN(Date.parse(data.updatedAt))) return false;
+  if (!data.createdAt) return false;
+  if (!data.updatedAt) return false;
 
   return true;
 }

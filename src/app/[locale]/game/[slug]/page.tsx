@@ -68,8 +68,6 @@ async function GamePage(props: GamePageProps) {
           <div className="flex flex-col gap-4 md:flex-row">
             {/* Game Title and Introduction */}
             <section className="basis-2/3 space-y-4">
-              <h1 className="text-foreground text-3xl font-bold md:text-4xl">{game.name}</h1>
-
               {/* Categories and Tags */}
               {(categories.length > 0 || tags.length > 0) && (
                 <div className="flex flex-wrap gap-2">

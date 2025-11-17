@@ -60,8 +60,8 @@ export default function Sidebar({ featuredItems, categories, tags, className }: 
   return (
     <div className={cn('flex w-full flex-col rounded-lg', className)}>
       <div className="flex-1">
-        {/* Search Section */}
-        <div className="mb-6">
+        {/* Search Section - 暂时隐藏 */}
+        <div className="mb-6 hidden">
           <form onSubmit={handleSearch}>
             <div className="relative">
               <Input

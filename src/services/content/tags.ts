@@ -418,6 +418,7 @@ export type ImportStrategy = 'upsert' | 'skip_existing' | 'overwrite';
  * Tag data for import
  */
 export interface TagImportData {
+  uuid?: string; // Optional: preserve UUID from mother site
   name: string;
   slug: string;
   content: string;
@@ -462,8 +463,19 @@ export async function importTags(
 
   for (const item of items) {
     try {
-      // 1. Check if tag exists (by slug), including soft-deleted records
-      const existing = await client.select().from(tags).where(eq(tags.slug, item.slug)).limit(1);
+      // 1. Check if tag exists (by UUID first if provided, then by slug), including soft-deleted records
+      let existing;
+      if (item.uuid) {
+        // If UUID provided, check by UUID first, then fall back to slug
+        existing = await client
+          .select()
+          .from(tags)
+          .where(or(eq(tags.uuid, item.uuid), eq(tags.slug, item.slug)))
+          .limit(1);
+      } else {
+        // No UUID provided, check by slug only
+        existing = await client.select().from(tags).where(eq(tags.slug, item.slug)).limit(1);
+      }
 
       if (existing[0]) {
         const isDeleted = existing[0].deletedAt !== null;
@@ -522,8 +534,8 @@ export async function importTags(
           });
         }
       } else {
-        // Create new record
-        const uuid = nanoid();
+        // Create new record with preserved UUID (if provided)
+        const uuid = item.uuid || nanoid();
         await client.insert(tags).values({
           uuid,
           name: item.name,

@@ -3,6 +3,7 @@ CREATE TABLE `categories` (
 	`uuid` text NOT NULL,
 	`name` text NOT NULL,
 	`slug` text NOT NULL,
+	`icon_url` text,
 	`metadata_title` text NOT NULL,
 	`metadata_description` text NOT NULL,
 	`content` text,
@@ -16,6 +17,21 @@ CREATE UNIQUE INDEX `categories_slug_unique` ON `categories` (`slug`);--> statem
 CREATE UNIQUE INDEX `categories_uuid_idx` ON `categories` (`uuid`);--> statement-breakpoint
 CREATE UNIQUE INDEX `categories_slug_idx` ON `categories` (`slug`);--> statement-breakpoint
 CREATE INDEX `categories_name_idx` ON `categories` (`name`);--> statement-breakpoint
+CREATE TABLE `category_translations` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`category_uuid` text NOT NULL,
+	`locale` text NOT NULL,
+	`name` text NOT NULL,
+	`metadata_title` text NOT NULL,
+	`metadata_description` text NOT NULL,
+	`content` text,
+	`created_at` integer DEFAULT (unixepoch()) NOT NULL,
+	`updated_at` integer DEFAULT (unixepoch()) NOT NULL
+);
+--> statement-breakpoint
+CREATE UNIQUE INDEX `category_translations_unique` ON `category_translations` (`category_uuid`,`locale`);--> statement-breakpoint
+CREATE INDEX `category_translations_uuid_idx` ON `category_translations` (`category_uuid`);--> statement-breakpoint
+CREATE INDEX `category_translations_locale_idx` ON `category_translations` (`locale`);--> statement-breakpoint
 CREATE TABLE `comments` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`uuid` text NOT NULL,
@@ -59,10 +75,26 @@ CREATE UNIQUE INDEX `featured_slug_unique` ON `featured` (`slug`);--> statement-
 CREATE UNIQUE INDEX `featured_uuid_idx` ON `featured` (`uuid`);--> statement-breakpoint
 CREATE UNIQUE INDEX `featured_slug_idx` ON `featured` (`slug`);--> statement-breakpoint
 CREATE INDEX `featured_name_idx` ON `featured` (`name`);--> statement-breakpoint
+CREATE TABLE `featured_translations` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`featured_uuid` text NOT NULL,
+	`locale` text NOT NULL,
+	`name` text NOT NULL,
+	`metadata_title` text NOT NULL,
+	`metadata_description` text NOT NULL,
+	`content` text,
+	`created_at` integer DEFAULT (unixepoch()) NOT NULL,
+	`updated_at` integer DEFAULT (unixepoch()) NOT NULL
+);
+--> statement-breakpoint
+CREATE UNIQUE INDEX `featured_translations_unique` ON `featured_translations` (`featured_uuid`,`locale`);--> statement-breakpoint
+CREATE INDEX `featured_translations_uuid_idx` ON `featured_translations` (`featured_uuid`);--> statement-breakpoint
+CREATE INDEX `featured_translations_locale_idx` ON `featured_translations` (`locale`);--> statement-breakpoint
 CREATE TABLE `games` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`uuid` text NOT NULL,
 	`name` text NOT NULL,
+	`name_i18n` text DEFAULT '{}' NOT NULL,
 	`slug` text NOT NULL,
 	`status` text DEFAULT 'draft' NOT NULL,
 	`thumbnail` text NOT NULL,
@@ -128,6 +160,20 @@ CREATE TABLE `games_to_tags` (
 CREATE INDEX `games_to_tags_game_idx` ON `games_to_tags` (`game_uuid`);--> statement-breakpoint
 CREATE INDEX `games_to_tags_tag_idx` ON `games_to_tags` (`tag_uuid`);--> statement-breakpoint
 CREATE INDEX `games_to_tags_sort_idx` ON `games_to_tags` (`tag_uuid`,`sort_order`);--> statement-breakpoint
+CREATE TABLE `introduction_translations` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`game_uuid` text NOT NULL,
+	`locale` text NOT NULL,
+	`metadata_title` text NOT NULL,
+	`metadata_description` text NOT NULL,
+	`content` text NOT NULL,
+	`created_at` integer DEFAULT (unixepoch()) NOT NULL,
+	`updated_at` integer DEFAULT (unixepoch()) NOT NULL
+);
+--> statement-breakpoint
+CREATE UNIQUE INDEX `introduction_translations_unique` ON `introduction_translations` (`game_uuid`,`locale`);--> statement-breakpoint
+CREATE INDEX `introduction_translations_uuid_idx` ON `introduction_translations` (`game_uuid`);--> statement-breakpoint
+CREATE INDEX `introduction_translations_locale_idx` ON `introduction_translations` (`locale`);--> statement-breakpoint
 CREATE TABLE `introductions` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`uuid` text NOT NULL,
@@ -143,6 +189,23 @@ CREATE TABLE `introductions` (
 CREATE UNIQUE INDEX `introductions_uuid_unique` ON `introductions` (`uuid`);--> statement-breakpoint
 CREATE UNIQUE INDEX `introductions_uuid_idx` ON `introductions` (`uuid`);--> statement-breakpoint
 CREATE UNIQUE INDEX `introductions_game_uuid_idx` ON `introductions` (`game_uuid`);--> statement-breakpoint
+CREATE TABLE `language_config` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`code` text NOT NULL,
+	`native_name` text NOT NULL,
+	`chinese_name` text NOT NULL,
+	`english_name` text NOT NULL,
+	`is_default` integer DEFAULT false NOT NULL,
+	`enabled` integer DEFAULT true NOT NULL,
+	`sort_order` integer DEFAULT 0 NOT NULL,
+	`created_at` integer DEFAULT (unixepoch()) NOT NULL,
+	`updated_at` integer DEFAULT (unixepoch()) NOT NULL
+);
+--> statement-breakpoint
+CREATE UNIQUE INDEX `language_config_code_unique` ON `language_config` (`code`);--> statement-breakpoint
+CREATE UNIQUE INDEX `language_config_code_idx` ON `language_config` (`code`);--> statement-breakpoint
+CREATE INDEX `language_config_sort_idx` ON `language_config` (`sort_order`);--> statement-breakpoint
+CREATE INDEX `language_config_enabled_idx` ON `language_config` (`enabled`);--> statement-breakpoint
 CREATE TABLE `orders` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`uuid` text NOT NULL,
@@ -205,6 +268,21 @@ CREATE INDEX `reports_user_uuid_idx` ON `reports` (`user_uuid`);--> statement-br
 CREATE INDEX `reports_status_idx` ON `reports` (`status`);--> statement-breakpoint
 CREATE INDEX `reports_report_type_idx` ON `reports` (`report_type`);--> statement-breakpoint
 CREATE INDEX `reports_created_idx` ON `reports` (`created_at`);--> statement-breakpoint
+CREATE TABLE `tag_translations` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`tag_uuid` text NOT NULL,
+	`locale` text NOT NULL,
+	`name` text NOT NULL,
+	`metadata_title` text NOT NULL,
+	`metadata_description` text NOT NULL,
+	`content` text,
+	`created_at` integer DEFAULT (unixepoch()) NOT NULL,
+	`updated_at` integer DEFAULT (unixepoch()) NOT NULL
+);
+--> statement-breakpoint
+CREATE UNIQUE INDEX `tag_translations_unique` ON `tag_translations` (`tag_uuid`,`locale`);--> statement-breakpoint
+CREATE INDEX `tag_translations_uuid_idx` ON `tag_translations` (`tag_uuid`);--> statement-breakpoint
+CREATE INDEX `tag_translations_locale_idx` ON `tag_translations` (`locale`);--> statement-breakpoint
 CREATE TABLE `tags` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`uuid` text NOT NULL,
@@ -223,6 +301,23 @@ CREATE UNIQUE INDEX `tags_slug_unique` ON `tags` (`slug`);--> statement-breakpoi
 CREATE UNIQUE INDEX `tags_uuid_idx` ON `tags` (`uuid`);--> statement-breakpoint
 CREATE UNIQUE INDEX `tags_slug_idx` ON `tags` (`slug`);--> statement-breakpoint
 CREATE INDEX `tags_name_idx` ON `tags` (`name`);--> statement-breakpoint
+CREATE TABLE `translation_tasks` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`uuid` text NOT NULL,
+	`language_code` text NOT NULL,
+	`type` text NOT NULL,
+	`status` text NOT NULL,
+	`progress` text DEFAULT '{"games":{"done":0,"total":0},"categories":{"done":0,"total":0},"tags":{"done":0,"total":0},"featured":{"done":0,"total":0}}',
+	`error` text,
+	`created_at` integer DEFAULT (unixepoch()) NOT NULL,
+	`started_at` integer,
+	`completed_at` integer
+);
+--> statement-breakpoint
+CREATE UNIQUE INDEX `translation_tasks_uuid_unique` ON `translation_tasks` (`uuid`);--> statement-breakpoint
+CREATE UNIQUE INDEX `translation_tasks_uuid_idx` ON `translation_tasks` (`uuid`);--> statement-breakpoint
+CREATE INDEX `translation_tasks_language_code_idx` ON `translation_tasks` (`language_code`);--> statement-breakpoint
+CREATE INDEX `translation_tasks_status_idx` ON `translation_tasks` (`status`);--> statement-breakpoint
 CREATE TABLE `user_credit_expense` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`uuid` text NOT NULL,
