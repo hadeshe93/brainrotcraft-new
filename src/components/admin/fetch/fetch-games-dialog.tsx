@@ -1,9 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { toast } from 'sonner';
+import debounce from 'lodash/debounce';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Badge } from '@/components/ui/badge';
@@ -12,6 +14,9 @@ import MdiDownload from '~icons/mdi/download';
 import MdiCheck from '~icons/mdi/check';
 import MdiChevronLeft from '~icons/mdi/chevron-left';
 import MdiChevronRight from '~icons/mdi/chevron-right';
+import MdiMagnify from '~icons/mdi/magnify';
+import MdiClose from '~icons/mdi/close';
+import MdiPause from '~icons/mdi/pause';
 import { buildParentApiUrl, getParentApiHeaders } from '@/lib/fetch-config';
 import {
   ContentReviewDialog,
@@ -28,6 +33,8 @@ interface Game {
   categories: string[];
   tags: string[];
   featured: string[];
+  isPublished: boolean;
+  publishedAt?: string;
 }
 
 interface FetchGamesDialogProps {
@@ -45,6 +52,7 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
   const [games, setGames] = useState<Game[]>([]); // 当前页的游戏数据
   const [importing, setImporting] = useState<Set<string>>(new Set());
   const [imported, setImported] = useState<Set<string>>(new Set());
+  const [searchQuery, setSearchQuery] = useState<string>(''); // 搜索关键词
 
   // 新增：审核相关状态
   const [reviewItems, setReviewItems] = useState<ReviewItem[]>([]);
@@ -63,6 +71,9 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
   useEffect(() => {
     if (open) {
       loadMissingUuids();
+    } else {
+      // 关闭时重置搜索状态
+      setSearchQuery('');
     }
   }, [open]);
 
@@ -74,14 +85,18 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
   }, [currentPage, missingUuids]);
 
   /**
-   * 步骤1&2：并发拉取母站和子站的所有游戏 UUID
+   * 步骤1&2：并发拉取母站和子站的所有游戏 UUID（支持搜索）
+   * @param search - 可选的搜索关键词
    */
-  const loadMissingUuids = async () => {
+  const loadMissingUuids = async (search = '') => {
     setLoadingUuids(true);
     try {
+      // 构建母站 API URL（带可选搜索参数）
+      const searchParam = search ? `?search=${encodeURIComponent(search)}` : '';
+
       // 并发执行：拉取母站所有游戏 UUID 和 子站所有游戏 UUID
       const [parentResponse, localResponse] = await Promise.all([
-        fetch(buildParentApiUrl('games/uuids'), {
+        fetch(buildParentApiUrl(`games/uuids${searchParam}`), {
           headers: getParentApiHeaders(),
         }),
         fetch('/api/admin/games/uuids'),
@@ -111,8 +126,8 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
       setCurrentPage(0); // 重置到第一页
 
       if (missing.length === 0) {
-        toast.info('所有游戏已存在', {
-          description: '没有新的游戏需要导入',
+        toast.info(search ? '没有找到匹配的游戏' : '所有游戏已存在', {
+          description: search ? '请尝试其他搜索词' : '没有新的游戏需要导入',
         });
       }
     } catch (error: any) {
@@ -123,6 +138,40 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
     } finally {
       setLoadingUuids(false);
     }
+  };
+
+  /**
+   * 防抖搜索
+   */
+  const debouncedLoad = useMemo(
+    () =>
+      debounce((query: string) => {
+        loadMissingUuids(query);
+      }, 300),
+    [],
+  );
+
+  // 清理防抖函数
+  useEffect(() => {
+    return () => {
+      debouncedLoad.cancel();
+    };
+  }, [debouncedLoad]);
+
+  /**
+   * 处理搜索输入
+   */
+  const handleSearchChange = (value: string) => {
+    setSearchQuery(value);
+    debouncedLoad(value);
+  };
+
+  /**
+   * 清除搜索
+   */
+  const handleClearSearch = () => {
+    setSearchQuery('');
+    loadMissingUuids(''); // 重新加载完整列表
   };
 
   /**
@@ -269,13 +318,38 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
   return (
     <>
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="flex max-h-[80vh] max-w-5xl flex-col overflow-hidden">
+        <DialogContent className="flex max-h-[80vh] !max-w-5xl flex-col overflow-hidden">
           <DialogHeader>
             <DialogTitle>拉取游戏数据</DialogTitle>
             <DialogDescription>
               从母站点拉取游戏数据，仅显示本地不存在的游戏。系统会自动检查并导入缺失的分类/标签/特性合集。
             </DialogDescription>
           </DialogHeader>
+
+          {/* 搜索框 */}
+          <div className="flex items-center gap-2 py-2">
+            <div className="relative flex-1">
+              <MdiMagnify className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                type="text"
+                placeholder="按游戏名称搜索..."
+                value={searchQuery}
+                onChange={(e) => handleSearchChange(e.target.value)}
+                className="pl-9 pr-9"
+                disabled={loadingUuids}
+              />
+              {searchQuery && (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2"
+                  onClick={handleClearSearch}
+                >
+                  <MdiClose className="h-4 w-4" />
+                </Button>
+              )}
+            </div>
+          </div>
 
           <div className="flex items-center justify-between py-2">
             <div className="text-muted-foreground text-sm">
@@ -325,6 +399,7 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
                   <TableHead>分类</TableHead>
                   <TableHead>标签</TableHead>
                   <TableHead>特性合集</TableHead>
+                  <TableHead>上线状态</TableHead>
                   <TableHead className="text-right">操作</TableHead>
                 </TableRow>
               </TableHeader>
@@ -345,14 +420,17 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
                         <Skeleton className="h-5 w-12" />
                       </TableCell>
                       <TableCell>
+                        <Skeleton className="h-5 w-16" />
+                      </TableCell>
+                      <TableCell>
                         <Skeleton className="ml-auto h-8 w-16" />
                       </TableCell>
                     </TableRow>
                   ))
                 ) : games.length === 0 ? (
                   <TableRow>
-                    <TableCell colSpan={5} className="text-muted-foreground py-8 text-center">
-                      {totalGames === 0 ? '没有需要导入的游戏' : '当前页没有游戏'}
+                    <TableCell colSpan={6} className="text-muted-foreground py-8 text-center">
+                      {searchQuery ? '没有找到匹配的游戏' : totalGames === 0 ? '没有需要导入的游戏' : '当前页没有游戏'}
                     </TableCell>
                   </TableRow>
                 ) : (
@@ -367,6 +445,19 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
                       </TableCell>
                       <TableCell>
                         <Badge variant="secondary">{game.featured.length}个</Badge>
+                      </TableCell>
+                      <TableCell>
+                        {game.isPublished ? (
+                          <Badge variant="default" className="bg-green-600 hover:bg-green-700">
+                            <MdiCheck className="mr-1 h-3 w-3" />
+                            已上线
+                          </Badge>
+                        ) : (
+                          <Badge variant="secondary" className="text-muted-foreground">
+                            <MdiPause className="mr-1 h-3 w-3" />
+                            未上线
+                          </Badge>
+                        )}
                       </TableCell>
                       <TableCell className="text-right">
                         {imported.has(game.uuid) ? (

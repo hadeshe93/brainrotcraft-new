@@ -87,7 +87,7 @@ export async function requireAdmin(request?: Request): Promise<{ userUuid: strin
   if (token) {
     const adminToken = process.env.ADMIN_API_TOKEN;
     if (token === adminToken) {
-      return { userUuid: 'admin', userEmail: 'admin@gamesramp.com' };
+      return { userUuid: 'admin', userEmail: 'admin@brainrotcraft.app' };
     }
   }
   const { userUuid, userEmail } = await requireAuth();

@@ -148,25 +148,64 @@ export async function fetchGameByUuid(uuid: string): Promise<{
   data: GameData | null;
   error: FetchError | null;
 }> {
-  const { data, error } = await fetchGames();
+  try {
+    const config = getParentSiteConfig();
 
-  if (error) {
-    return { data: null, error };
-  }
+    // 使用 uuid 参数查询指定游戏
+    const url = config.useMock
+      ? `${config.parentSiteUrl}/api/fetch/mock/games?uuid=${encodeURIComponent(uuid)}`
+      : `${config.parentSiteUrl}/api/fetch/games?uuid=${encodeURIComponent(uuid)}`;
 
-  const game = data.find((g) => g.uuid === uuid);
+    const headers: HeadersInit = {
+      'Content-Type': 'application/json',
+    };
 
-  if (!game) {
+    if (!config.useMock && config.apiKey) {
+      headers['X-API-Key'] = config.apiKey;
+    }
+
+    const response = await fetch(url, {
+      method: 'GET',
+      headers,
+      cache: 'no-store',
+    });
+
+    if (!response.ok) {
+      const error = new Error(`HTTP ${response.status}`);
+      (error as any).status = response.status;
+      throw error;
+    }
+
+    const json = await response.json();
+
+    // 验证响应格式
+    const validatedResponse = validateFetchResponse(json, validateGame);
+    console.log('验证结果:', validatedResponse?.data.length);
+
+    if (!validatedResponse) {
+      throw new Error('Invalid response format from parent site');
+    }
+
+    // 返回第一个游戏（应该只有一个或零个）
+    const game = validatedResponse.data[0] || null;
+
+    if (!game) {
+      return {
+        data: null,
+        error: {
+          type: 'unknown',
+          message: `Game with UUID ${uuid} not found`,
+        },
+      };
+    }
+
+    return { data: game, error: null };
+  } catch (error: any) {
     return {
       data: null,
-      error: {
-        type: 'unknown',
-        message: `Game with UUID ${uuid} not found`,
-      },
+      error: handleFetchError(error),
     };
   }
-
-  return { data: game, error: null };
 }
 
 /**

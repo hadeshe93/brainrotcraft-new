@@ -82,8 +82,6 @@ export class ContentRewriter {
         temperature,
       });
 
-      console.log('text:', text);
-
       // 解析 JSON 响应（参考现有模式）
       const jsonMatch = text.match(/```json\n([\s\S]*?)\n```/);
       const jsonStr = jsonMatch ? jsonMatch[1] : text;

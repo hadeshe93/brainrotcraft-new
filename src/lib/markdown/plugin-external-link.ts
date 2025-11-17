@@ -25,7 +25,7 @@ export default function loadExternalLinkPlugin(md: MarkdownIt) {
       // 判断是否是外部链接（以 http/https 开头）
       if (/^(?:http|https):\/\//i.test(href)) {
         // 添加 target="_blank" 属性
-        let targetIndex = token.attrIndex('target');
+        const targetIndex = token.attrIndex('target');
         if (targetIndex < 0) {
           token.attrPush(['target', '_blank']);
         } else {
@@ -33,7 +33,7 @@ export default function loadExternalLinkPlugin(md: MarkdownIt) {
         }
         
         // 添加 rel="noopener nofollow" 属性
-        let relIndex = token.attrIndex('rel');
+        const relIndex = token.attrIndex('rel');
         if (relIndex < 0) {
           token.attrPush(['rel', 'noopener nofollow']);
         } else {

@@ -51,7 +51,14 @@ export function validateUuid(uuid: string | null | undefined): ValidationResult 
  * Validates if a string is a valid slug
  */
 export function validateSlug(slug: string | null | undefined, required: boolean = true): ValidationResult {
-  if (!slug) {
+  // IMPORTANT: Allow empty string for homepage game
+  // Empty string ('') is different from null/undefined
+  if (slug === '') {
+    return { valid: true };
+  }
+
+  // Handle null or undefined (preserve original logic)
+  if (slug === null || slug === undefined) {
     return required
       ? {
           valid: false,
@@ -61,6 +68,7 @@ export function validateSlug(slug: string | null | undefined, required: boolean 
       : { valid: true };
   }
 
+  // Length check (only for non-empty strings)
   if (slug.length < 1 || slug.length > 100) {
     return {
       valid: false,
@@ -69,6 +77,7 @@ export function validateSlug(slug: string | null | undefined, required: boolean 
     };
   }
 
+  // Format check
   if (!SLUG_REGEX.test(slug)) {
     return {
       valid: false,

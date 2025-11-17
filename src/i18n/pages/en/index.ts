@@ -7,7 +7,6 @@ import terms from './terms';
 import userProfile from './user-profile';
 import feedback from './feedback';
 import changelog from './changelog';
-import about from './about';
 import pricing from './pricing';
 
 const LOGO: Image = {
@@ -81,7 +80,7 @@ export default {
       ],
       social: {
         items: [
-          { title: 'Email', type: ESocialType.Email, link: { url: 'mailto:contact@gamesramp.com' } },
+          { title: 'Email', type: ESocialType.Email, link: { url: 'mailto:contact@brainrotcraft.app' } },
           { title: 'Linktree', type: ESocialType.Linktree, link: { url: 'https://linktr.ee/thebrainrotcraft', target: '_blank', rel: 'nofollow' } },
           // {
           //   title: 'Bluesky',
@@ -122,7 +121,6 @@ export default {
   dmca,
   privacy,
   terms,
-  about,
   userProfile,
   paymentSuccess: {
     metadata: {

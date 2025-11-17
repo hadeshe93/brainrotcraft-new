@@ -113,7 +113,11 @@ export async function POST(request: NextRequest) {
     // Validate required fields
     const nameValidation = composeValidation(validateRequired(name, 'Name'), validateLength(name, 'Name', 1, 200));
 
-    const slugValidation = composeValidation(validateSlug(slug, true), validateLength(slug, 'Slug', 1, 100));
+    // Allow empty slug for homepage game, but if slug is provided it must be valid
+    const slugValidation =
+      slug === ''
+        ? { valid: true } // Empty slug passes (homepage game)
+        : composeValidation(validateSlug(slug, true), validateLength(slug, 'Slug', 1, 100));
 
     const thumbnailValidation = composeValidation(
       validateRequired(thumbnail, 'Thumbnail'),

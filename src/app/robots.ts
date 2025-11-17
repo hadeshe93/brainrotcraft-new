@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const SITE_URL = process.env.NEXTAUTH_URL || 'https://gamesramp.com';
+const SITE_URL = process.env.NEXTAUTH_URL || 'https://brainrotcraft.app';
 
 export default function robots(): MetadataRoute.Robots {
   return {

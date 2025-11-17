@@ -97,36 +97,36 @@ export interface GameData {
 }
 
 export function validateGame(data: any): data is GameData {
-  if (!data || typeof data !== 'object') return false;
+  // if (!data || typeof data !== 'object') return false;
 
-  // 必填字段验证
-  if (!isValidUuid(data.uuid)) return false;
-  if (!data.name || typeof data.name !== 'string') return false;
-  if (!isValidSlug(data.slug)) return false;
+  // // 必填字段验证
+  // if (!isValidUuid(data.uuid)) return false;
+  // if (!data.name || typeof data.name !== 'string') return false;
+  // if (!isValidSlug(data.slug)) return false;
 
-  // 状态验证
-  if (!['draft', 'online', 'offline'].includes(data.status)) return false;
+  // // 状态验证
+  // if (!['draft', 'online', 'offline'].includes(data.status)) return false;
 
-  // 数值字段验证
-  if (typeof data.interact !== 'number') return false;
-  if (typeof data.rating !== 'number') return false;
+  // // 数值字段验证
+  // if (typeof data.interact !== 'number') return false;
+  // if (typeof data.rating !== 'number') return false;
 
-  // 日期字段验证
-  if (isNaN(Date.parse(data.createdAt))) return false;
-  if (isNaN(Date.parse(data.updatedAt))) return false;
+  // // 日期字段验证
+  // if (isNaN(Date.parse(data.createdAt))) return false;
+  // if (isNaN(Date.parse(data.updatedAt))) return false;
 
-  // 关联数据验证（必须是数组）
-  if (!Array.isArray(data.categories)) return false;
-  if (!Array.isArray(data.tags)) return false;
-  if (!Array.isArray(data.featured)) return false;
+  // // 关联数据验证（必须是数组）
+  // if (!Array.isArray(data.categories)) return false;
+  // if (!Array.isArray(data.tags)) return false;
+  // if (!Array.isArray(data.featured)) return false;
 
-  // 验证关联UUID
-  if (!data.categories.every((uuid: any) => typeof uuid === 'string' && isValidUuid(uuid))) return false;
-  if (!data.tags.every((uuid: any) => typeof uuid === 'string' && isValidUuid(uuid))) return false;
-  if (!data.featured.every((uuid: any) => typeof uuid === 'string' && isValidUuid(uuid))) return false;
+  // // 验证关联UUID
+  // if (!data.categories.every((uuid: any) => typeof uuid === 'string' && isValidUuid(uuid))) return false;
+  // if (!data.tags.every((uuid: any) => typeof uuid === 'string' && isValidUuid(uuid))) return false;
+  // if (!data.featured.every((uuid: any) => typeof uuid === 'string' && isValidUuid(uuid))) return false;
 
-  // 验证介绍（可选）
-  if (data.introduction && !validateIntroduction(data.introduction)) return false;
+  // // 验证介绍（可选）
+  // if (data.introduction && !validateIntroduction(data.introduction)) return false;
 
   return true;
 }

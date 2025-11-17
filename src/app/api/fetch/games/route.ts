@@ -1,10 +1,11 @@
 /**
  * 母站点 - 游戏数据提供接口
  * GET /api/fetch/games - 提供所有游戏数据（包含关联关系和介绍，不包含翻译）
+ * GET /api/fetch/games?uuid=xxx - 提供指定 UUID 的游戏数据
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { eq, isNull } from 'drizzle-orm';
+import { eq, isNull, and, inArray } from 'drizzle-orm';
 import { getCloudflareEnv } from '@/services/base';
 import { createDrizzleClient } from '@/db/client';
 import { games, gamesToCategories, gamesToTags, gamesToFeatured, introductions } from '@/db/schema';
@@ -23,45 +24,70 @@ export async function GET(request: NextRequest) {
     const authError = await validateApiKey(request);
     if (authError) return authError;
 
+    // 获取查询参数
+    const { searchParams } = new URL(request.url);
+    const uuid = searchParams.get('uuid');
+
     // 获取数据库
     const env = await getCloudflareEnv();
     const db = createDrizzleClient(env.DB);
 
-    // 获取所有游戏（未删除的）
-    const allGames = await db.select().from(games).where(isNull(games.deletedAt)).orderBy(games.createdAt);
+    // 构建查询条件
+    const conditions = [isNull(games.deletedAt)];
+
+    // 如果指定了 UUID，只查询该游戏
+    if (uuid && uuid.trim()) {
+      conditions.push(eq(games.uuid, uuid.trim()));
+    }
+
+    // 获取游戏（未删除的）
+    const allGames = await db
+      .select()
+      .from(games)
+      .where(and(...conditions))
+      .orderBy(games.createdAt);
 
     // 批量获取关联数据
     const gameUuids = allGames.map((g) => g.uuid);
 
-    // 获取所有游戏的分类关联
+    // 如果没有游戏，直接返回空数组
+    if (gameUuids.length === 0) {
+      return createFetchResponse([], undefined, request);
+    }
+
+    // 获取指定游戏的分类关联
     const categoryRelations = await db
       .select({
         gameUuid: gamesToCategories.gameUuid,
         categoryUuid: gamesToCategories.categoryUuid,
       })
       .from(gamesToCategories)
+      .where(inArray(gamesToCategories.gameUuid, gameUuids))
       .orderBy(gamesToCategories.sortOrder);
 
-    // 获取所有游戏的标签关联
+    // 获取指定游戏的标签关联
     const tagRelations = await db
       .select({
         gameUuid: gamesToTags.gameUuid,
         tagUuid: gamesToTags.tagUuid,
       })
       .from(gamesToTags)
+      .where(inArray(gamesToTags.gameUuid, gameUuids))
       .orderBy(gamesToTags.sortOrder);
 
-    // 获取所有游戏的特性合集关联
+    // 获取指定游戏的特性合集关联
     const featuredRelations = await db
       .select({
         gameUuid: gamesToFeatured.gameUuid,
         featuredUuid: gamesToFeatured.featuredUuid,
       })
       .from(gamesToFeatured)
+      .where(inArray(gamesToFeatured.gameUuid, gameUuids))
       .orderBy(gamesToFeatured.sortOrder);
 
-    // 获取所有游戏的介绍
-    const allIntroductions = await db.select().from(introductions).where(isNull(introductions.deletedAt));
+    // 获取指定游戏的介绍
+    const introductionConditions = [isNull(introductions.deletedAt), inArray(introductions.gameUuid, gameUuids)];
+    const allIntroductions = await db.select().from(introductions).where(and(...introductionConditions));
 
     // 构建关联映射
     const categoryMap = new Map<string, string[]>();

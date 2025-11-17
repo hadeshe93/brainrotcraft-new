@@ -4,8 +4,9 @@ import { createDrizzleClient } from '@/db/client';
 import { games, categories, tags, gamesToCategories, gamesToTags } from '@/db/schema';
 import { isNull, eq, and, sql } from 'drizzle-orm';
 import { DEFAULT_LOCALE, LANGUAGES_CODES } from '@/i18n/language';
+import { getGamePath } from '@/lib/game-links';
 
-const SITE_URL = process.env.NEXTAUTH_URL || 'https://gamesramp.com';
+const SITE_URL = process.env.NEXTAUTH_URL || 'https://brainrotcraft.app';
 const LOCALES = LANGUAGES_CODES;
 
 // ISR (Incremental Static Regeneration) - regenerate sitemap every 24 hours
@@ -92,8 +93,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const game of allGames) {
       for (const locale of LOCALES) {
         const localeUrl = locale === DEFAULT_LOCALE ? '' : `/${locale}`;
+        const gamePath = getGamePath(game.slug);
+        if (gamePath === '/') {
+          continue;
+        }
         sitemapEntries.push({
-          url: `${SITE_URL}${localeUrl}/game/${game.slug}`,
+          url: `${SITE_URL}${localeUrl}${gamePath}`,
           lastModified: game.updatedAt ? new Date(game.updatedAt * 1000) : new Date(),
           changeFrequency: 'daily' as const,
           priority: 0.9,

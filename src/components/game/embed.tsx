@@ -8,10 +8,12 @@ import { cn } from '@/lib/utils';
 import GameActions from '@/components/game/actions';
 import MdiFullscreen from '~icons/mdi/fullscreen';
 import MdiFullscreenExit from '~icons/mdi/fullscreen-exit';
+import { checkGameUrlNeedsNoReferrer } from '@/lib/game-links';
 
 interface GameEmbedProps {
   gameUuid: string;
   gameName: string;
+  gameSlug: string;
   gameUrl: string;
   thumbnail: string;
   initialUpvoteCount?: number;
@@ -24,6 +26,7 @@ interface GameEmbedProps {
 export default function GameEmbed({
   gameUuid,
   gameName,
+  gameSlug,
   gameUrl,
   thumbnail,
   initialUpvoteCount = 0,
@@ -63,6 +66,12 @@ export default function GameEmbed({
     setIsFullscreen(!!document.fullscreenElement);
   };
 
+  // iframe props
+  const iframeProps: React.IframeHTMLAttributes<HTMLIFrameElement> = {};
+  if (checkGameUrlNeedsNoReferrer(gameUrl)) {
+    iframeProps.referrerPolicy = 'no-referrer';
+  }
+
   // Add/remove fullscreen change listener
   if (typeof window !== 'undefined') {
     document.addEventListener('fullscreenchange', handleFullscreenChange);
@@ -79,6 +88,7 @@ export default function GameEmbed({
           sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-presentation"
           allow="accelerometer; gyroscope; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           allowFullScreen
+          {...iframeProps}
         />
       </div>
 
@@ -112,6 +122,7 @@ export default function GameEmbed({
           <GameActions
             gameUuid={gameUuid}
             gameName={gameName}
+            gameSlug={gameSlug}
             initialUpvoteCount={initialUpvoteCount}
             initialDownvoteCount={initialDownvoteCount}
             initialSaveCount={initialSaveCount}

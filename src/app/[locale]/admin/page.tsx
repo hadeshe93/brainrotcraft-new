@@ -95,7 +95,7 @@ export default function AdminDashboard() {
       {/* Quick Stats (Optional - can be implemented later) */}
       <Card>
         <CardHeader>
-          <CardTitle>Welcome to GamesRamp CMS</CardTitle>
+          <CardTitle>Welcome to CMS</CardTitle>
           <CardDescription>
             Use the sidebar or the cards above to navigate to different management sections
           </CardDescription>

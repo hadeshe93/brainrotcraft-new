@@ -4,15 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import GameCard from '@/components/game/card';
 import { cn } from '@/lib/utils';
-
-interface SimilarGame {
-  uuid: string;
-  name: string;
-  slug: string;
-  thumbnail: string;
-  rating?: number;
-  interact?: number;
-}
+import type { SimilarGame } from '@/types/game';
 
 interface SimilarGamesProps {
   games: SimilarGame[];

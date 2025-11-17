@@ -3,13 +3,7 @@
 import { cn } from '@/lib/utils';
 import { formatDistanceToNow } from 'date-fns';
 import { useTranslations } from 'next-intl';
-
-interface Comment {
-  uuid: string;
-  content: string;
-  authorName: string;
-  createdAt: number;
-}
+import type { Comment } from '@/types/game';
 
 interface CommentListProps {
   comments: Comment[];

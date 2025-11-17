@@ -107,6 +107,7 @@ export async function getGameBySlug(slug: string, db: D1Database, locale: Langua
       slug: t.slug,
       metadataTitle: t.metadataTitle,
       metadataDescription: t.metadataDescription,
+      content: null,
     })),
     locale,
     db,

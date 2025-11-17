@@ -1,10 +1,11 @@
 import { type LanguageCode } from '@/types/lang';
+export type Lang = LanguageCode | 'tw' | 'vi' | 'ms';
 
 export interface Language {
   // language abbreviation code with region
   code: string;
   // language abbreviation code without region
-  lang: LanguageCode;
+  lang: Lang;
   // language name in native language
   language: string;
   // language name in Chinese
@@ -17,6 +18,24 @@ export const LANGUAGES: Language[] = [
     lang: 'en',
     language: 'English',
     zhLanguage: '英语',
+  },
+  {
+    code: "es",
+    lang: "es",
+    language: "Español",
+    zhLanguage: "西班牙语",
+  },
+  {
+    code: "pt",
+    lang: "pt",
+    language: "Português",
+    zhLanguage: "葡萄牙语",
+  },
+  {
+    code: "ms",
+    lang: "ms",
+    language: "Bahasa Malaysia",
+    zhLanguage: "马来西亚语",
   },
   // {
   //   code: 'zh',

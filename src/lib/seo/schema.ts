@@ -94,7 +94,7 @@ export function generateProductSchema(
     description,
     brand: {
       '@type': 'Brand',
-      name: 'gamesramp',
+      name: 'brainrotcraft',
     },
   };
 
@@ -159,7 +159,7 @@ export function generateBreadcrumbSchema(items: Array<{ name: string; url: strin
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `https://gamesramp.com${item.url}`,
+      item: `https://brainrotcraft.app${item.url}`,
     })),
   };
 }
@@ -168,9 +168,9 @@ export function generateOrganizationSchema(): SchemaOrganization {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'gamesramp',
-    url: 'https://gamesramp.com',
-    logo: 'https://gamesramp.com/logo.png',
+    name: 'brainrotcraft',
+    url: 'https://brainrotcraft.app',
+    logo: 'https://brainrotcraft.app/logo.png',
     sameAs: [
       // Add social media URLs when available
     ],
@@ -181,13 +181,13 @@ export function generateWebSiteSchema(): SchemaWebSite {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'gamesramp - AI Polaroid Generator',
-    url: 'https://gamesramp.com',
+    name: 'brainrotcraft',
+    url: 'https://brainrotcraft.app',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://gamesramp.com/search?q={search_term_string}',
+        urlTemplate: 'https://brainrotcraft.app/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },

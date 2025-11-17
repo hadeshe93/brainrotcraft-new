@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { isNull } from 'drizzle-orm';
+import { isNull, like, and } from 'drizzle-orm';
 import { getCloudflareEnv } from '@/services/base';
 import { createDrizzleClient } from '@/db/client';
 import { games } from '@/db/schema';
@@ -23,15 +23,27 @@ export async function GET(request: NextRequest) {
     const authError = await validateApiKey(request);
     if (authError) return authError;
 
+    // 获取搜索参数
+    const { searchParams } = new URL(request.url);
+    const search = searchParams.get('search');
+
     // 获取数据库
     const env = await getCloudflareEnv();
     const db = createDrizzleClient(env.DB);
 
-    // 仅获取 UUID 列表（未删除的）
+    // 构建查询条件
+    const conditions = [isNull(games.deletedAt)];
+
+    // 如果有搜索参数，添加模糊搜索条件
+    if (search && search.trim()) {
+      conditions.push(like(games.name, `%${search.trim()}%`));
+    }
+
+    // 执行查询并排序
     const allGames = await db
       .select({ uuid: games.uuid })
       .from(games)
-      .where(isNull(games.deletedAt))
+      .where(and(...conditions))
       .orderBy(games.createdAt);
 
     const uuids = allGames.map((g: { uuid: string }) => g.uuid);

@@ -124,6 +124,10 @@ export async function POST(request: NextRequest) {
         createdAt: game.createdAt,
         updatedAt: game.updatedAt,
 
+        // 新增：上线状态
+        isPublished: game.status === 'online',
+        publishedAt: game.status === 'online' ? new Date(game.createdAt * 1000).toISOString() : null,
+
         // 关联数据（UUID数组）
         categories: categoryMap.get(game.uuid) || [],
         tags: tagMap.get(game.uuid) || [],

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { getGameShareUrl } from '@/lib/game-links';
 import ReportDialog from '@/components/report/dialog';
 import MdiThumbUp from '~icons/mdi/thumb-up';
 import MdiThumbUpOutline from '~icons/mdi/thumb-up-outline';
@@ -17,6 +18,7 @@ import MdiFlag from '~icons/mdi/flag';
 interface GameActionsProps {
   gameUuid: string;
   gameName: string;
+  gameSlug: string;
   initialUpvoteCount?: number;
   initialDownvoteCount?: number;
   initialSaveCount?: number;
@@ -27,6 +29,7 @@ interface GameActionsProps {
 export default function GameActions({
   gameUuid,
   gameName,
+  gameSlug,
   initialUpvoteCount = 0,
   initialDownvoteCount = 0,
   initialSaveCount = 0,
@@ -122,7 +125,8 @@ export default function GameActions({
     await handleInteraction('share');
 
     // Native share or copy to clipboard
-    const shareUrl = `${window.location.origin}/game/${gameUuid}`;
+    // Use centralized game link utility (fixes bug: was using gameUuid instead of gameSlug)
+    const shareUrl = getGameShareUrl(gameSlug);
 
     if (navigator.share) {
       try {

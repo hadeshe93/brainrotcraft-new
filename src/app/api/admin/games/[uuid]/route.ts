@@ -110,7 +110,12 @@ export async function PUT(request: NextRequest, { params }: RouteContext) {
     }
 
     if (slug !== undefined) {
-      validations.push(composeValidation(validateSlug(slug, true), validateLength(slug, 'Slug', 1, 100)));
+      if (slug === '') {
+        // Empty slug is allowed (homepage game)
+      } else {
+        // Only validate format and length if slug is not empty
+        validations.push(composeValidation(validateSlug(slug, true), validateLength(slug, 'Slug', 1, 100)));
+      }
     }
 
     if (thumbnail !== undefined) {

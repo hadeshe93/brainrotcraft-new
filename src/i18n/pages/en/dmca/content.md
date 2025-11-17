@@ -4,9 +4,9 @@
 
 ## Overview
 
-[GamesRamp](/) respects the intellectual property rights of game developers, publishers, and content creators. We have implemented procedures in accordance with the Digital Millennium Copyright Act (DMCA) to address copyright infringement concerns on our platform.
+[BrainrotCraft](/) respects the intellectual property rights of game developers, publishers, and content creators. We have implemented procedures in accordance with the Digital Millennium Copyright Act (DMCA) to address copyright infringement concerns on our platform.
 
-If you believe that content on GamesRamp infringes your copyright, we will take appropriate action to investigate and, if warranted, remove the allegedly infringing material upon receiving proper notification.
+If you believe that content on BrainrotCraft infringes your copyright, we will take appropriate action to investigate and, if warranted, remove the allegedly infringing material upon receiving proper notification.
 
 ## Scope of DMCA Policy
 
@@ -15,11 +15,11 @@ This policy applies to:
 - Games hosted on or linked from our platform
 - Game descriptions, images, and promotional materials
 - User-submitted content (if applicable)
-- Any other copyrighted material appearing on GamesRamp
+- Any other copyrighted material appearing on BrainrotCraft
 
 ## Filing a DMCA Takedown Notice
 
-To report a claim of copyright infringement, please send a written DMCA notice to our designated agent at: **[contact@gamesramp.com](mailto:contact@gamesramp.com)**
+To report a claim of copyright infringement, please send a written DMCA notice to our designated agent at: **[contact@brainrotcraft.app](mailto:contact@brainrotcraft.app)**
 
 Your DMCA notice must include the following information as required by law (17 U.S.C. § 512(c)(3)):
 
@@ -58,14 +58,14 @@ Your counter-notification must include:
 2. Identification of the material that was removed and its previous location
 3. A statement under penalty of perjury that you have a good faith belief that the material was removed or disabled as a result of mistake or misidentification
 4. Your name, address, and telephone number
-5. A statement that you consent to the jurisdiction of the Federal District Court for your judicial district (or if outside the U.S., any judicial district in which GamesRamp may be found)
+5. A statement that you consent to the jurisdiction of the Federal District Court for your judicial district (or if outside the U.S., any judicial district in which BrainrotCraft may be found)
 6. A statement that you will accept service of process from the person who provided the original DMCA notice
 
-Send counter-notifications to: **[contact@gamesramp.com](mailto:contact@gamesramp.com)**
+Send counter-notifications to: **[contact@brainrotcraft.app](mailto:contact@brainrotcraft.app)**
 
 ## Repeat Infringer Policy
 
-GamesRamp maintains a policy of terminating, in appropriate circumstances, content providers or users who are repeat infringers of copyright.
+BrainrotCraft maintains a policy of terminating, in appropriate circumstances, content providers or users who are repeat infringers of copyright.
 
 ## False Claims Warning
 
@@ -82,7 +82,7 @@ Making false claims of copyright infringement is illegal and may result in serio
 
 If you are a game developer or publisher and would like to report unauthorized use of your games on our platform, we encourage you to:
 
-1. Contact us first at **[contact@gamesramp.com](mailto:contact@gamesramp.com)** to discuss the issue
+1. Contact us first at **[contact@brainrotcraft.app](mailto:contact@brainrotcraft.app)** to discuss the issue
 2. If necessary, follow the formal DMCA notice procedure outlined above
 3. Provide clear proof of ownership and specific URLs of infringing content
 
@@ -92,8 +92,8 @@ We value partnerships with game creators and strive to feature only properly lic
 
 **DMCA Designated Agent:**
 
-- Email: [contact@gamesramp.com](mailto:contact@gamesramp.com)
-- Website: [gamesramp.com](/)
+- Email: [contact@brainrotcraft.app](mailto:contact@brainrotcraft.app)
+- Website: [brainrotcraft.app](/)
 
 For non-copyright related inquiries, please visit our [Feedback](/feedback) page.
 

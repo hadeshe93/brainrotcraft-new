@@ -1,10 +1,12 @@
 import { getTranslations } from 'next-intl/server';
-import { wrapForI18n } from '@/i18n/utils';
+import { wrapForI18n, getPageContent } from '@/i18n/utils';
 import type { LocalePageProps } from '@/types/page';
 import { getCloudflareEnv } from '@/services/base';
-import { getHomePageData } from '@/services/content/home';
+import { getHomePageData, getSidebarData } from '@/services/content/home';
+import { getGameBySlug, getSimilarGames, getGameComments } from '@/services/content/detail';
 import SidebarContainer from '@/components/blocks/sidebar-container';
 import GameSection from '@/components/game/section';
+import GameDetailContent from '@/components/game/detail-content';
 import MarkdownRenderer from '@/components/markdown-renderer';
 import { GameItem } from '@/types/game';
 
@@ -13,7 +15,7 @@ async function Home(props: LocalePageProps) {
   const t = await getTranslations('biz.game');
 
   // Get Cloudflare D1 database with error handling for local development
-  let hotGames: GameItem[], newGames: GameItem[], seoContent, sidebar;
+  let homepageGameData, hotGames: GameItem[], newGames: GameItem[], seoContent, sidebar;
 
   try {
     const env = await getCloudflareEnv();
@@ -23,7 +25,37 @@ async function Home(props: LocalePageProps) {
       throw new Error('Database not available in local development');
     }
 
-    // Fetch all home page data
+    // Check if there's a homepage game (empty slug game)
+    homepageGameData = await getGameBySlug('', db, locale as any);
+
+    // If homepage game exists, render game detail page
+    if (homepageGameData) {
+      const { game, introduction, categories, tags } = homepageGameData;
+
+      // Fetch sidebar, similar games, and comments in parallel
+      const [sidebarData, similarGames, commentsData] = await Promise.all([
+        getSidebarData(db, locale as any),
+        getSimilarGames(game.uuid, 4, db, locale as any),
+        getGameComments(game.uuid, 1, 20, db),
+      ]);
+
+      // Reuse GameDetailContent component
+      return (
+        <GameDetailContent
+          locale={locale}
+          game={game}
+          introduction={introduction}
+          categories={categories}
+          tags={tags}
+          similarGames={similarGames}
+          comments={commentsData.comments}
+          totalComments={commentsData.pagination.totalItems}
+          sidebar={sidebarData}
+        />
+      );
+    }
+
+    // No homepage game, render normal game list homepage
     const data = await getHomePageData(db);
     hotGames = data.hotGames;
     newGames = data.newGames;
@@ -41,6 +73,7 @@ async function Home(props: LocalePageProps) {
     sidebar = { featuredItems: [], categories: [], tags: [] };
   }
 
+  // Render normal game list homepage
   return (
     <div className="block-section">
       <div className="flex flex-col gap-6 md:flex-row">
@@ -85,8 +118,47 @@ async function Home(props: LocalePageProps) {
   );
 }
 
+// Generate metadata
+export async function generateMetadata(props: LocalePageProps) {
+  const { locale } = await props.params;
+
+  try {
+    const env = await getCloudflareEnv();
+    const db = (env as any)?.DB as D1Database;
+
+    if (!db) {
+      return {
+        title: 'Homepage',
+        description: '',
+      };
+    }
+
+    // Check if there's a homepage game
+    const homepageGameData = await getGameBySlug('', db, locale as any);
+
+    if (homepageGameData) {
+      // Use homepage game metadata
+      const { game, introduction } = homepageGameData;
+      return {
+        title: introduction?.metadataTitle || game.name,
+        description: introduction?.metadataDescription || '',
+      };
+    }
+
+    // Use default homepage metadata
+    const content = await getPageContent<'layout'>({ key: 'layout', locale });
+    const { metadata } = content!;
+    return metadata;
+  } catch (error) {
+    return {
+      title: 'Homepage',
+      description: '',
+    };
+  }
+}
+
 // 云原生做法：EDGE 模式 + ISR
 // 如果用 SSG + ISR 的话，要兼容本地渲染，以 API 的方式全部达到正式环境去请求数据
 // Enable Static Site Generation with Incremental Static Regeneration
-export const revalidate = 86400; // Revalidate every 24 hours (86400 seconds)
+export const revalidate = 3600; // Revalidate every hour (same as game detail page)
 export default wrapForI18n<LocalePageProps>(Home);

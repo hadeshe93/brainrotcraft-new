@@ -1,22 +1,17 @@
 import { Link } from '@/i18n/navigation';
 import Image from '@/components/image';
 import { cn } from '@/lib/utils';
+import { getGamePath } from '@/lib/game-links';
+import type { SimilarGame } from '@/types/game';
 
 export interface GameCardProps {
-  game: {
-    uuid: string;
-    slug: string;
-    name: string;
-    thumbnail: string;
-    rating?: number;
-    interact?: number;
-  };
+  game: SimilarGame;
   className?: string;
 }
 
 export default function GameCard({ game, className }: GameCardProps) {
   return (
-    <Link href={`/game/${game.slug}`} className={cn('group block', className)}>
+    <Link href={getGamePath(game.slug)} className={cn('group block', className)}>
       <div className="bg-card hover:bg-accent/10 overflow-hidden rounded-lg shadow-sm transition-all duration-200 hover:shadow-md">
         {/* Game Thumbnail */}
         <div className="relative aspect-video overflow-hidden">
@@ -43,8 +38,8 @@ export default function GameCard({ game, className }: GameCardProps) {
         <div className="p-3">
           <h3 className="text-foreground group-hover:text-primary line-clamp-2 text-sm font-medium">{game.name}</h3>
           {/* Optional: Show interaction count */}
-          {false && game.interact !== undefined && game.interact > 0 && (
-            <p className="text-muted-foreground mt-1 text-xs">{game.interact.toLocaleString()} plays</p>
+          {false && game.interact !== undefined && game.interact! > 0 && (
+            <p className="text-muted-foreground mt-1 text-xs">{game.interact!.toLocaleString()} plays</p>
           )}
         </div>
       </div>

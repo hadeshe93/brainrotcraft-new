@@ -76,8 +76,8 @@ export class StripePaymentService extends BasePaymentService {
   ): Promise<PaymentServiceResponse<CreateBillingPortalSessionResponse>> {
     try {
       let customerId = request.customerId || '';
-      let subscriptionId = request.subscriptionId || '';
-      let sessionId = request.sessionId || '';
+      const subscriptionId = request.subscriptionId || '';
+      const sessionId = request.sessionId || '';
       try {
         if (!customerId && subscriptionId) {
           const session = await this.stripe.subscriptions.retrieve(subscriptionId);

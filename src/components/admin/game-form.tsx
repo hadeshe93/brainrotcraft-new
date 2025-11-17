@@ -221,21 +221,19 @@ export default function GameForm({ open, onOpenChange, game, onSuccess, language
 
           {/* Slug */}
           <div className="space-y-2">
-            <Label htmlFor="slug">
-              Slug <span className="text-destructive">*</span>
-            </Label>
+            <Label htmlFor="slug">Slug</Label>
             <Input
               id="slug"
               type="text"
-              placeholder="game-slug-url"
+              placeholder="Leave empty for homepage game, or enter game-slug-url"
               value={slug}
               onChange={(e) => setSlug(e.target.value)}
-              required
               maxLength={100}
-              pattern="[a-z0-9-]+"
+              pattern="[a-z0-9-]*"
             />
             <p className="text-muted-foreground text-xs">
-              URL-friendly identifier (lowercase letters, numbers, and hyphens only)
+              URL-friendly identifier (lowercase letters, numbers, and hyphens only). Leave empty to set this game as
+              the homepage game.
             </p>
           </div>
 

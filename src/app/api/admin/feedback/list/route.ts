@@ -1,6 +1,6 @@
 /**
  * 获取反馈列表
- * - https://gamesramp.com/api/admin/feedback/list?token=FrXA-YGL-CUbNLwCk2GykkAlzOD6KCJA5vSN
+ * - https://brainrotcraft.app/api/admin/feedback/list?token=FrXA-YGL-CUbNLwCk2GykkAlzOD6KCJA5vSN
  */
 
 import { NextRequest, NextResponse } from 'next/server';

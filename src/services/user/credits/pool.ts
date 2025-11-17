@@ -663,7 +663,7 @@ export async function fixCreditPool(userUuid: string): Promise<CreditPoolOperati
 
     // 记录修正前的状态
     const beforeState = { ...state };
-    let updatedState = { ...state };
+    const updatedState = { ...state };
     const fixedIssues: string[] = [];
 
     // 1. 清理过期的预扣记录
