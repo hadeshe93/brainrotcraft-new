@@ -124,12 +124,29 @@ export async function POST(request: NextRequest) {
     const env = await getCloudflareEnv();
     const db = env.DB;
 
-    // Check if slug already exists
+    // Check if slug already exists (including deleted records)
     const slugAlreadyExists = await featuredSlugExists(slug, undefined, db);
     if (slugAlreadyExists) {
       return await APIErrors.badRequest(EValidationErrorCode.INVALID_PARAMETER, {
         customMessage: 'Slug already exists',
       });
+    }
+
+    // Check if a deleted record with this slug exists and permanently delete it
+    const { createDrizzleClient } = await import('@/db/client');
+    const { featured: featuredTable } = await import('@/db/schema');
+    const { eq } = await import('drizzle-orm');
+
+    const client = createDrizzleClient(db);
+    const deletedRecord = await client
+      .select()
+      .from(featuredTable)
+      .where(eq(featuredTable.slug, slug))
+      .limit(1);
+
+    if (deletedRecord.length > 0 && deletedRecord[0].deletedAt !== null) {
+      // Permanently delete the old record to free up the slug
+      await client.delete(featuredTable).where(eq(featuredTable.uuid, deletedRecord[0].uuid));
     }
 
     // Create featured collection

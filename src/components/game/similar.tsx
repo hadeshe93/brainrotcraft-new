@@ -23,7 +23,7 @@ export default function SimilarGames({ games, className }: SimilarGamesProps) {
       {/* Section Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-foreground text-2xl font-bold">{t('similar_games')}</h2>
-        <Link href="/games" className="text-primary hover:text-primary/80 text-sm font-medium transition-colors">
+        <Link href="/new" className="text-primary hover:text-primary/80 text-sm font-medium transition-colors">
           {t('more_new_games')} →
         </Link>
       </div>
