@@ -8,6 +8,7 @@ import userProfile from './user-profile';
 import feedback from './feedback';
 import changelog from './changelog';
 import pricing from './pricing';
+import about from './about';
 
 const LOGO: Image = {
   url: '/logo.png',
@@ -67,14 +68,11 @@ export default {
       copyright: '© 2025 • Brainrotcraft.app Todos os direitos reservados Desenvolvido com Next.js',
       nav: [
         {
-          title: 'Sobre Nós',
+          title: 'Suporte',
           children: [
+            { title: 'Sobre Nós', link: { url: '/about' } },
             { title: 'Feedback', link: { url: '/feedback' } },
             { title: 'Registro de Alterações', link: { url: '/changelog' } },
-            // {
-            //   title: 'Status',
-            //   link: { url: 'https://free-background-remover.instatus.com/', target: '_blank', rel: 'nofollow' },
-            // },
           ],
         },
       ],
@@ -121,6 +119,7 @@ export default {
   dmca,
   privacy,
   terms,
+  about,
   userProfile,
   paymentSuccess: {
     metadata: {

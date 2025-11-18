@@ -8,6 +8,7 @@ import userProfile from './user-profile';
 import feedback from './feedback';
 import changelog from './changelog';
 import pricing from './pricing';
+import about from './about';
 
 const LOGO: Image = {
   url: '/logo.png',
@@ -67,8 +68,9 @@ export default {
       copyright: '© 2025 • Brainrotcraft.app Todos los derechos reservados Construido con Next.js',
       nav: [
         {
-          title: 'Sobre Nosotros',
+          title: 'Soporte',
           children: [
+            { title: 'Sobre Nosotros', link: { url: '/about' } },
             { title: 'Comentarios', link: { url: '/feedback' } },
             { title: 'Historial de Cambios', link: { url: '/changelog' } },
             // {
@@ -121,6 +123,7 @@ export default {
   dmca,
   privacy,
   terms,
+  about,
   userProfile,
   paymentSuccess: {
     metadata: {

@@ -93,6 +93,47 @@
   }
   body {
     @apply bg-background text-foreground w-screen overflow-x-hidden;
+    position: relative;
+  }
+
+  /* 星际空间背景 */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:
+      radial-gradient(2px 2px at 20px 30px, white, transparent),
+      radial-gradient(2px 2px at 60px 70px, white, transparent),
+      radial-gradient(1px 1px at 50px 50px, white, transparent),
+      radial-gradient(1px 1px at 130px 80px, white, transparent),
+      radial-gradient(2px 2px at 90px 10px, white, transparent);
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    animation: stars-move 60s linear infinite;
+    opacity: 0.6;
+  }
+
+  /* 第二层星星 - 更亮更大 */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:
+      radial-gradient(3px 3px at 40px 60px, rgba(255, 255, 255, 0.9), transparent),
+      radial-gradient(2px 2px at 120px 30px, rgba(255, 255, 255, 0.8), transparent),
+      radial-gradient(2px 2px at 170px 90px, rgba(255, 255, 255, 0.7), transparent);
+    background-size: 300px 300px;
+    background-repeat: repeat;
+    animation: stars-move 80s linear infinite reverse;
+    opacity: 0.4;
   }
   h1 {
     @apply tracking-tighter;
@@ -213,6 +254,42 @@
     }
     75% {
       transform: translate(15px, 10px) scale(1.05);
+    }
+  }
+
+  /* 星空移动动画 */
+  @keyframes stars-move {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-200px);
+    }
+  }
+
+  /* 流星动画（可选，添加到特定元素） */
+  @keyframes shooting-star {
+    0% {
+      transform: translate(0, 0) rotate(-45deg);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-500px, 500px) rotate(-45deg);
+      opacity: 0;
+    }
+  }
+
+  /* 星星闪烁动画 */
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 1;
     }
   }
 

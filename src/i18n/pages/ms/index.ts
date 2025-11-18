@@ -8,6 +8,7 @@ import userProfile from './user-profile';
 import feedback from './feedback';
 import changelog from './changelog';
 import pricing from './pricing';
+import about from './about';
 
 const LOGO: Image = {
   url: '/logo.png',
@@ -67,8 +68,9 @@ export default {
       copyright: '© 2025 • Brainrotcraft.app Hak cipta terpelihara Dibina dengan Next.js',
       nav: [
         {
-          title: 'Tentang Kami',
+          title: 'Sokongan',
           children: [
+            { title: 'Tentang Kami', link: { url: '/about' } },
             { title: 'Maklum Balas', link: { url: '/feedback' } },
             { title: 'Log Perubahan', link: { url: '/changelog' } },
             // {
@@ -121,6 +123,7 @@ export default {
   dmca,
   privacy,
   terms,
+  about,
   userProfile,
   paymentSuccess: {
     metadata: {
