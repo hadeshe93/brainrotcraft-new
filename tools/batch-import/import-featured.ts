@@ -11,7 +11,7 @@ config({ path: path.resolve(process.cwd(), '.env.local') });
 // Configuration
 const API_URL = process.env.IMPORT_API_ORIGIN || 'http://localhost:4004';
 const API_PATH = '/api/admin/featured/import';
-const DEFAULT_FILE = 'tools/rewrite/cate-and-tag/output/game-featured.json';
+const DEFAULT_FILE = 'tools/batch-import/data/game-featured.json';
 const STRATEGY = (process.env.IMPORT_STRATEGY as 'upsert' | 'skip_existing' | 'overwrite') || 'upsert';
 
 interface FeaturedData {

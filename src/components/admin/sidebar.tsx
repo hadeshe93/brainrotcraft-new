@@ -9,6 +9,7 @@ import MdiLabel from '~icons/mdi/label';
 import MdiStar from '~icons/mdi/star';
 import MdiTranslate from '~icons/mdi/translate';
 import MdiCloudDownload from '~icons/mdi/cloud-download';
+import MdiDatabaseExport from '~icons/mdi/database-export';
 import MdiComment from '~icons/mdi/comment';
 import MdiAlertCircle from '~icons/mdi/alert-circle';
 
@@ -48,6 +49,11 @@ const navItems: NavItem[] = [
     href: '/admin/fetch',
     label: 'Data Fetch',
     icon: MdiCloudDownload,
+  },
+  {
+    href: '/admin/export',
+    label: 'Data Export',
+    icon: MdiDatabaseExport,
   },
   {
     href: '/admin/comments',

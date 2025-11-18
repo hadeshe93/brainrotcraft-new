@@ -6,6 +6,7 @@ import MdiLabel from '~icons/mdi/label';
 import MdiStar from '~icons/mdi/star';
 import MdiTranslate from '~icons/mdi/translate';
 import MdiCloudDownload from '~icons/mdi/cloud-download';
+import MdiDatabaseExport from '~icons/mdi/database-export';
 import MdiComment from '~icons/mdi/comment';
 import MdiAlertCircle from '~icons/mdi/alert-circle';
 
@@ -45,6 +46,12 @@ const modules = [
     description: 'Sync data from parent site',
     href: '/admin/fetch',
     icon: MdiCloudDownload,
+  },
+  {
+    title: 'Data Export',
+    description: 'Export game data to JSON files',
+    href: '/admin/export',
+    icon: MdiDatabaseExport,
   },
   {
     title: 'Comments',

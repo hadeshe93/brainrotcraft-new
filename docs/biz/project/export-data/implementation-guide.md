@@ -9,7 +9,7 @@
 1. `game-categories.json` - 游戏分类数据
 2. `game-tags.json` - 游戏标签数据
 3. `game-featured.json` - 游戏特色合集数据
-4. `games.json` - 游戏列表数据
+4. `games-export.zip` - 游戏数据压缩包（包含games.json和content/*.md文件）
 
 ## 二、现状分析
 
@@ -522,23 +522,112 @@ pnpm run export
 - 自动更新静态站点
 - Webhook通知机制
 
-## 八、注意事项
+## 八、游戏数据导出格式（更新）
 
-1. **API Key安全**：不要将API Key提交到代码仓库
-2. **数据隐私**：确保导出的数据不包含敏感信息
-3. **性能影响**：避免在高峰期执行全量导出
-4. **版本控制**：导出文件建议加入版本号或时间戳
-5. **备份策略**：导出前备份现有数据
+### 8.1 ZIP包结构
 
-## 九、相关文档
+游戏数据导出为 `games-export.zip` 压缩包，包含以下内容：
+
+```
+games-export.zip
+├── games.json              # 游戏元数据JSON文件
+└── content/                # 游戏内容文件夹
+    ├── undead-corridor.md
+    ├── geometry-dash.md
+    ├── slope.md
+    └── ...                 # 每个游戏一个.md文件
+```
+
+### 8.2 文件说明
+
+#### **games.json**
+包含所有游戏的元数据，格式为JSON数组：
+
+```json
+[
+  {
+    "title": "Undead Corridor",
+    "pageUrl": "https://geometrylite.io/undead-corridor",
+    "gameUrl": "https://undead-corridor.1games.io/",
+    "coverImage": "https://...",
+    "rating": "10",
+    "contentPath": "content/undead-corridor.md",
+    "metaTitle": "Undead Corridor - Survive...",
+    "metaDescription": "Trapped in a corridor...",
+    "categories": ["Action", "Shooter", "Arcade"],
+    "tags": ["Survival", "Endless Runner", "Weapon"]
+  }
+]
+```
+
+**注意**：`contentPath` 字段指向ZIP包内的相对路径，与实际文件位置完全匹配。
+
+#### **content/*.md**
+每个游戏的详细介绍内容，文件名由游戏名称转换为 kebab-case 生成：
+- 文件格式：Markdown
+- 文件名：游戏名称的 kebab-case 版本（例如："Undead Corridor" → `undead-corridor.md`）
+- 内容来源：`introductions.content` 字段
+- 命名规则：
+  - 转换为小写
+  - 移除特殊字符（只保留字母、数字、空格和连字符）
+  - 空格替换为连字符
+  - 处理连续的连字符为单个连字符
+
+### 8.3 导出逻辑
+
+1. **API端**：
+   - 查询所有游戏及其介绍内容
+   - 解析category/tag的UUID为名称
+   - 将游戏名称转换为 kebab-case 作为文件名
+   - 生成 `contentPath` 字段：`content/{name-in-kebab-case}.md`
+   - 返回包含 `content` 字段的完整数据
+
+2. **前端**：
+   - 接收API返回的数据
+   - 生成 `games.json`（移除 `content` 字段）
+   - 使用同样的 kebab-case 转换逻辑处理游戏名称
+   - 为每个游戏创建 `content/{name-in-kebab-case}.md` 文件
+   - 使用JSZip打包成ZIP文件
+   - 自动下载ZIP包
+
+**关键点**：
+- 前后端使用相同的 kebab-case 转换逻辑，确保文件名一致
+- 使用游戏名称而非 slug，避免 slug 为空的问题
+- `contentPath` 字段与实际文件路径完全匹配
+
+### 8.4 Web界面导出优势
+
+- ✅ 自动复用管理员登录态，无需配置API Key
+- ✅ 点击按钮即可导出，无需运行命令
+- ✅ 实时显示导出进度和统计信息
+- ✅ 自动生成ZIP包，无需手动打包
+- ✅ 支持单独导出或批量导出所有数据
+
+## 九、注意事项
+
+1. **文件命名安全**：使用游戏名称转 kebab-case 而非 slug，避免空 slug 导致的文件名问题
+2. **前后端一致性**：前后端使用相同的 kebab-case 转换逻辑，确保 contentPath 与实际文件名匹配
+3. **API Key安全**：不要将API Key提交到代码仓库（Web界面无此问题）
+4. **数据隐私**：确保导出的数据不包含敏感信息
+5. **性能影响**：避免在高峰期执行全量导出
+6. **版本控制**：导出文件建议加入版本号或时间戳
+7. **备份策略**：导出前备份现有数据
+8. **ZIP文件大小**：游戏数据较多时，ZIP文件可能较大，注意浏览器下载限制
+
+## 十、相关文档
 
 - [Demo JSON文件示例](./demo/)
 - [API接口文档](../../../api-docs.md)
 - [数据库Schema](../../../db/schema.ts)
 - [服务层实现](../../../services/content/)
+- [Web导出界面](../../../src/app/[locale]/admin/export/)
 
 ---
 
-*文档版本：1.0.0*
-*最后更新：2024-11-17*
+*文档版本：1.2.0*
+*最后更新：2024-11-18*
+*更新内容：*
+- *v1.2.0: 使用游戏名称转 kebab-case 而非 slug 生成文件名*
+- *v1.1.0: 添加游戏内容导出和Web界面支持*
+- *v1.0.0: 初始版本*
 *作者：Claude Assistant*

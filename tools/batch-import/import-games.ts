@@ -13,7 +13,7 @@ config({ path: path.resolve(process.cwd(), '.env.local') });
 // Configuration
 const API_URL = process.env.IMPORT_API_ORIGIN || 'http://localhost:4004';
 const API_PATH = '/api/admin/games/import';
-const DEFAULT_PATTERN = 'tools/rewrite/geometrylite.io/output/games-*.json';
+const DEFAULT_PATTERN = 'tools/batch-import/data/games.json';
 const STRATEGY = 'upsert' as 'upsert' | 'skip_existing' | 'overwrite';
 const BATCH_SIZE = 50;
 
