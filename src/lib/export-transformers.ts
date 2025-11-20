@@ -45,6 +45,7 @@ export interface ExportMetadata {
  * Category export format
  */
 export interface CategoryExport {
+  uuid: string;
   name: string;
   slug: string;
   iconUrl: string;
@@ -57,6 +58,7 @@ export interface CategoryExport {
  * Tag export format
  */
 export interface TagExport {
+  uuid: string;
   name: string;
   slug: string;
   content: string;
@@ -68,6 +70,7 @@ export interface TagExport {
  * Featured export format
  */
 export interface FeaturedExport {
+  uuid: string;
   name: string;
   slug: string;
   content: string;
@@ -79,6 +82,7 @@ export interface FeaturedExport {
  * Game export format
  */
 export interface GameExport {
+  uuid: string;
   title: string;
   pageUrl: string;
   gameUrl: string;
@@ -97,6 +101,7 @@ export interface GameExport {
  */
 export function transformCategoryForExport(category: CategoryRecord): CategoryExport {
   return {
+    uuid: category.uuid,
     name: category.name,
     slug: category.slug,
     iconUrl: category.iconUrl || '',
@@ -111,6 +116,7 @@ export function transformCategoryForExport(category: CategoryRecord): CategoryEx
  */
 export function transformTagForExport(tag: TagRecord): TagExport {
   return {
+    uuid: tag.uuid,
     name: tag.name,
     slug: tag.slug,
     content: tag.content || '',
@@ -124,6 +130,7 @@ export function transformTagForExport(tag: TagRecord): TagExport {
  */
 export function transformFeaturedForExport(featuredRecord: FeaturedRecord): FeaturedExport {
   return {
+    uuid: featuredRecord.uuid,
     name: featuredRecord.name,
     slug: featuredRecord.slug,
     content: featuredRecord.content || '',
@@ -140,6 +147,7 @@ export function transformGameForExport(game: GameRecord, includeContent: boolean
   const fileName = toKebabCase(game.name);
 
   const exportData: GameExport = {
+    uuid: game.uuid,
     title: game.name,
     pageUrl: `${EXPORT_CONFIG.gameBaseUrl}/${game.slug}`,
     gameUrl: game.source,

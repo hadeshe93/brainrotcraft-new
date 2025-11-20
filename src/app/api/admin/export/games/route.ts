@@ -27,7 +27,7 @@ import { transformGameForExport } from '@/lib/export-transformers';
 export async function GET(request: NextRequest) {
   try {
     // Check admin access
-    await requireAdmin();
+    await requireAdmin(request);
 
     // Get database
     const env = await getCloudflareEnv();
