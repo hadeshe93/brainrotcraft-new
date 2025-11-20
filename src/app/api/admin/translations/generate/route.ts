@@ -215,12 +215,12 @@ export async function POST(request: NextRequest) {
           },
         };
 
-        // Send to queue (requires TRANSLATION_QUEUE to be configured in wrangler.jsonc)
-        const envWithQueue = env as CloudflareEnv & { TRANSLATION_QUEUE?: Queue<TranslationQueueMessage> };
-        if (envWithQueue.TRANSLATION_QUEUE) {
-          await envWithQueue.TRANSLATION_QUEUE.send(message);
+        // Send to queue (requires QUEUE to be configured in wrangler.jsonc)
+        const envWithQueue = env as CloudflareEnv & { QUEUE?: Queue<TranslationQueueMessage> };
+        if (envWithQueue.QUEUE) {
+          await envWithQueue.QUEUE.send(message);
         } else {
-          console.warn('[API] TRANSLATION_QUEUE not configured. Task will not be processed.');
+          console.warn('[API] QUEUE not configured. Task will not be processed.');
         }
       }
 

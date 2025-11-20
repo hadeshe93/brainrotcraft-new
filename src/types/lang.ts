@@ -24,4 +24,4 @@ export type TargetLanguageCode = CommonLanguageCode | 'en-GB' | 'en-US' | 'pt-BR
  * API accept case-insensitive language codes.
  */
 // export type LanguageCode = SourceLanguageCode | TargetLanguageCode;
-export type LanguageCode = SourceLanguageCode | TargetLanguageCode | 'tw' | 'vi';
+export type LanguageCode = SourceLanguageCode | TargetLanguageCode | 'tw' | 'vi' | 'ms';

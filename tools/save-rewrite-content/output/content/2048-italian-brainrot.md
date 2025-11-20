@@ -1,0 +1,31 @@
+Experience the classic 2048 puzzle game reborn with a chaotic Italian meme twist. Merge tiles to unlock increasingly bizarre characters and hilarious sounds in this wildly addictive brain teaser!
+
+## What is 2048 Italian Brainrot?
+
+2048 Italian Brainrot is a casual puzzle game that reinvents the classic 2048 formula with a heavy dose of internet meme culture. Available on any web browser for desktop, tablet, or mobile, this game challenges players to think strategically while enjoying a chaotic and humorous experience. The main objective is to slide and combine numbered tiles on a grid to eventually create the 2048 tile. However, each successful merge reveals a new, funnier Italian 'brainrot' meme character, complete with unique sounds and visuals. This game is designed for a wide audience, from strategic thinkers who love a good puzzle to meme enthusiasts and chaos seekers who just want to slide tiles randomly to see what absurdity unfolds. It's the perfect blend of logic and ludicrous fun.
+
+## How to Play 2048 Italian Brainrot?
+
+The gameplay is simple to learn but challenging to master. Use the arrow keys on your keyboard or swipe on a touch screen to move all the tiles in one of four directions (up, down, left, or right). When two tiles with the same number and character touch, they merge into a single new tile with double the value and a new, evolved meme character. After every move, a new tile (usually a '2') will appear in a random empty spot on the grid. The game continues until the grid is full and no more moves can be made, or until you successfully create the legendary 2048 tile. For beginners, a key tip is to try and keep your highest-value tile in one of the corners of the grid. Build up your other tiles around it to prevent it from getting trapped in the middle, making it easier to set up future merges.
+
+## What Makes 2048 Italian Brainrot Special?
+
+What sets 2048 Italian Brainrot apart is its hilarious and unhinged execution of a classic concept. While the core mechanics are familiar, the game wraps them in a layer of peak internet meme insanity. Instead of just numbers, you're merging bizarre characters that get progressively funnier and more absurd. Every combination triggers comical sound bites and glitchy visual effects, turning a simple puzzle game into an unpredictable comedy experience. This isn't just about reaching a high score; it's about the ridiculous journey of discovering every cursed meme character in the evolution chain. Players love it for its perfect fusion of addictive strategy and pure, chaotic fun that keeps them laughing with every swipe.
+
+## Frequently Asked Questions
+
+### What platforms can I play 2048 Italian Brainrot on?
+
+The game is built with HTML5 technology, making it accessible on any modern web browser. You can play it seamlessly on your desktop computer, tablet, or mobile phone without needing to download or install anything.
+
+### Is the game difficult to learn?
+
+Not at all! The controls are incredibly simple—just use your arrow keys or swipe to move the tiles. The concept of merging matching tiles is easy to grasp. However, achieving the 2048 tile requires strategic thinking and planning.
+
+### What is 'Italian Brainrot'?
+
+It refers to the game's theme, which is based on a specific genre of bizarre, chaotic, and often nonsensical Italian-themed internet memes. As you play, you'll unlock these characters, adding a layer of humor and discovery to the puzzle.
+
+### Are there any strategies to get a higher score?
+
+Yes! A popular strategy is the 'corner method.' Keep your highest value tile locked in one corner and try to fill the row or column it's in with descending tile values. This organizes the board and makes it easier to merge tiles without getting stuck.

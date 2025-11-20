@@ -3,6 +3,9 @@ import { LocalePageProps } from '@/types/page';
 import { Metadata } from 'next';
 import { PaymentSuccess } from '@/components/blocks/payment-success';
 
+// Force dynamic rendering for payment callback pages
+export const dynamic = 'force-dynamic';
+
 interface PaymentSuccessPageProps extends LocalePageProps {
   searchParams: Promise<{ session_id?: string }>;
 }

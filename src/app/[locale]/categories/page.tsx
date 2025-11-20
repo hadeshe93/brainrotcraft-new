@@ -67,5 +67,11 @@ export async function generateMetadata(props: LocalePageProps) {
 
 // Enable Static Site Generation with Incremental Static Regeneration
 export const revalidate = 3600; // Revalidate every hour
+
+// Skip build-time pre-rendering, generate on first request
+export async function generateStaticParams() {
+  return [];
+}
+
 // Removed edge runtime for OpenNext compatibility
 export default wrapForI18n<LocalePageProps>(CategoriesPage);

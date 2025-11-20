@@ -5,12 +5,13 @@ import { games, categories, tags, gamesToCategories, gamesToTags } from '@/db/sc
 import { isNull, eq, and, sql } from 'drizzle-orm';
 import { DEFAULT_LOCALE, LANGUAGES_CODES } from '@/i18n/language';
 import { getGamePath } from '@/lib/game-links';
+import { ORIGIN } from '@/constants/config';
 
-const SITE_URL = process.env.NEXTAUTH_URL || 'https://brainrotcraft.app';
+const SITE_URL = ORIGIN;
 const LOCALES = LANGUAGES_CODES;
 
-// ISR (Incremental Static Regeneration) - regenerate sitemap every 24 hours
-export const revalidate = 86400; // 86400 seconds = 24 hours
+// Force dynamic rendering - always use production database, never pre-render at build time
+export const dynamic = 'force-dynamic';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {

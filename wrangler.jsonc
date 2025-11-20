@@ -38,7 +38,9 @@
     "NEXT_PUBLIC_RUNTIME_ENV": "production",
     "NEXTAUTH_URL": "https://brainrotcraft.app",
     "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "",
-    "SHOW_COLLECTION_STRATEGY": "EFFECTIVE"
+    "SHOW_COLLECTION_STRATEGY": "EFFECTIVE",
+    "NEXT_PUBLIC_PARENT_SITE_URL": "https://gamesramp.com",
+    "NEXT_PUBLIC_PARENT_API_KEY": "2ZchPYWlhRMM8w__4r2EQmI4nOkRUi0QJ9hB",
   },
 
   /**
@@ -73,6 +75,26 @@
       "bucket_name": "union-biz"
     },
   ],
+
+  /**
+   * Queues
+   * https://developers.cloudflare.com/workers/wrangler/configuration/#queues
+   */
+  "queues": {
+    "producers": [
+      {
+        "queue": "brainrotcraft",
+        "binding": "QUEUE"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "brainrotcraft",
+        "max_batch_size": 1,
+        "max_batch_timeout": 2,
+      }
+    ]
+  },
 
   "images": {
     "binding": "IMAGES", // i.e. available in your Worker on env.IMAGES

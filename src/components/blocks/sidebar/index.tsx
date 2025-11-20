@@ -86,7 +86,7 @@ export default function Sidebar({ featuredItems, categories, tags, className }: 
         {/* Quick Navigation Section */}
         {featuredItems && featuredItems.length > 0 && (
           <div className="mb-6">
-            <h3 className="text-foreground mb-3 text-sm font-semibold">Quick Navigation</h3>
+            <div className="text-foreground mb-3 text-sm font-semibold">Quick Navigation</div>
             <nav className="space-y-1">
               {featuredItems.map((item) => (
                 <Link
@@ -104,7 +104,7 @@ export default function Sidebar({ featuredItems, categories, tags, className }: 
         {/* Categories Section */}
         {categories && categories.length > 0 && (
           <div className="mb-6">
-            <h3 className="text-foreground mb-3 text-sm font-semibold">Categories</h3>
+            <div className="text-foreground mb-3 text-sm font-semibold">Categories</div>
             <nav className="space-y-1">
               {categories.map((category) => (
                 <Link
@@ -126,14 +126,12 @@ export default function Sidebar({ featuredItems, categories, tags, className }: 
                   <span>{category.name}</span>
                 </Link>
               ))}
-              {categories.length > 5 && (
-                <Link
-                  href="/categories"
-                  className="text-primary hover:text-primary/80 block px-3 py-2 text-sm font-medium transition-colors"
-                >
-                  View All Categories →
-                </Link>
-              )}
+              <Link
+                href="/categories"
+                className="text-primary hover:text-primary/80 block px-3 py-2 text-sm font-medium transition-colors"
+              >
+                View All Categories →
+              </Link>
             </nav>
           </div>
         )}
@@ -141,7 +139,7 @@ export default function Sidebar({ featuredItems, categories, tags, className }: 
         {/* Tags Section */}
         {tags && tags.length > 0 && (
           <div>
-            <h3 className="text-foreground mb-3 text-sm font-semibold">Tags</h3>
+            <div className="text-foreground mb-3 text-sm font-semibold">Tags</div>
             <nav className="space-y-1">
               {tags.slice(0, 5).map((tag) => (
                 <Link
@@ -152,14 +150,12 @@ export default function Sidebar({ featuredItems, categories, tags, className }: 
                   {tag.name}
                 </Link>
               ))}
-              {tags.length > 5 && (
-                <Link
-                  href="/tags"
-                  className="text-primary hover:text-primary/80 block px-3 py-2 text-sm font-medium transition-colors"
-                >
-                  View All Tags →
-                </Link>
-              )}
+              <Link
+                href="/tags"
+                className="text-primary hover:text-primary/80 block px-3 py-2 text-sm font-medium transition-colors"
+              >
+                View All Tags →
+              </Link>
             </nav>
           </div>
         )}

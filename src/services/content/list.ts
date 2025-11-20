@@ -286,6 +286,7 @@ export async function getAllCategories(db: D1Database, locale: LanguageCode = DE
         uuid: categories.uuid,
         name: categories.name,
         slug: categories.slug,
+        iconUrl: categories.iconUrl,
         metadataTitle: categories.metadataTitle,
         metadataDescription: categories.metadataDescription,
         gameCount: sql<number>`COUNT(DISTINCT ${gamesToCategories.gameUuid})`,
@@ -307,6 +308,7 @@ export async function getAllCategories(db: D1Database, locale: LanguageCode = DE
         uuid: categories.uuid,
         name: categories.name,
         slug: categories.slug,
+        iconUrl: categories.iconUrl,
         metadataTitle: categories.metadataTitle,
         metadataDescription: categories.metadataDescription,
         gameCount: sql<number>`COUNT(DISTINCT ${gamesToCategories.gameUuid})`,
@@ -327,6 +329,7 @@ export async function getAllCategories(db: D1Database, locale: LanguageCode = DE
     uuid: c.uuid,
     name: c.name,
     slug: c.slug,
+    iconUrl: c.iconUrl,
     metadataTitle: c.metadataTitle,
     metadataDescription: c.metadataDescription,
     content: null,
@@ -338,6 +341,7 @@ export async function getAllCategories(db: D1Database, locale: LanguageCode = DE
     uuid: category.uuid,
     name: category.name,
     slug: category.slug,
+    iconUrl: category.iconUrl,
     count: Number(results[index].gameCount) || 0,
   }));
 }
@@ -399,6 +403,7 @@ export async function getAllTags(db: D1Database, locale: LanguageCode = DEFAULT_
     slug: t.slug,
     metadataTitle: t.metadataTitle,
     metadataDescription: t.metadataDescription,
+    content: null,
   }));
 
   const translatedTags = await batchGetTranslatedTags(tagsToTranslate, locale, db);

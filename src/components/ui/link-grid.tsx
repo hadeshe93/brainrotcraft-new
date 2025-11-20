@@ -1,11 +1,13 @@
 import { Link } from '@/i18n/navigation';
 import { cn } from '@/lib/utils';
+import Image from '@/components/image';
 
 export interface LinkItem {
   uuid: string;
   name: string;
   slug: string;
   count?: number;
+  iconUrl?: string | null;
 }
 
 interface LinkGridProps {
@@ -35,9 +37,12 @@ export default function LinkGrid({ items, baseUrl, className }: LinkGridProps) {
         <Link
           key={item.uuid}
           href={`${baseUrl}/${item.slug}`}
-          className="bg-card hover:bg-accent/10 group border-border flex h-24 items-center justify-center rounded-lg border p-4 text-center shadow-sm transition-all duration-200 hover:shadow-md"
+          className="bg-card hover:bg-accent/10 group border-border flex h-24 items-center justify-center rounded-lg border px-4 text-center shadow-sm transition-all duration-200 hover:shadow-md"
         >
           <div className="flex flex-col items-center gap-1">
+            {item.iconUrl && (
+              <Image src={item.iconUrl} alt={item.name} width={40} height={40} className="size-8 object-contain" />
+            )}
             <span className="text-foreground group-hover:text-primary line-clamp-2 text-sm font-medium">
               {item.name}
             </span>

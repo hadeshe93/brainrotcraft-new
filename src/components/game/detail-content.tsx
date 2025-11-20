@@ -11,6 +11,7 @@ import SimilarGames from '@/components/game/similar';
 import CommentList from '@/components/comment/list';
 import CommentForm from '@/components/comment/form';
 import MarkdownRenderer from '@/components/markdown-renderer';
+import Image from '@/components/image';
 import type { SimilarGame, Comment } from '@/types/game';
 
 // Game basic information type
@@ -46,8 +47,6 @@ export interface Tag {
   slug: string;
 }
 
-
-
 // Sidebar data type
 export interface SidebarData {
   featuredItems: any[];
@@ -79,15 +78,18 @@ export default function GameDetailContent({
   totalComments,
   sidebar,
 }: GameDetailContentProps) {
+  // 检查介绍文案中
+  const hasH1InContent =
+    // 1. 匹配 Markdown: 开头可能是空白，然后是 #，然后必须有一个空格，后面跟任意非换行字符
+    /^\s*#\s/.test(introduction?.content || '') ||
+    // 2. 匹配 HTML: 开头可能是空白，然后是 <h1，后面跟着空格 或者 直接是 >
+    /^\s*<h1(\s|>)/i.test(introduction?.content || '');
+
   return (
     <div className="block-section">
       <div className="flex flex-col gap-6 md:flex-row">
         {/* Sidebar - Desktop: fixed left, Mobile: hidden */}
-        <SidebarContainer
-          featuredItems={sidebar.featuredItems}
-          categories={sidebar.categories}
-          tags={sidebar.tags}
-        />
+        <SidebarContainer featuredItems={sidebar.featuredItems} categories={sidebar.categories} tags={sidebar.tags} />
 
         {/* Main Content Area */}
         <main className="flex-1 space-y-8">
@@ -104,38 +106,42 @@ export default function GameDetailContent({
             initialShareCount={game.shareCount}
           />
 
+          {/* Categories and Tags */}
+          <div className="flex flex-wrap gap-2">
+            {/* Categories and Tags */}
+            {(categories.length > 0 || tags.length > 0) && (
+              <div className="flex flex-wrap gap-2">
+                {categories.map((category) => (
+                  <Link
+                    key={category.uuid}
+                    href={`/category/${category.slug}`}
+                    className="bg-primary/10 text-primary hover:bg-primary/20 rounded-md px-3 py-1 text-sm font-medium transition-colors"
+                  >
+                    {category.name}
+                  </Link>
+                ))}
+                {tags.map((tag) => (
+                  <Link
+                    key={tag.uuid}
+                    href={`/tag/${tag.slug}`}
+                    className="bg-accent/50 text-foreground hover:bg-accent rounded-md px-3 py-1 text-sm transition-colors"
+                  >
+                    #{tag.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           {/* Similar Games Section */}
           {similarGames.length > 0 && <SimilarGames games={similarGames} />}
+
+          {/* Title */}
+          {!hasH1InContent && <h1 className="text-foreground text-3xl font-bold md:text-4xl">{game.name}</h1>}
 
           <div className="flex flex-col gap-4 md:flex-row">
             {/* Game Title and Introduction */}
             <section className="basis-2/3 space-y-4">
-              <h1 className="text-foreground text-3xl font-bold md:text-4xl">{game.name}</h1>
-
-              {/* Categories and Tags */}
-              {(categories.length > 0 || tags.length > 0) && (
-                <div className="flex flex-wrap gap-2">
-                  {categories.map((category) => (
-                    <Link
-                      key={category.uuid}
-                      href={`/category/${category.slug}`}
-                      className="bg-primary/10 text-primary hover:bg-primary/20 rounded-md px-3 py-1 text-sm font-medium transition-colors"
-                    >
-                      {category.name}
-                    </Link>
-                  ))}
-                  {tags.map((tag) => (
-                    <Link
-                      key={tag.uuid}
-                      href={`/tag/${tag.slug}`}
-                      className="bg-accent/50 text-foreground hover:bg-accent rounded-md px-3 py-1 text-sm transition-colors"
-                    >
-                      #{tag.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-
               {/* Game Introduction Content */}
               {introduction && introduction.content && (
                 <div className="prose dark:prose-invert max-w-none">

@@ -117,7 +117,8 @@
       "Bash(jq:*)",
       "Bash(python3:*)",
       "Bash(wrangler d1 info:*)",
-      "Bash(npx playwright install:*)"
+      "Bash(npx playwright install:*)",
+      "Bash(git mv:*)"
     ],
     "deny": [
       "Bash(git push:*)",

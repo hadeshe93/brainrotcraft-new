@@ -1,5 +1,5 @@
 import { type LanguageCode } from '@/types/lang';
-export type Lang = LanguageCode | 'tw' | 'vi' | 'ms';
+export type Lang = LanguageCode;
 
 export interface Language {
   // language abbreviation code with region

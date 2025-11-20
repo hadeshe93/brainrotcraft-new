@@ -3,7 +3,7 @@
  * Fetches data for the home page (Hot Games, New Games, SEO content, Sidebar data) with i18n support
  */
 
-import { eq, and, isNull, sql } from 'drizzle-orm';
+import { eq, and, isNull, sql, inArray } from 'drizzle-orm';
 import { createDrizzleClient } from '@/db/client';
 import { featured, categories, tags, games, gamesToCategories, gamesToTags } from '@/db/schema';
 import { getHotGames, getNewGames } from './featured-games';
@@ -177,6 +177,7 @@ export async function getSidebarTags(db: D1Database, locale: LanguageCode = DEFA
         slug: t.slug,
         metadataTitle: t.metadataTitle,
         metadataDescription: t.metadataDescription,
+        content: null,
       })),
       locale,
       db,
@@ -211,6 +212,7 @@ export async function getSidebarTags(db: D1Database, locale: LanguageCode = DEFA
       slug: t.slug,
       metadataTitle: t.metadataTitle,
       metadataDescription: t.metadataDescription,
+      content: null,
     })),
     locale,
     db,
@@ -242,15 +244,7 @@ export async function getSidebarFeatured(db: D1Database, locale: LanguageCode = 
       metadataDescription: featured.metadataDescription,
     })
     .from(featured)
-    .where(
-      and(
-        sql`${featured.slug} IN (${sql.join(
-          quickNavSlugs.map((s) => sql`${s}`),
-          sql`, `,
-        )})`,
-        isNull(featured.deletedAt),
-      ),
-    )
+    .where(and(inArray(featured.slug, quickNavSlugs), isNull(featured.deletedAt)))
     .orderBy(
       sql`CASE ${featured.slug}
         WHEN 'home' THEN 1

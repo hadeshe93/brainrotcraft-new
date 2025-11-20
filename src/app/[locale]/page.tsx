@@ -161,4 +161,10 @@ export async function generateMetadata(props: LocalePageProps) {
 // 如果用 SSG + ISR 的话，要兼容本地渲染，以 API 的方式全部达到正式环境去请求数据
 // Enable Static Site Generation with Incremental Static Regeneration
 export const revalidate = 3600; // Revalidate every hour (same as game detail page)
+
+// Skip build-time pre-rendering, generate on first request
+export async function generateStaticParams() {
+  return [];
+}
+
 export default wrapForI18n<LocalePageProps>(Home);

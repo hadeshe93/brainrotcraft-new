@@ -14,6 +14,7 @@
     "start": "next start",
     "lint": "next lint",
     "run:tools": "tsx tools/index.ts",
+    "find-diff-files": "tsx tools/find-diff-files/index.ts",
     "deploy": "cross-env NEXT_PUBLIC_RUNTIME_ENV=production opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "preview": "cross-env NEXTJS_ENV=production opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "drizzle:generate": "drizzle-kit generate",

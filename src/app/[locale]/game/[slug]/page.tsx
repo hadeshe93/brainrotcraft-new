@@ -76,4 +76,9 @@ export async function generateMetadata(props: GamePageProps) {
 // Enable Static Site Generation with Incremental Static Regeneration
 export const revalidate = 3600; // Revalidate every hour
 
+// Skip build-time pre-rendering, generate on first request
+export async function generateStaticParams() {
+  return [];
+}
+
 export default wrapForI18n<GamePageProps>(GamePage);

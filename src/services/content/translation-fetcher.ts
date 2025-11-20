@@ -22,6 +22,7 @@ export interface TranslatedCategory {
   uuid: string;
   name: string;
   slug: string;
+  iconUrl?: string | null;
   metadataTitle: string | null;
   metadataDescription: string | null;
   content: string | null;

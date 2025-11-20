@@ -4,6 +4,9 @@ import { Link } from '@/i18n/navigation';
 import Icon from '@/components/icon';
 import { Metadata } from 'next';
 
+// Force dynamic rendering for payment callback pages
+export const dynamic = 'force-dynamic';
+
 interface PaymentCancelPageProps extends LocalePageProps {
   searchParams: Promise<{ errorCode?: string }>;
 }
