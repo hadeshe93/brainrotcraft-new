@@ -30,7 +30,7 @@ export const PREDICTION_STORAGE_PROVIDER = 'do';
 export const CHILD_SITE_WHITELIST = [
   'http://localhost:4004', // 本地开发
   'http://localhost:3000', // 本地开发
-  'https://brainrotcraft.com', // 生产环境（母站也可以自己拉取自己）
+  'https://gamesramp.com', // 生产环境（母站也可以自己拉取自己）
   'https://brainrotcraft.app',
   // 在此添加更多子站点域名，例如：
   // 'https://subdomain.example.com',
