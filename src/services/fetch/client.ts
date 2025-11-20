@@ -52,7 +52,7 @@ async function fetchFromParent<T>(
   validator: (item: any) => item is T,
 ): Promise<{ data: T[]; error: FetchError | null }> {
   try {
-    const config = getParentSiteConfig();
+    const config = await getParentSiteConfig();
 
     // 如果启用 Mock，使用 mock 端点
     const url = config.useMock
@@ -149,7 +149,7 @@ export async function fetchGameByUuid(uuid: string): Promise<{
   error: FetchError | null;
 }> {
   try {
-    const config = getParentSiteConfig();
+    const config = await getParentSiteConfig();
 
     // 使用 uuid 参数查询指定游戏
     const url = config.useMock
@@ -180,7 +180,6 @@ export async function fetchGameByUuid(uuid: string): Promise<{
 
     // 验证响应格式
     const validatedResponse = validateFetchResponse(json, validateGame);
-    console.log('验证结果:', validatedResponse?.data.length);
 
     if (!validatedResponse) {
       throw new Error('Invalid response format from parent site');

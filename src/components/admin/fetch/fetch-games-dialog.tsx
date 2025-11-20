@@ -95,10 +95,10 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
       const searchParam = search ? `?search=${encodeURIComponent(search)}` : '';
 
       // 并发执行：拉取母站所有游戏 UUID 和 子站所有游戏 UUID
+      const url = await buildParentApiUrl(`games/uuids${searchParam}`);
+      const headers = await getParentApiHeaders();
       const [parentResponse, localResponse] = await Promise.all([
-        fetch(buildParentApiUrl(`games/uuids${searchParam}`), {
-          headers: getParentApiHeaders(),
-        }),
+        fetch(url, { headers }),
         fetch('/api/admin/games/uuids'),
       ]);
 
@@ -185,9 +185,9 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
 
     setLoadingGames(true);
     try {
-      const response = await fetch(buildParentApiUrl('games/by-uuids'), {
+      const response = await fetch(await buildParentApiUrl('games/by-uuids'), {
         method: 'POST',
-        headers: getParentApiHeaders(),
+        headers: await getParentApiHeaders(),
         body: JSON.stringify({ uuids: currentPageUuids }),
       });
 
@@ -226,7 +226,7 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
         body: JSON.stringify({ uuid: game.uuid, enableRewrite: true }),
       });
 
-      const data = await response.json();
+      const data = await response.json() as any;
 
       if (!response.ok) {
         // 检查是否是缺失依赖错误
@@ -318,7 +318,7 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
   return (
     <>
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="flex max-h-[80vh] !max-w-5xl flex-col overflow-hidden">
+        <DialogContent className="flex max-h-[80vh] !max-w-4xl flex-col overflow-hidden">
           <DialogHeader>
             <DialogTitle>拉取游戏数据</DialogTitle>
             <DialogDescription>
@@ -329,20 +329,20 @@ export default function FetchGamesDialog({ open, onOpenChange }: FetchGamesDialo
           {/* 搜索框 */}
           <div className="flex items-center gap-2 py-2">
             <div className="relative flex-1">
-              <MdiMagnify className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <MdiMagnify className="text-muted-foreground absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
               <Input
                 type="text"
                 placeholder="按游戏名称搜索..."
                 value={searchQuery}
                 onChange={(e) => handleSearchChange(e.target.value)}
-                className="pl-9 pr-9"
+                className="pr-9 pl-9"
                 disabled={loadingUuids}
               />
               {searchQuery && (
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2"
+                  className="absolute top-1/2 right-1 h-7 w-7 -translate-y-1/2"
                   onClick={handleClearSearch}
                 >
                   <MdiClose className="h-4 w-4" />

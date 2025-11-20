@@ -42,8 +42,8 @@ export default function FetchTagsDialog({ open, onOpenChange }: FetchTagsDialogP
   const loadTags = async () => {
     setLoading(true);
     try {
-      const response = await fetch(buildParentApiUrl('tags'), {
-        headers: getParentApiHeaders(),
+      const response = await fetch(await buildParentApiUrl('tags'), {
+        headers: await getParentApiHeaders(),
       });
 
       if (!response.ok) {

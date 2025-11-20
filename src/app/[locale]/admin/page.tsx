@@ -6,9 +6,9 @@ import MdiLabel from '~icons/mdi/label';
 import MdiStar from '~icons/mdi/star';
 import MdiTranslate from '~icons/mdi/translate';
 import MdiCloudDownload from '~icons/mdi/cloud-download';
-import MdiDatabaseExport from '~icons/mdi/database-export';
 import MdiComment from '~icons/mdi/comment';
 import MdiAlertCircle from '~icons/mdi/alert-circle';
+import MdiCog from '~icons/mdi/cog';
 
 const modules = [
   {
@@ -48,10 +48,10 @@ const modules = [
     icon: MdiCloudDownload,
   },
   {
-    title: 'Data Export',
-    description: 'Export game data to JSON files',
-    href: '/admin/export',
-    icon: MdiDatabaseExport,
+    title: 'Site Configuration',
+    description: 'Manage global site configurations',
+    href: '/admin/site-config',
+    icon: MdiCog,
   },
   {
     title: 'Comments',
@@ -102,7 +102,7 @@ export default function AdminDashboard() {
       {/* Quick Stats (Optional - can be implemented later) */}
       <Card>
         <CardHeader>
-          <CardTitle>Welcome to CMS</CardTitle>
+          <CardTitle>Welcome to GamesRamp CMS</CardTitle>
           <CardDescription>
             Use the sidebar or the cards above to navigate to different management sections
           </CardDescription>

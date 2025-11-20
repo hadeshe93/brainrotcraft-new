@@ -12,6 +12,7 @@ export const NEXTAUTH_URL = `https://${DOMAIN}`;
  * 上传到 R2 的跟路径
  */
 export const UPLOAD_IMG_ROOT_PATH = 'brainrotcraft';
+export const UPLOAD_GAME_COVER_ROOT_PATH = 'brainrotcraft/covers';
 
 /**
  * 开发者相关

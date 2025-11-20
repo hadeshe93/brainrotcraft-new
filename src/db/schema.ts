@@ -805,3 +805,34 @@ export const introductionTranslationsRelations = relations(introductionTranslati
     references: [introductions.gameUuid],
   }),
 }));
+
+// ============================================
+// 站点配置表 (Site Configuration)
+// ============================================
+
+// 站点配置表
+export const siteConfig = sqliteTable(
+  'site_config',
+  {
+    id: integer('id').primaryKey({ autoIncrement: true }),
+    uuid: text('uuid').notNull().unique(),
+    scope: text('scope', { enum: ['client', 'admin', 'common'] })
+      .notNull()
+      .unique(), // 唯一约束确保每个使用方只有一条配置
+    config: text('config', { mode: 'json' })
+      .$type<Record<string, any>>()
+      .notNull()
+      .default(sql`'{}'`), // JSON 对象存储配置内容
+    createdAt: integer('created_at')
+      .notNull()
+      .default(sql`(unixepoch())`),
+    updatedAt: integer('updated_at')
+      .notNull()
+      .default(sql`(unixepoch())`),
+    deletedAt: integer('deleted_at'), // 软删除支持
+  },
+  (table) => ({
+    uuidIdx: uniqueIndex('site_config_uuid_idx').on(table.uuid),
+    scopeIdx: uniqueIndex('site_config_scope_idx').on(table.scope), // 确保 scope 唯一性
+  }),
+);

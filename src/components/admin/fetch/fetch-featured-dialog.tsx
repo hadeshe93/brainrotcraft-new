@@ -42,8 +42,8 @@ export default function FetchFeaturedDialog({ open, onOpenChange }: FetchFeature
   const loadFeatured = async () => {
     setLoading(true);
     try {
-      const response = await fetch(buildParentApiUrl('featured'), {
-        headers: getParentApiHeaders(),
+      const response = await fetch(await buildParentApiUrl('featured'), {
+        headers: await getParentApiHeaders(),
       });
 
       if (!response.ok) {

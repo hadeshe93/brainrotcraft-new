@@ -43,8 +43,8 @@ export default function FetchCategoriesDialog({ open, onOpenChange }: FetchCateg
   const loadCategories = async () => {
     setLoading(true);
     try {
-      const response = await fetch(buildParentApiUrl('categories'), {
-        headers: getParentApiHeaders(),
+      const response = await fetch(await buildParentApiUrl('categories'), {
+        headers: await getParentApiHeaders(),
       });
 
       if (!response.ok) {

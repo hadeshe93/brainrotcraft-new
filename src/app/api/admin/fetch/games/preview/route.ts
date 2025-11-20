@@ -103,11 +103,6 @@ export async function POST(request: NextRequest): Promise<NextResponse<Response>
 
     // 检查分类
     if (gameData.categories && gameData.categories.length > 0) {
-      const existingCategories = await db
-        .select({ uuid: categories.uuid })
-        .from(categories)
-        .where(eq(categories.uuid, gameData.categories[0])); // 简化：逐个检查
-
       const existingUuidSet = new Set((await db.select({ uuid: categories.uuid }).from(categories)).map((c) => c.uuid));
 
       for (const categoryUuid of gameData.categories) {
